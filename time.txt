@@ -1,0 +1,838 @@
+const { ethers } = require("hardhat");
+const fs = require("fs");
+require("dotenv").config();
+
+// ========== CONFIGURATION ==========
+const ARB_ADDRESS = "0x912ce59144191c1204e64559fe8253a0e49e6548"; // ARB on Arbitrum
+const WETH_ADDRESS = "0x82af49447d8a07e3bd95bd0d56f35241523fbab1"; // WETH on Arbitrum
+const UNISWAP_V3_POOL_ADDRESS = "0xc6f780497a95e246eb9449f5e4770916dcd6396a"; // Uniswap V3 ARB/WETH
+const SUSHISWAP_V2_POOL_ADDRESS = "0xbf6cbb1f40a542af50839cad01b0dc1747f11e18"; // SushiSwap V2 ARB/WETH
+const FLASHLOAN_ARBITRAGE_CONTRACT_ADDRESS = "0x692012128AA9D18cB4371C5ecb6a5f89655619Fc";
+const BORROW_VALUE_USD = 10; // Desired borrow amount in USD
+const ARBITRAGE_THRESHOLD = .0000004;
+const MAX_ARBITRAGE_TRANSACTIONS = 1; // Stop after max arbitrage transactions
+const STOP_LOSS_USD = 2.5; // Stop when net loss reaches $2.5
+const CHAINLINK_ETH_USD_ADDRESS = "0x639Fe6ab55C921f74e7fac1ee960C0B6293ba612"; // Chainlink ETH/USD on Arbitrum
+const BALANCER_VAULT_ADDRESS = "0xBA12222222228d8Ba445958a75a0704d566BF2C8"; // Balancer Vault on Arbitrum
+
+// ========== ABI DEFINITIONS ==========
+const V3_POOL_ABI = [
+  "function token0() view returns (address)",
+  "function token1() view returns (address)",
+  "function slot0() view returns (uint160 sqrtPriceX96, int24 tick, uint16 observationIndex, uint16 observationCardinality, uint16 observationCardinalityNext, uint8 feeProtocol, bool unlocked)",
+  "function fee() view returns (uint24)",
+  "event Swap(address indexed sender, address indexed recipient, int256 amount0, int256 amount1, uint160 sqrtPriceX96, uint128 liquidity, int24 tick)"
+];
+
+const V2_POOL_ABI = [
+  "function token0() view returns (address)",
+  "function token1() view returns (address)",
+  "function getReserves() view returns (uint112 reserve0, uint112 reserve1, uint32 blockTimestampLast)",
+  "function totalSupply() view returns (uint256)",
+  "event Swap(address indexed sender, uint amount0In, uint amount1In, uint amount0Out, uint amount1Out, address indexed to)"
+];
+
+const FLASHLOAN_ARBITRAGE_ABI = [
+  "function executeArbitrage(uint256 amountAForLiquidity, uint256 amountBForLiquidity, uint256 amountAForArbitrage, bool direction, uint256 minAmountOut1, uint256 minAmountOut2, uint256 deadline, uint24 feeUniswap) external",
+  "event ArbitrageExecuted(uint256 profitA, uint256 profitB, bool success)"
+];
+
+const CHAINLINK_ABI = [
+  "function latestAnswer() view returns (int256)",
+  "function decimals() view returns (uint8)"
+];
+
+const VAULT_ABI = [
+  "function getProtocolFeesCollector() view returns (address)"
+];
+
+const FEE_COLLECTOR_ABI = [
+  "function getFlashLoanFeePercentage() view returns (uint256)"
+];
+
+const IERC20_ABI = [
+  "function balanceOf(address) view returns (uint256)"
+];
+
+// ========== GLOBAL STATE ==========
+let wsProvider, httpProvider, signer, cachedFeeData;
+let uniswapV3Pool, sushiswapV2Pool, flashLoanArbitrage, chainlinkEthUsd;
+let uniswapIsARBFirst, sushiswapIsARBFirst;
+let cachedUniswapPrice = 0, cachedSushiSwapPrice = 0;
+let cachedWethUsdPrice = 0;
+let cachedUniswapFee, cachedSushiSwapFee, cachedFlashloanFeePercentage;
+let vaultArbBalance, vaultWethBalance; // Store Vault's token balances
+const swapEventTimestamps = {};
+let highestPriceDiff = 0;
+let arbitrageCount = 0;
+let arbOpportunityStartTime = null;
+let cumulativePnLInWETH = 0;
+let shouldStop = false;
+let executingTransactions = 0;
+const MAX_EXECUTING_TRANSACTIONS = 2;
+let currentNonce;
+
+// ========== CORE FUNCTIONS ==========
+
+/** Connect to WebSocket and initialize contracts */
+const connectWebSocket = async () => {
+  wsProvider = new ethers.WebSocketProvider(process.env.ARBITRUM_WS_RPC_URL);
+
+  wsProvider.websocket.on("close", (code) => {
+    console.error(`WebSocket closed (${code}). Reconnecting... Kuwabara kuwabara...`);
+    setTimeout(connectWebSocket, 3000);
+  });
+
+  wsProvider.websocket.on("error", (error) => {
+    console.error("WebSocket error:", error.message);
+    wsProvider.websocket.close();
+  });
+
+  try {
+    await wsProvider.getNetwork();
+    console.log("✅ WebSocket connected");
+  } catch (error) {
+    console.error("WebSocket connection failed:", error.message);
+    return;
+  }
+
+  uniswapV3Pool = new ethers.Contract(UNISWAP_V3_POOL_ADDRESS, V3_POOL_ABI, wsProvider);
+  sushiswapV2Pool = new ethers.Contract(SUSHISWAP_V2_POOL_ADDRESS, V2_POOL_ABI, wsProvider);
+  flashLoanArbitrage = new ethers.Contract(FLASHLOAN_ARBITRAGE_CONTRACT_ADDRESS, FLASHLOAN_ARBITRAGE_ABI, wsProvider);
+  chainlinkEthUsd = new ethers.Contract(CHAINLINK_ETH_USD_ADDRESS, CHAINLINK_ABI, wsProvider);
+  const balancerVault = new ethers.Contract(BALANCER_VAULT_ADDRESS, VAULT_ABI, wsProvider);
+
+  try {
+    const [uniToken0, uniToken1, sushiToken0, sushiToken1] = await Promise.all([
+      uniswapV3Pool.token0(),
+      uniswapV3Pool.token1(),
+      sushiswapV2Pool.token0(),
+      sushiswapV2Pool.token1()
+    ]);
+    console.log(`Uniswap token0: ${uniToken0}, token1: ${uniToken1}`);
+    console.log(`SushiSwap token0: ${sushiToken0}, token1: ${sushiToken1}`);
+    uniswapIsARBFirst = uniToken0.toLowerCase() === ARB_ADDRESS.toLowerCase();
+    sushiswapIsARBFirst = sushiToken0.toLowerCase() === ARB_ADDRESS.toLowerCase();
+    console.log(`Uniswap isARBFirst: ${uniswapIsARBFirst}`);
+    console.log(`SushiSwap isARBFirst: ${sushiswapIsARBFirst}`);
+  } catch (error) {
+    console.error("Failed to fetch pool token details:", error.message);
+    return;
+  }
+
+  try {
+    cachedUniswapFee = await uniswapV3Pool.fee();
+    cachedSushiSwapFee = 3000; // Fixed 0.3% for SushiSwap V2
+    // Fetch Balancer flash loan fee percentage
+    const feeCollectorAddress = await balancerVault.getProtocolFeesCollector();
+    const feeCollector = new ethers.Contract(feeCollectorAddress, FEE_COLLECTOR_ABI, wsProvider);
+    cachedFlashloanFeePercentage = await feeCollector.getFlashLoanFeePercentage();
+    const feePercentage = Number(cachedFlashloanFeePercentage) / 1e18;
+    console.log(`Uniswap V3 Pool Fee: ${cachedUniswapFee} (${(Number(cachedUniswapFee) / 1e6) * 100}%)`);
+    console.log(`SushiSwap V2 Pool Fee: ${cachedSushiSwapFee} (0.3%)`);
+    console.log(`Balancer Flashloan Fee: ${feePercentage * 100}%`);
+
+    // Fetch and log Balancer Vault's balances for ARB and WETH
+    const arbToken = new ethers.Contract(ARB_ADDRESS, IERC20_ABI, wsProvider);
+    const wethToken = new ethers.Contract(WETH_ADDRESS, IERC20_ABI, wsProvider);
+    vaultArbBalance = await arbToken.balanceOf(BALANCER_VAULT_ADDRESS);
+    vaultWethBalance = await wethToken.balanceOf(BALANCER_VAULT_ADDRESS);
+    console.log(`Balancer Vault ARB Balance: ${ethers.formatUnits(vaultArbBalance, 18)} ARB`);
+    console.log(`Balancer Vault WETH Balance: ${ethers.formatUnits(vaultWethBalance, 18)} WETH`);
+  } catch (error) {
+    console.error("Failed to fetch fees or balances:", error.message);
+    return;
+  }
+
+  await updateWethUsdPrice();
+  try {
+    const { freshPriceUni, freshPriceSushi } = await fetchFreshPrices();
+    cachedUniswapPrice = freshPriceUni;
+    cachedSushiSwapPrice = freshPriceSushi;
+  } catch (error) {
+    console.error("Initial price fetch failed:", error.message);
+  }
+
+  await updateFeeData();
+  checkArbitrage("Initial");
+  setupEventListeners();
+
+  setInterval(updateFeeData, 10000);
+  setInterval(updateWethUsdPrice, 60000);
+};
+
+/** Update WETH/USD price from Chainlink */
+const updateWethUsdPrice = async () => {
+  try {
+    const price = await chainlinkEthUsd.latestAnswer();
+    const decimals = Number(await chainlinkEthUsd.decimals());
+    cachedWethUsdPrice = Number(price) / 10 ** decimals;
+    console.log(`💵 Updated WETH/USD price: ${cachedWethUsdPrice}`);
+  } catch (error) {
+    console.error("Failed to update WETH/USD price:", error.message);
+  }
+};
+
+/** Update gas fee data */
+const updateFeeData = async () => {
+  try {
+    cachedFeeData = await wsProvider.getFeeData();
+    console.log("⛽ Gas Update - Base:", ethers.formatUnits(cachedFeeData.gasPrice, "gwei"), "Gwei");
+  } catch (error) {
+    console.error("Gas update failed:", error.message);
+    cachedFeeData = {
+      gasPrice: ethers.parseUnits("1", "gwei"),
+      maxPriorityFeePerGas: ethers.parseUnits("1", "gwei"),
+      maxFeePerGas: ethers.parseUnits("2", "gwei")
+    };
+  }
+};
+
+/** Calculate ARB/WETH price from sqrtPriceX96 (Uniswap V3) */
+const calculateV3Price = (sqrtPriceX96, isARBFirst) => {
+  const decimalsARB = 18;
+  const decimalsWETH = 18;
+  const sqrtPrice = Number(sqrtPriceX96.toString()) / 2 ** 96;
+  const priceRatio = sqrtPrice ** 2;
+  const price = isARBFirst 
+    ? priceRatio * 10 ** (decimalsARB - decimalsWETH)
+    : (1 / priceRatio) * 10 ** (decimalsWETH - decimalsARB);
+  console.log(`Calculated V3 price: ${price} (isARBFirst: ${isARBFirst})`);
+  return price;
+};
+
+/** Calculate ARB/WETH price from SushiSwap V2 reserves */
+const calculateV2Price = (reserves, isARBFirst) => {
+  const reserve0 = Number(reserves.reserve0.toString());
+  const reserve1 = Number(reserves.reserve1.toString());
+  const price = isARBFirst ? reserve1 / reserve0 : reserve0 / reserve1;
+  console.log(`Calculated V2 price: ${price} (isARBFirst: ${isARBFirst})`);
+  return price;
+};
+
+/** Fetch and log prices from both DEXes */
+const fetchAndLogPrices = async (context = "general") => {
+  const maxRetries = 3;
+  for (let attempt = 0; attempt < maxRetries; attempt++) {
+    try {
+      const [slot0Uni, reservesSushi] = await Promise.all([
+        uniswapV3Pool.slot0(),
+        sushiswapV2Pool.getReserves()
+      ]);
+
+      const freshPriceUni = calculateV3Price(slot0Uni.sqrtPriceX96, uniswapIsARBFirst);
+      const freshPriceSushi = calculateV2Price(reservesSushi, sushiswapIsARBFirst);
+      const priceDiff = Math.abs(freshPriceUni - freshPriceSushi);
+      const timestamp = Date.now();
+
+      const logMessage = `⭕ (${context}): Uniswap=${freshPriceUni.toFixed(18)}, SushiSwap=${freshPriceSushi.toFixed(18)}, PriceDiff=${priceDiff.toFixed(18)} at ${timestamp}\n`;
+      console.log(logMessage);
+      fs.appendFileSync("logs/time.txt", logMessage);
+      return { freshPriceUni, freshPriceSushi, priceDiff };
+    } catch (err) {
+      console.error(`Fetch prices attempt ${attempt + 1} failed: ${err.message}`);
+      if (attempt === maxRetries - 1) {
+        fs.appendFileSync("logs/time.txt", `Failed after ${maxRetries} attempts: ${err.message}\n`);
+        return null;
+      }
+      await new Promise(resolve => setTimeout(resolve, 1000 * (attempt + 1)));
+    }
+  }
+  return null;
+};
+
+/** Fetch initial prices */
+const fetchFreshPrices = async () => {
+  try {
+    const slot0Uni = await uniswapV3Pool.slot0();
+    const reservesSushi = await sushiswapV2Pool.getReserves();
+    const freshPriceUni = calculateV3Price(slot0Uni.sqrtPriceX96, uniswapIsARBFirst);
+    const freshPriceSushi = calculateV2Price(reservesSushi, sushiswapIsARBFirst);
+    console.log(`Fresh UniswapV3 price: ${freshPriceUni}`);
+    console.log(`Fresh SushiSwapV2 price: ${freshPriceSushi}`);
+    return { freshPriceUni, freshPriceSushi };
+  } catch (error) {
+    console.error("Initial price fetch failed:", error.message);
+    throw error;
+  }
+};
+
+/** Set up swap event listeners */
+const setupEventListeners = () => {
+  uniswapV3Pool.removeAllListeners("Swap");
+  sushiswapV2Pool.removeAllListeners("Swap");
+
+  uniswapV3Pool.on("Swap", (_, __, ___, ____, sqrtPriceX96) => {
+    const price = calculateV3Price(sqrtPriceX96, uniswapIsARBFirst);
+    cachedUniswapPrice = price;
+    swapEventTimestamps["Uniswap"] = Date.now();
+    console.log(`🔄 [UniswapV3] Swap event at ARB Price: ${price}`);
+    checkArbitrage("Uniswap");
+  });
+
+  sushiswapV2Pool.on("Swap", async () => {
+    try {
+      const reserves = await sushiswapV2Pool.getReserves();
+      const price = calculateV2Price(reserves, sushiswapIsARBFirst);
+      cachedSushiSwapPrice = price;
+      swapEventTimestamps["SushiSwap"] = Date.now();
+      console.log(`🔄 [SushiSwapV2] Swap event updated ARB Price: ${price}`);
+      checkArbitrage("SushiSwap");
+    } catch (error) {
+      console.error("Error updating SushiSwap price:", error.message);
+    }
+  });
+};
+
+/** Calculate loan amount in ARB based on USD value */
+const calculateLoanAmount = (targetPrice) => {
+  if (cachedWethUsdPrice === 0) {
+    throw new Error("WETH/USD price not available");
+  }
+  const borrowValueWeth = BORROW_VALUE_USD / cachedWethUsdPrice;
+  const ARBAmountFloat = borrowValueWeth / targetPrice;
+  const loanAmount = ethers.parseUnits(ARBAmountFloat.toFixed(18), 18);
+  console.log(`Calculated loan amount: ${ethers.formatUnits(loanAmount, 18)} ARB`);
+  return loanAmount;
+};
+
+/** Check for arbitrage opportunities */
+const checkArbitrage = (dex) => {
+  if (shouldStop) {
+    console.log("Bot stopped due to stop condition.");
+    return;
+  }
+
+  if (arbitrageCount >= MAX_ARBITRAGE_TRANSACTIONS) {
+    console.log(`Bot stopped: Reached max transactions (${MAX_ARBITRAGE_TRANSACTIONS}).`);
+    shouldStop = true;
+    uniswapV3Pool.removeAllListeners("Swap");
+    sushiswapV2Pool.removeAllListeners("Swap");
+    wsProvider.websocket.close();
+    return;
+  }
+
+  if (executingTransactions >= MAX_EXECUTING_TRANSACTIONS) {
+    console.log("Max executing transactions reached.");
+    return;
+  }
+
+  if (!cachedUniswapPrice || !cachedSushiSwapPrice) {
+    console.log("Price data missing - Uniswap:", cachedUniswapPrice, "SushiSwap:", cachedSushiSwapPrice);
+    return;
+  }
+
+  const priceDiff = Math.abs(cachedUniswapPrice - cachedSushiSwapPrice);
+  if (priceDiff > highestPriceDiff) highestPriceDiff = priceDiff;
+
+  if (priceDiff > ARBITRAGE_THRESHOLD) {
+    fetchAndLogPrices("opportunity_detected");
+    setTimeout(() => fetchAndLogPrices("2s_after_opportunity"), 2000);
+
+    if (arbOpportunityStartTime === null) {
+      arbOpportunityStartTime = Date.now();
+      console.log(`📈 Arbitrage opportunity started at ${arbOpportunityStartTime}`);
+    }
+    arbitrageCount++;
+    console.log(`🚨 Arbitrage #${arbitrageCount}: Price diff ${priceDiff.toFixed(10)}`);
+    const direction = cachedSushiSwapPrice > cachedUniswapPrice;
+    console.log(`Direction: ${direction ? "SushiSwap -> Uniswap" : "Uniswap -> SushiSwap"}`);
+    executePresignedArbitrage(direction, swapEventTimestamps[dex] || Date.now());
+  } else {
+    if (arbOpportunityStartTime !== null) {
+      const vanishTime = Date.now() - arbOpportunityStartTime;
+      console.log(`😟 Arbitrage vanished after ${vanishTime} ms.`);
+      fs.appendFileSync("logs/time.txt", `Opportunity lasted: ${vanishTime} ms, pricediff: ${priceDiff.toFixed(10)}\n`);
+      arbOpportunityStartTime = null;
+    }
+    console.log(`ℹ️ No arbitrage. Price diff: ${priceDiff.toFixed(10)} | Count: ${arbitrageCount}`);
+  }
+};
+
+/** Log transaction details */
+const logTransactionDetails = (serial, txHash, direction, loanAmount, profitInWETH, gasCostInWETH, swapFeeUniswap, swapFeeSushiSwap, netPnL, cumulativePnL, txStatus, error = null) => {
+  const timestamp = new Date().toISOString();
+  const statusText = txStatus === 1 ? "Success" : "Failed";
+  const errorMessage = error ? `\nError: ${error}` : '';
+  const arbUsdPrice = cachedUniswapPrice * cachedWethUsdPrice;
+  const loanAmountUSD = Number(ethers.formatUnits(loanAmount, 18)) * arbUsdPrice;
+  const profitUSD = profitInWETH * cachedWethUsdPrice;
+  const gasCostUSD = gasCostInWETH * cachedWethUsdPrice;
+  const swapFeeUniswapUSD = swapFeeUniswap * cachedWethUsdPrice;
+  const swapFeeSushiSwapUSD = swapFeeSushiSwap * cachedWethUsdPrice;
+  const netPnLUSD = netPnL * cachedWethUsdPrice;
+  const cumulativePnLUSD = cumulativePnL * cachedWethUsdPrice;
+
+  const logMessage = `
+Timestamp: ${timestamp}
+Transaction #${serial}
+Status: ${statusText}
+Transaction Hash: ${txHash || 'N/A'}
+Direction: ${direction ? "SushiSwap -> Uniswap" : "Uniswap -> SushiSwap"}
+Loan Amount: ${ethers.formatUnits(loanAmount, 18)} ARB (≈$${loanAmountUSD.toFixed(2)} USD)
+Profit: ${profitInWETH.toFixed(18)} WETH (≈$${profitUSD.toFixed(2)} USD)
+Gas Cost: ${gasCostInWETH.toFixed(18)} WETH (≈$${gasCostUSD.toFixed(2)} USD)
+Uniswap Swap Fee: ${swapFeeUniswap.toFixed(18)} WETH (≈$${swapFeeUniswapUSD.toFixed(2)} USD)
+SushiSwap Swap Fee: ${swapFeeSushiSwap.toFixed(18)} WETH (≈$${swapFeeSushiSwapUSD.toFixed(2)} USD)
+Net PnL: ${netPnL.toFixed(18)} WETH (≈$${netPnLUSD.toFixed(2)} USD)
+Cumulative PnL: ${cumulativePnL.toFixed(18)} WETH (≈$${cumulativePnLUSD.toFixed(2)} USD)${errorMessage}
+--------------------------------------------------
+`;
+  fs.appendFileSync("logs/p&l.txt", logMessage);
+};
+
+/** Execute arbitrage with liquidity provision for 99% pool ownership */
+const executePresignedArbitrage = async (direction, startTime) => {
+  executingTransactions++;
+  console.log(`Transaction started. Executing transactions: ${executingTransactions}`);
+  let loanAmount;
+
+  try {
+    const detectionTime = Date.now();
+    console.log("Starting arbitrage execution for transaction #" + arbitrageCount);
+
+    // Fetch SushiSwap pool reserves
+    const reserves = await sushiswapV2Pool.getReserves();
+    let R_A, R_B;
+    if (sushiswapIsARBFirst) {
+      R_A = reserves.reserve0; // ARB
+      R_B = reserves.reserve1; // WETH
+    } else {
+      R_A = reserves.reserve1; // ARB
+      R_B = reserves.reserve0; // WETH
+    }
+    console.log(`Current reserves: R_A = ${ethers.formatUnits(R_A, 18)} ARB, R_B = ${ethers.formatUnits(R_B, 18)} WETH`);
+
+    // Calculate liquidity amounts for 99% ownership (original reserves = 1% of new total)
+    const FACTOR = ethers.parseUnits("5", 0); // 99x reserves to get 99% share
+    const amountAForLiquidity = R_A * FACTOR;
+    const amountBForLiquidity = R_B * FACTOR;
+    console.log(`amountAForLiquidity = ${ethers.formatUnits(amountAForLiquidity, 18)} ARB`);
+    console.log(`amountBForLiquidity = ${ethers.formatUnits(amountBForLiquidity, 18)} WETH`);
+
+    // Calculate arbitrage amount
+    const targetPrice = direction ? cachedSushiSwapPrice : cachedUniswapPrice;
+    if (!targetPrice) {
+      throw new Error("Target price unavailable");
+    }
+    console.log(`Target price: ${targetPrice}`);
+    loanAmount = calculateLoan537Amount(targetPrice);
+    const amountAForArbitrage = loanAmount;
+    console.log(`amountAForArbitrage = ${ethers.formatUnits(amountAForArbitrage, 18)} ARB`);
+
+    // Calculate minimum outputs
+    const uniswapFeeFactor = 1 - Number(cachedUniswapFee) / 1e6;
+    const sushiswapFeeFactor = 1 - Number(cachedSushiSwapFee) / 1e6;
+    let feeFactorFirst, feeFactorSecond;
+    if (direction) {
+      feeFactorFirst = uniswapFeeFactor;
+      feeFactorSecond = sushiswapFeeFactor;
+    } else {
+      feeFactorFirst = sushiswapFeeFactor;
+      feeFactorSecond = uniswapFeeFactor;
+    }
+
+    const slippageTolerance = 0.2;
+    let minAmountOut1, minAmountOut2;
+    const slippageFactor = BigInt(Math.floor((1 - slippageTolerance) * 10000));
+    if (direction) {
+      const expectedWETHFloat = Number(ethers.formatUnits(amountAForArbitrage, 18)) * targetPrice * feeFactorFirst;
+      const expectedWETH = ethers.parseUnits(expectedWETHFloat.toFixed(18), 18);
+      minAmountOut1 = (expectedWETH * slippageFactor) / 10000n;
+
+      const expectedARBFloat = expectedWETHFloat / cachedSushiSwapPrice * feeFactorSecond;
+      const expectedARB = ethers.parseUnits(expectedARBFloat.toFixed(18), 18);
+      minAmountOut2 = (expectedARB * slippageFactor) / 10000n;
+    } else {
+      const expectedWETHFloat = Number(ethers.formatUnits(amountAForArbitrage, 18)) * targetPrice * feeFactorFirst;
+      const expectedWETH = ethers.parseUnits(expectedWETHFloat.toFixed(18), 18);
+      minAmountOut1 = (expectedWETH * slippageFactor) / 10000n;
+
+      const expectedARBFloat = expectedWETHFloat / cachedUniswapPrice * feeFactorSecond;
+      const expectedARB = ethers.parseUnits(expectedARBFloat.toFixed(18), 18);
+      minAmountOut2 = (expectedARB * slippageFactor) / 10000n;
+    }
+    console.log(`minAmountOut1: ${ethers.formatUnits(minAmountOut1, 18)} WETH`);
+    console.log(`minAmountOut2: ${ethers.formatUnits(minAmountOut2, 18)} ARB`);
+
+    const deadline = Math.floor(Date.now() / 1000) + 45;
+    const feeUniswap = cachedUniswapFee;
+
+    // Encode transaction data
+    const txData = flashLoanArbitrage.interface.encodeFunctionData(
+      "executeArbitrage",
+      [
+        amountAForLiquidity,
+        amountBForLiquidity,
+        amountAForArbitrage,
+        direction,
+        minAmountOut1,
+        minAmountOut2,
+        deadline,
+        feeUniswap
+      ]
+    );
+    const encodeTime = Date.now();
+
+    let nonce = currentNonce;
+    console.log(`Using nonce: ${nonce}`);
+
+    const fetchedFeeData = cachedFeeData;
+    if (!fetchedFeeData) {
+      throw new Error("Fee data unavailable");
+    }
+    const baseFeePerGas = fetchedFeeData.lastBaseFeePerGas || fetchedFeeData.gasPrice;
+    const suggestedMaxPriorityFeePerGas = fetchedFeeData.maxPriorityFeePerGas || fetchedFeeData.gasPrice;
+    const reasonableTip = suggestedMaxPriorityFeePerGas * 2n;
+    const buffer = ethers.parseUnits("0.1", "gwei");
+    let maxFeePerGas = baseFeePerGas + reasonableTip + buffer;
+    const suggestedMaxFeePerGas = fetchedFeeData.maxFeePerGas || (baseFeePerGas + suggestedMaxPriorityFeePerGas);
+    if (maxFeePerGas < suggestedMaxFeePerGas) maxFeePerGas = suggestedMaxFeePerGas;
+
+    const tx = {
+      to: FLASHLOAN_ARBITRAGE_CONTRACT_ADDRESS,
+      data: txData,
+      nonce: nonce,
+      chainId: 42161n,
+      type: 2,
+      maxFeePerGas: maxFeePerGas,
+      maxPriorityFeePerGas: reasonableTip,
+      gasLimit: 1500000n
+    };
+
+    const signedTx = await signer.signTransaction(tx);
+    const signTime = Date.now();
+
+    const txHash = await httpProvider.send("eth_sendRawTransaction", [signedTx]);
+    console.log(`⚡ TX Sent: ${txHash}`);
+    currentNonce++;
+    const sendTime = Date.now();
+
+    const receipt = await httpProvider.waitForTransaction(txHash);
+    const confirmTime = Date.now();
+
+    const timingLog = `Arbitrage #${arbitrageCount} timings:
+- Detection to encode: ${encodeTime - detectionTime} ms
+- Encode to sign: ${signTime - encodeTime} ms
+- Sign to send: ${sendTime - signTime} ms
+- Send to confirm: ${confirmTime - sendTime} ms
+- Total: ${confirmTime - detectionTime} ms
+`;
+    console.log(timingLog);
+    fs.appendFileSync("logs/timings.txt", timingLog + "\n");
+
+    if (receipt) {
+      console.log(`Transaction status: ${receipt.status}`);
+      if (receipt.status === 1) {
+        for (const log of receipt.logs) {
+          try {
+            const parsedLog = flashLoanArbitrage.interface.parseLog(log);
+            if (parsedLog.name === "ArbitrageExecuted") {
+              console.log(`ArbitrageExecuted - Success: ${parsedLog.args.success}`);
+            }
+          } catch (e) {
+            // Skip logs not from our contract
+          }
+        }
+      }
+
+      const gasUsed = receipt.gasUsed;
+      const effectiveGasPrice = receipt.effectiveGasPrice || cachedFeeData.gasPrice;
+      const gasCostInWei = gasUsed * effectiveGasPrice;
+      const gasCostInWETH = Number(ethers.formatUnits(gasCostInWei, 18));
+
+      const loanAmountInWETH = Number(ethers.formatUnits(amountAForArbitrage, 18)) * cachedUniswapPrice;
+      const swapFeeUniswap = loanAmountInWETH * (Number(cachedUniswapFee) / 1e6);
+      const swapFeeSushiSwap = loanAmountInWETH * (Number(cachedSushiSwapFee) / 1e6);
+
+      // Placeholder for profit calculation
+      const profitInWETH = 0;
+      const netPnL = profitInWETH - gasCostInWETH;
+      cumulativePnLInWETH += netPnL;
+
+      logTransactionDetails(
+        arbitrageCount,
+        receipt.transactionHash,
+        direction,
+        amountAForArbitrage,
+        profitInWETH,
+        gasCostInWETH,
+        swapFeeUniswap,
+        swapFeeSushiSwap,
+        netPnL,
+        cumulativePnLInWETH,
+        receipt.status
+      );
+      checkStopCondition();
+    }
+  } catch (error) {
+    console.error("Execution failed:", error.message);
+    logTransactionDetails(
+      arbitrageCount,
+      null,
+      direction,
+      loanAmount || ethers.parseUnits("0", 18),
+      0,
+      0,
+      0,
+      0,
+      0,
+      cumulativePnLInWETH,
+      0,
+      error.message
+    );
+    if (error.message.includes("nonce")) {
+      currentNonce = await signer.provider.getTransactionCount(signer.address, "pending");
+      console.log(`Resynced nonce: ${currentNonce}`);
+    }
+  } finally {
+    executingTransactions--;
+    console.log(`Transaction completed. Executing transactions: ${executingTransactions}`);
+    if (executingTransactions === 0) {
+      checkArbitrage("PostTransaction");
+    }
+  }
+};
+
+/** Check stop-loss condition */
+const checkStopCondition = () => {
+  if (cachedWethUsdPrice === 0) {
+    console.error("WETH/USD price is zero, cannot check stop condition");
+    return;
+  }
+  const stopLossWeth = STOP_LOSS_USD / cachedWethUsdPrice;
+  if (cumulativePnLInWETH <= -stopLossWeth) {
+    console.log(`Net PnL ${cumulativePnLInWETH} WETH ≤ -${stopLossWeth} WETH. Stopping bot.`);
+    shouldStop = true;
+    uniswapV3Pool.removeAllListeners("Swap");
+    sushiswapV2Pool.removeAllListeners("Swap");
+    wsProvider.websocket.close();
+  }
+};
+
+// ========== INITIALIZATION ==========
+(async () => {
+  try {
+    httpProvider = new ethers.JsonRpcProvider(process.env.ARBITRUM_HTTP_RPC_URL);
+    signer = new ethers.Wallet(process.env.PRIVATE_KEY, httpProvider);
+    console.log("Signer address:", signer.address);
+    currentNonce = await signer.provider.getTransactionCount(signer.address, "pending");
+    console.log(`Initialized nonce: ${currentNonce}`);
+
+    flashLoanArbitrage = new ethers.Contract(
+      FLASHLOAN_ARBITRAGE_CONTRACT_ADDRESS,
+      FLASHLOAN_ARBITRAGE_ABI,
+      signer
+    );
+    console.log("Flashloan contract initialized at:", FLASHLOAN_ARBITRAGE_CONTRACT_ADDRESS);
+
+    await connectWebSocket();
+  } catch (error) {
+    console.error("Initialization failed:", error.message);
+  }
+})().catch(console.error);⭕Double check (opportunity_detected): Uniswap=0.000182092752224374, SushiSwap=0.000182652921581771, PriceDiff=0.000000560169357397 at 1745989648502
+⭕Double check (2s_after_opportunity): Uniswap=0.000182092752224374, SushiSwap=0.000182652921581771, PriceDiff=0.000000560169357397 at 1745989650973
+⭕Double check (opportunity_detected): Uniswap=0.000181679496261890, SushiSwap=0.000182134769520927, PriceDiff=0.000000455273259037 at 1745992484607
+⭕Double check (opportunity_detected): Uniswap=0.000181409694217245, SushiSwap=0.000181968026726513, PriceDiff=0.000000558332509268 at 1745993166231
+⭕Double check (opportunity_detected): Uniswap=0.000181433205758430, SushiSwap=0.000182113804276229, PriceDiff=0.000000680598517799 at 1745994049800
+⭕Double check (2s_after_opportunity): Uniswap=0.000181433205758430, SushiSwap=0.000182052033066824, PriceDiff=0.000000618827308394 at 1745994052259
+⭕Double check (opportunity_detected): Uniswap=0.000181433205758430, SushiSwap=0.000182052033066824, PriceDiff=0.000000618827308394 at 1745994090545
+⭕Double check (opportunity_detected): Uniswap=0.000181772477842289, SushiSwap=0.000182202870426769, PriceDiff=0.000000430392584479 at 1745994518468
+⭕Double check (opportunity_detected): Uniswap=0.000181874843663687, SushiSwap=0.000182395352332839, PriceDiff=0.000000520508669152 at 1745994958341
+⭕Double check (2s_after_opportunity): Uniswap=0.000181874843663687, SushiSwap=0.000182395352332839, PriceDiff=0.000000520508669152 at 1745994960803
+⭕Double check (opportunity_detected): Uniswap=0.000183242595275921, SushiSwap=0.000183719911289785, PriceDiff=0.000000477316013864 at 1746026496131
+⭕Double check (opportunity_detected): Uniswap=0.000183318363062378, SushiSwap=0.000183937406086897, PriceDiff=0.000000619043024519 at 1746028126990
+⭕Double check (opportunity_detected): Uniswap=0.000183246992647973, SushiSwap=0.000183770388557632, PriceDiff=0.000000523395909659 at 1746028534521
+⭕Double check (opportunity_detected): Uniswap=0.000184181721541008, SushiSwap=0.000184724382750263, PriceDiff=0.000000542661209254 at 1746093688749
+⭕Double check (opportunity_detected): Uniswap=0.000184669561001757, SushiSwap=0.000185225154228897, PriceDiff=0.000000555593227140 at 1746094374311
+⭕Double check (opportunity_detected): Uniswap=0.000184518140068838, SushiSwap=0.000185090503318426, PriceDiff=0.000000572363249588 at 1746095322784
+⭕Double check (opportunity_detected): Uniswap=0.000184389122800963, SushiSwap=0.000184883248327514, PriceDiff=0.000000494125526551 at 1746095388572
+⭕Double check (opportunity_detected): Uniswap=0.000184324097644447, SushiSwap=0.000184911286098104, PriceDiff=0.000000587188453657 at 1746165785193
+⭕Double check (opportunity_detected): Uniswap=0.000184583678037429, SushiSwap=0.000185155944196827, PriceDiff=0.000000572266159398 at 1746166793940
+⭕Double check (opportunity_detected): Uniswap=0.000184574790977902, SushiSwap=0.000185244605365879, PriceDiff=0.000000669814387977 at 1746167250566
+⭕Double check (opportunity_detected): Uniswap=0.000184314137620837, SushiSwap=0.000184931529587718, PriceDiff=0.000000617391966881 at 1746167816529
+⭕Double check (opportunity_detected): Uniswap=0.000184205688298513, SushiSwap=0.000184669626084345, PriceDiff=0.000000463937785832 at 1746171236203
+⭕Double check (opportunity_detected): Uniswap=0.000185017609314995, SushiSwap=0.000185661438145182, PriceDiff=0.000000643828830188 at 1746175735601
+⭕ Double check (opportunity_detected): Uniswap=0.000185155116114525, SushiSwap=0.000185699631364476, PriceDiff=0.000000544515249951 at 1746176107622
+⭕ Double check (opportunity_detected): Uniswap=0.000185155904006976, SushiSwap=0.000185689596435988, PriceDiff=0.000000533692429012 at 1746176291888
+⭕ Double check (opportunity_detected): Uniswap=0.000014036465403338, SushiSwap=0.000014021154421161, PriceDiff=0.000000015310982177 at 1746179309736
+⭕ Double check (opportunity_detected): Uniswap=0.000014036465403338, SushiSwap=0.000014021154421161, PriceDiff=0.000000015310982177 at 1746179372345
+⭕ Double check (opportunity_detected): Uniswap=0.000014036465403338, SushiSwap=0.000014021154421161, PriceDiff=0.000000015310982177 at 1746179539598
+⭕ Double check (opportunity_detected): Uniswap=0.000014036465403338, SushiSwap=0.000014021154421161, PriceDiff=0.000000015310982177 at 1746179566427
+⭕ Double check (opportunity_detected): Uniswap=0.000013922821419508, SushiSwap=0.000014021154421161, PriceDiff=0.000000098333001652 at 1746188524239
+⭕ Double check (2s_after_opportunity): Uniswap=0.000013922821419508, SushiSwap=0.000014021154421161, PriceDiff=0.000000098333001652 at 1746188526664
+⭕ Double check (opportunity_detected): Uniswap=0.000013922821419508, SushiSwap=0.000014021154421161, PriceDiff=0.000000098333001652 at 1746188683002
+⭕ Double check (2s_after_opportunity): Uniswap=0.000013922821419508, SushiSwap=0.000014021154421161, PriceDiff=0.000000098333001652 at 1746188685463
+⭕ Double check (opportunity_detected): uniswap=0.001944836885204904, sushiSwap=0.001944204864139389, Diff=0.000000632021065515 | uniswap=0.001944836885204904, camelot=0.001948270372079245, Diff=0.000003433486874341 | sushiSwap=0.001944204864139389, camelot=0.001948270372079245, Diff=0.000004065507939856 at 1746203346152
+⭕ Double check (opportunity_detected): uniswap=0.001944836885204904, sushiSwap=0.001944204864139389, Diff=0.000000632021065515 | uniswap=0.001944836885204904, camelot=0.001948270372079245, Diff=0.000003433486874341 | sushiSwap=0.001944204864139389, camelot=0.001948270372079245, Diff=0.000004065507939856 at 1746203346159
+⭕ Double check (opportunity_detected): uniswap=0.001944836885204904, sushiSwap=0.001944204864139389, Diff=0.000000632021065515 | uniswap=0.001944836885204904, camelot=0.001948270372079245, Diff=0.000003433486874341 | sushiSwap=0.001944204864139389, camelot=0.001948270372079245, Diff=0.000004065507939856 at 1746203346161
+⭕ Double check (2s_after_opportunity): uniswap=0.001944836885204904, sushiSwap=0.001944204864139389, Diff=0.000000632021065515 | uniswap=0.001944836885204904, camelot=0.001948270372079245, Diff=0.000003433486874341 | sushiSwap=0.001944204864139389, camelot=0.001948270372079245, Diff=0.000004065507939856 at 1746203348616
+⭕ Double check (2s_after_opportunity): uniswap=0.001944836885204904, sushiSwap=0.001944204864139389, Diff=0.000000632021065515 | uniswap=0.001944836885204904, camelot=0.001948270372079245, Diff=0.000003433486874341 | sushiSwap=0.001944204864139389, camelot=0.001948270372079245, Diff=0.000004065507939856 at 1746203348621
+⭕ Double check (2s_after_opportunity): uniswap=0.001944836885204904, sushiSwap=0.001944204864139389, Diff=0.000000632021065515 | uniswap=0.001944836885204904, camelot=0.001948270372079245, Diff=0.000003433486874341 | sushiSwap=0.001944204864139389, camelot=0.001948270372079245, Diff=0.000004065507939856 at 1746203348628
+⭕ Double check (opportunity_detected): uniswap=0.001944885567480715, sushiSwap=0.001944204864139389, Diff=0.000000680703341326 | uniswap=0.001944885567480715, camelot=0.001948270372079245, Diff=0.000003384804598531 | sushiSwap=0.001944204864139389, camelot=0.001948270372079245, Diff=0.000004065507939856 at 1746203392164
+⭕ Double check (opportunity_detected): uniswap=0.001944885567480715, sushiSwap=0.001944204864139389, Diff=0.000000680703341326 | uniswap=0.001944885567480715, camelot=0.001948270372079245, Diff=0.000003384804598531 | sushiSwap=0.001944204864139389, camelot=0.001948270372079245, Diff=0.000004065507939856 at 1746203392168
+⭕ Double check (opportunity_detected): uniswap=0.001944885567480715, sushiSwap=0.001944204864139389, Diff=0.000000680703341326 | uniswap=0.001944885567480715, camelot=0.001948270372079245, Diff=0.000003384804598531 | sushiSwap=0.001944204864139389, camelot=0.001948270372079245, Diff=0.000004065507939856 at 1746203392171
+⭕ Double check (2s_after_opportunity): uniswap=0.001944885567480715, sushiSwap=0.001944204864139389, Diff=0.000000680703341326 | uniswap=0.001944885567480715, camelot=0.001948270372079245, Diff=0.000003384804598531 | sushiSwap=0.001944204864139389, camelot=0.001948270372079245, Diff=0.000004065507939856 at 1746203394589
+⭕ Double check (2s_after_opportunity): uniswap=0.001944885567480715, sushiSwap=0.001944204864139389, Diff=0.000000680703341326 | uniswap=0.001944885567480715, camelot=0.001948270372079245, Diff=0.000003384804598531 | sushiSwap=0.001944204864139389, camelot=0.001948270372079245, Diff=0.000004065507939856 at 1746203394598
+⭕ Double check (2s_after_opportunity): uniswap=0.001944885567480715, sushiSwap=0.001944204864139389, Diff=0.000000680703341326 | uniswap=0.001944885567480715, camelot=0.001948270372079245, Diff=0.000003384804598531 | sushiSwap=0.001944204864139389, camelot=0.001948270372079245, Diff=0.000004065507939856 at 1746203394602
+⭕ Double check (opportunity_detected): uniswap=0.001931765356796886, sushiSwap=0.001937093259254902, Diff=0.000005327902458016 | uniswap=0.001931765356796886, camelot=0.001942422871687691, Diff=0.000010657514890805 | sushiSwap=0.001937093259254902, camelot=0.001942422871687691, Diff=0.000005329612432789 at 1746244400739
+⭕ Double check (2s_after_opportunity): uniswap=0.001931765356796886, sushiSwap=0.001937093259254902, Diff=0.000005327902458016 | uniswap=0.001931765356796886, camelot=0.001942422871687691, Diff=0.000010657514890805 | sushiSwap=0.001937093259254902, camelot=0.001942422871687691, Diff=0.000005329612432789 at 1746244403056
+⭕ Double check (opportunity_detected): uniswap=0.001930079644684853, sushiSwap=0.001934866223363323, Diff=0.000004786578678470 | uniswap=0.001930079644684853, camelot=0.001939818933711589, Diff=0.000009739289026737 | sushiSwap=0.001934866223363323, camelot=0.001939818933711589, Diff=0.000004952710348266 at 1746244984060
+⭕ Double check (2s_after_opportunity): uniswap=0.001930079644684853, sushiSwap=0.001934866223363323, Diff=0.000004786578678470 | uniswap=0.001930079644684853, camelot=0.001939818933711589, Diff=0.000009739289026737 | sushiSwap=0.001934866223363323, camelot=0.001939818933711589, Diff=0.000004952710348266 at 1746244986492
+⭕ Double check (opportunity_detected): uniswap=0.001928736432307683, sushiSwap=0.001933802774955434, Diff=0.000005066342647750 | uniswap=0.001928736432307683, camelot=0.001939213320490511, Diff=0.000010476888182827 | sushiSwap=0.001933802774955434, camelot=0.001939213320490511, Diff=0.000005410545535077 at 1746245456776
+⭕ Double check (2s_after_opportunity): uniswap=0.001928736432307683, sushiSwap=0.001933802774955434, Diff=0.000005066342647750 | uniswap=0.001928736432307683, camelot=0.001939213320490511, Diff=0.000010476888182827 | sushiSwap=0.001933802774955434, camelot=0.001939213320490511, Diff=0.000005410545535077 at 1746245459094
+⭕ Double check (opportunity_detected): uniswap=0.001920655806721162, sushiSwap=0.001925050922656308, Diff=0.000004395115935147 | uniswap=0.001920655806721162, camelot=0.001930471374047387, Diff=0.000009815567326225 | sushiSwap=0.001925050922656308, camelot=0.001930471374047387, Diff=0.000005420451391079 at 1746249883409
+⭕ Double check (2s_after_opportunity): uniswap=0.001920655806721162, sushiSwap=0.001925050922656308, Diff=0.000004395115935147 | uniswap=0.001920655806721162, camelot=0.001930471374047387, Diff=0.000009815567326225 | sushiSwap=0.001925050922656308, camelot=0.001930471374047387, Diff=0.000005420451391079 at 1746249885697
+⭕ Double check (opportunity_detected): uniswap=0.001922311579716084, sushiSwap=0.001925050922656308, Diff=0.000002739342940224 | uniswap=0.001922311579716084, camelot=0.001930471374047387, Diff=0.000008159794331302 | sushiSwap=0.001925050922656308, camelot=0.001930471374047387, Diff=0.000005420451391079 at 1746250244726
+⭕ Double check (2s_after_opportunity): uniswap=0.001922311579716084, sushiSwap=0.001925050922656308, Diff=0.000002739342940224 | uniswap=0.001922311579716084, camelot=0.001930471374047387, Diff=0.000008159794331302 | sushiSwap=0.001925050922656308, camelot=0.001930471374047387, Diff=0.000005420451391079 at 1746250247020
+⭕ Double check (opportunity_detected): uniswap=0.001924274025823694, sushiSwap=0.001924306848152731, Diff=0.000000032822329037 | uniswap=0.001924274025823694, camelot=0.001929515615048770, Diff=0.000005241589225076 | sushiSwap=0.001924306848152731, camelot=0.001929515615048770, Diff=0.000005208766896038 at 1746251074800
+⭕ Double check (2s_after_opportunity): uniswap=0.001924274025823694, sushiSwap=0.001924306848152731, Diff=0.000000032822329037 | uniswap=0.001924274025823694, camelot=0.001929515615048770, Diff=0.000005241589225076 | sushiSwap=0.001924306848152731, camelot=0.001929515615048770, Diff=0.000005208766896038 at 1746251077122
+⭕ Double check (opportunity_detected): uniswap=0.001926246085722005, sushiSwap=0.001924306848152731, Diff=0.000001939237569273 | uniswap=0.001926246085722005, camelot=0.001929515615048770, Diff=0.000003269529326765 | sushiSwap=0.001924306848152731, camelot=0.001929515615048770, Diff=0.000005208766896038 at 1746251387832
+⭕ Double check (opportunity_detected): uniswap=0.001926246085722005, sushiSwap=0.001924306848152731, Diff=0.000001939237569273 | uniswap=0.001926246085722005, camelot=0.001929515615048770, Diff=0.000003269529326765 | sushiSwap=0.001924306848152731, camelot=0.001929515615048770, Diff=0.000005208766896038 at 1746251494412
+⭕ Double check (opportunity_detected): uniswap=0.001926246085722005, sushiSwap=0.001924306848152731, Diff=0.000001939237569273 | uniswap=0.001926246085722005, camelot=0.001929515615048770, Diff=0.000003269529326765 | sushiSwap=0.001924306848152731, camelot=0.001929515615048770, Diff=0.000005208766896038 at 1746251583022
+⭕ Double check (2s_after_opportunity): uniswap=0.001926246085722005, sushiSwap=0.001924306848152731, Diff=0.000001939237569273 | uniswap=0.001926246085722005, camelot=0.001929515615048770, Diff=0.000003269529326765 | sushiSwap=0.001924306848152731, camelot=0.001929515615048770, Diff=0.000005208766896038 at 1746251585391
+⭕ Double check (opportunity_detected): uniswap=0.001923175437056703, sushiSwap=0.001924306848152731, Diff=0.000001131411096029 | uniswap=0.001923175437056703, camelot=0.001929506922168668, Diff=0.000006331485111965 | sushiSwap=0.001924306848152731, camelot=0.001929506922168668, Diff=0.000005200074015936 at 1746252138323
+⭕ Double check (2s_after_opportunity): uniswap=0.001923175437056703, sushiSwap=0.001924306848152731, Diff=0.000001131411096029 | uniswap=0.001923175437056703, camelot=0.001929506922168668, Diff=0.000006331485111965 | sushiSwap=0.001924306848152731, camelot=0.001929506922168668, Diff=0.000005200074015936 at 1746252140638
+⭕ Double check (opportunity_detected): uniswap=0.001912674784693653, sushiSwap=0.001916214754834953, Diff=0.000003539970141300 | uniswap=0.001912674784693653, camelot=0.001920557598004099, Diff=0.000007882813310446 | sushiSwap=0.001916214754834953, camelot=0.001920557598004099, Diff=0.000004342843169145 at 1746253507340
+⭕ Double check (2s_after_opportunity): uniswap=0.001912674784693653, sushiSwap=0.001916214754834953, Diff=0.000003539970141300 | uniswap=0.001912674784693653, camelot=0.001920557598004099, Diff=0.000007882813310446 | sushiSwap=0.001916214754834953, camelot=0.001920557598004099, Diff=0.000004342843169145 at 1746253509620
+⭕ Double check (opportunity_detected): uniswap=0.000172887506568796, sushiSwap=571.441436014406463073, arbswap=0.000173439987467412, swaprum=0.000173442497557886 at 1746365497634
+⭕ Double check (2s_after_opportunity): uniswap=0.000172887506568796, sushiSwap=571.441436014406463073, arbswap=0.000173439987467412, swaprum=0.000173442497557886 at 1746365500896
+⭕ Double check (opportunity_detected): uniswap=0.000172529776615353, arbswap=0.000172189707887525, swaprum=0.000173332743878447 at 1746373094812
+⭕ Double check (opportunity_detected): uniswap=0.000171908106466543, sushiSwap=570.983026157430913372, arbswap=0.000172189707887525, swaprum=0.000172322767521608 at 1746373469011
+⭕ Double check (opportunity_detected): uniswap=0.000171924623579926, arbswap=0.000171489132281985, swaprum=0.000172322767521608 at 1746374589881
+⭕ Double check (2s_after_opportunity): uniswap=0.000171924623579926, arbswap=0.000171489132281985, swaprum=0.000172322767521608 at 1746374593243
+⭕ Double check (opportunity_detected): uniswap=0.000175783914149762, arbswap=0.000176081289822949, arbidex=0.000175309206654094 at 1746419792901
+⭕ Double check (2s_after_opportunity): uniswap=0.000175783914149762, arbswap=0.000176081289822949, arbidex=0.000175309206654094 at 1746419796026
+⭕ Double check (opportunity_detected): uniswap=0.000175983872828842, arbswap=0.000176555928802359, arbidex=0.000175309206654094 at 1746420517264
+⭕ Double check (opportunity_detected): uniswap=0.000175913794082299, arbswap=0.000176492230586856, arbidex=0.000175416418900276 at 1746420642971
+⭕ Double check (2s_after_opportunity): uniswap=0.000175913794082299, arbswap=0.000176492230586856, arbidex=0.000175416418900276 at 1746420645872
+⭕ Double check (opportunity_detected): uniswap=0.000175925507610305, arbswap=0.000176492230586856, arbidex=0.000175416418900276 at 1746420698783
+⭕ Double check (2s_after_opportunity): uniswap=0.000175925507610305, arbswap=0.000176492230586856, arbidex=0.000175416418900276 at 1746420701603
+⭕ Double check (opportunity_detected): uniswap=0.000175925507610305, arbswap=0.000176492230586856, arbidex=0.000175416418900276 at 1746420778283
+⭕ Double check (opportunity_detected): uniswap=0.000174469070445784, arbswap=0.000175077483024573, arbidex=0.000174845901092289 at 1746428713410
+⭕ Double check (opportunity_detected): uniswap=0.000173159356358944, arbswap=0.000172715623917076, arbidex=0.000172446351013828 at 1746448956498
+⭕ Double check (opportunity_detected): uniswap=0.000173159340665717, arbswap=0.000172715623917076, arbidex=0.000172552458435172 at 1746449035492
+⭕ Double check (2s_after_opportunity): uniswap=0.000173159340665717, arbswap=0.000172715623917076, arbidex=0.000172552458435172 at 1746449038799
+⭕ Double check (opportunity_detected): uniswap=0.000172382261641658, arbswap=0.000171761713335316, arbidex=0.000172552458435172 at 1746452985671
+⭕ Double check (2s_after_opportunity): uniswap=0.000172382261641658, arbswap=0.000171761713335316, arbidex=0.000172552458435172 at 1746452988550
+⭕ Double check (opportunity_detected): uniswap=0.000172597791157107, arbswap=0.000171895169365991, arbidex=0.000172552458435172 at 1746456151651
+⭕ Double check (2s_after_opportunity): uniswap=0.000172597791157107, arbswap=0.000171895169365991, arbidex=0.000172552458435172 at 1746456154547
+⭕ Double check (opportunity_detected): uniswap=0.000171637634759778, arbswap=0.000172397789529503, arbidex=0.000172552458435172 at 1746459871678
+⭕ Double check (2s_after_opportunity): uniswap=0.000171588695975654, arbswap=0.000172397789529503, arbidex=0.000172552458435172 at 1746459874821
+⭕ Double check (opportunity_detected): uniswap=0.000171332470969357, arbswap=0.000172153114180487, arbidex=0.000172046220151496 at 1746460069617
+⭕ Double check (2s_after_opportunity): uniswap=0.000171332470969357, arbswap=0.000172153114180487, arbidex=0.000172046220151496 at 1746460072766
+Opportunity detected at 1746517196215 between Arbswap and Uniswap
+Opportunity detected at 1746522072880 between Arbswap and Uniswap
+Opportunity vanished after 8749 ms at 1746522081629
+Opportunity detected at 1746524218469 between Arbswap and Uniswap
+Opportunity vanished after 7607 ms at 1746524226076
+Opportunity detected at 1746524789588 between Arbidex and Uniswap
+Opportunity detected at 1746526154406 between Arbswap and Uniswap
+⭕ Double check (opportunity_detected): uniswap=0.000169402301734252, arbswap=0.000170046289121469, arbidex=0.000169744414767646 at 1746526155949
+⭕ Double check (2s_after_opportunity): uniswap=0.000169402301734252, arbswap=0.000170046289121469, arbidex=0.000169744414767646 at 1746526158865
+Opportunity detected at 1746526784445 between Uniswap and Arbswap
+⭕ Double check (opportunity_detected): uniswap=0.000169631459963055, arbswap=0.000169168692817768, arbidex=0.000169744414767646 at 1746526785304
+⭕ Double check (opportunity_detected): uniswap=0.000169631459963055, arbswap=0.000169168692817768, arbidex=0.000169744414767646 at 1746526785311
+Opportunity detected at 1746528076622 between Arbidex and Uniswap
+⭕ Double check (opportunity_detected): uniswap=0.000169031294576284, arbswap=0.000169035181048350, arbidex=0.000169744414767646 at 1746528077535
+⭕ Double check (2s_after_opportunity): uniswap=0.000169031294576284, arbswap=0.000169035181048350, arbidex=0.000169744414767646 at 1746528080482
+Opportunity detected at 1746528524667 between Arbswap and Uniswap
+Opportunity detected at 1746529509437 between Uniswap and Arbswap
+⭕ Double check (opportunity_detected): uniswap=0.000169993535771930, arbswap=0.000169285976679190, arbidex=0.000169423101742699 at 1746529510690
+Opportunity detected at 1746529591176 between Uniswap and Arbswap
+⭕ Double check (opportunity_detected): uniswap=0.000170039342296718, arbswap=0.000169318017724323, arbidex=0.000169423101742699 at 1746529592302
+⭕ Double check (2s_after_opportunity): uniswap=0.000170039342296718, arbswap=0.000169318017724323, arbidex=0.000169423101742699 at 1746529595399
+Opportunity detected at 1746530952774 between Arbswap and Arbidex
+⭕ Double check (opportunity_detected): uniswap=0.000170040823396270, arbswap=0.000170533619417794, arbidex=0.000169423101742699 at 1746530953918
+⭕ Double check (opportunity_detected): uniswap=0.000170040823396270, arbswap=0.000170533619417794, arbidex=0.000169423101742699 at 1746530953931
+Opportunity detected at 1746531528125 between Arbswap and Arbidex
+⭕ Double check (opportunity_detected): uniswap=0.000170052331685227, arbswap=0.000170672482416938, arbidex=0.000169529553346306 at 1746531529482
+Opportunity vanished after 3610 ms at 1746531531735
+⭕ Double check (2s_after_opportunity): uniswap=0.000170052331685227, arbswap=0.000170640056205905, arbidex=0.000169636480738136 at 1746531532856
+Opportunity detected at 1746532068233 between Arbswap and Uniswap
+⭕ Double check (opportunity_detected): uniswap=0.000169934347889290, arbswap=0.000170640056205905, arbidex=0.000169636480738136 at 1746532069370
+Opportunity vanished after 3585 ms at 1746532071818
+⭕ Double check (2s_after_opportunity): uniswap=0.000169934365838538, arbswap=0.000170607584561519, arbidex=0.000169636480738136 at 1746532072520
+Opportunity detected at 1746533070327 between Uniswap and Arbidex
+⭕ Double check (opportunity_detected): uniswap=0.000170346157499052, arbswap=0.000170385295321964, arbidex=0.000169636480738136 at 1746533071496
+⭕ Double check (opportunity_detected): uniswap=0.000170346157499052, arbswap=0.000170385295321964, arbidex=0.000169636480738136 at 1746533071497
+Opportunity detected at 1746546355958 between Arbidex and Uniswap
+⭕ Double check (opportunity_detected): uniswap=0.000170441387533025, arbswap=0.000170740448955823, arbidex=0.000171229066714004 at 1746546356869
+Opportunity vanished after 2774 ms at 1746546358732
+⭕ Double check (2s_after_opportunity): uniswap=0.000170441405374562, arbswap=0.000170740448955823, arbidex=0.000171120897814729 at 1746546359790
+Opportunity detected at 1746546376813 between Arbidex and Uniswap
+⭕ Double check (opportunity_detected): uniswap=0.000170419672533103, arbswap=0.000170740448955823, arbidex=0.000171120897814729 at 1746546377725
+Opportunity vanished after 3025 ms at 1746546379838
+⭕ Double check (2s_after_opportunity): uniswap=0.000170419690362234, arbswap=0.000170740448955823, arbidex=0.000171012831424551 at 1746546380598
+Opportunity detected at 1746546422622 between Arbidex and Uniswap
+⭕ Double check (opportunity_detected): uniswap=0.000170296455950491, arbswap=0.000170740448955823, arbidex=0.000171012831424551 at 1746546423535
+Opportunity vanished after 2999 ms at 1746546425621
+⭕ Double check (2s_after_opportunity): uniswap=0.000170296473795238, arbswap=0.000170740448955823, arbidex=0.000170904853663617 at 1746546426466
+Opportunity detected at 1746546596560 between Arbidex and Uniswap
+⭕ Double check (opportunity_detected): uniswap=0.000170192492204468, arbswap=0.000170740448955823, arbidex=0.000170904853663617 at 1746546597450
+⭕ Double check (opportunity_detected): uniswap=0.000170192492204468, arbswap=0.000170740448955823, arbidex=0.000170904853663617 at 1746546597453
+Opportunity vanished after 6858 ms at 1746546603418
+Opportunity detected at 1746548000815 between Uniswap and Arbswap
+⭕ Double check (opportunity_detected): uniswap=0.000170336026124103, arbswap=0.000169635311954141, arbidex=0.000170510950986198 at 1746548001934
+⭕ Double check (opportunity_detected): uniswap=0.000170336026124103, arbswap=0.000169635311954141, arbidex=0.000170510950986198 at 1746548001940
+Opportunity detected at 1746550253267 between Arbswap and Uniswap
+⭕ Double check (opportunity_detected): uniswap=0.000169968324758184, arbswap=0.000170728004806409, arbidex=0.000170510950986198 at 1746550254377
+⭕ Double check (opportunity_detected): uniswap=0.000169968324758184, arbswap=0.000170728004806409, arbidex=0.000170510950986198 at 1746550254378
+Opportunity detected at 1746550926153 between Uniswap and Arbswap
+Opportunity detected at 1746551353017 between Uniswap and Arbswap
+⭕ Double check (opportunity_detected): uniswap=0.000170473772064323, arbswap=0.000169771591106003, arbidex=0.000170510950986198 at 1746551354255
+⭕ Double check (2s_after_opportunity): uniswap=0.000170473772064323, arbswap=0.000169771591106003, arbidex=0.000170510950986198 at 1746551357427
+Opportunity detected at 1746551389135 between Uniswap and Arbswap
+⭕ Double check (opportunity_detected): uniswap=0.000170552709897015, arbswap=0.000169804686052281, arbidex=0.000170510950986198 at 1746551390269
+⭕ Double check (2s_after_opportunity): uniswap=0.000170552692158487, arbswap=0.000169836882616846, arbidex=0.000170510950986198 at 1746551393618
+⭕ Double check (opportunity_detected): uniswap=0.000170552692158487, arbswap=0.000169836882616846, arbidex=0.000170510950986198 at 1746551399465
+⭕ Double check (2s_after_opportunity): uniswap=0.000170548232478063, arbswap=0.000169869081386915, arbidex=0.000170510950986198 at 1746551402610
+Opportunity vanished after 15849 ms at 1746551404984
+Opportunity detected at 1746551427281 between Uniswap and Arbswap
+⭕ Double check (opportunity_detected): uniswap=0.000170577234303473, arbswap=0.000169869081386915, arbidex=0.000170510950986198 at 1746551428411
+⭕ Double check (2s_after_opportunity): uniswap=0.000170577198842954, arbswap=0.000169933455104046, arbidex=0.000170510950986198 at 1746551431623
+Opportunity vanished after 7379 ms at 1746551434660
+Opportunity detected at 1746551480800 between Uniswap and Arbswap
+⭕ Double check (opportunity_detected): uniswap=0.000170653422811153, arbswap=0.000169933455104046, arbidex=0.000170510950986198 at 1746551481953
+⭕ Double check (2s_after_opportunity): uniswap=0.000170652551624976, arbswap=0.000169997869443380, arbidex=0.000170510950986198 at 1746551485073
+Opportunity vanished after 7430 ms at 1746551488230
+Opportunity detected at 1746552072473 between Uniswap and Arbswap
+⭕ Double check (opportunity_detected): uniswap=0.000170800119437380, arbswap=0.000170237616341610, arbidex=0.000170510950986198 at 1746552073583
+⭕ Double check (2s_after_opportunity): uniswap=0.000170800119437380, arbswap=0.000170237616341610, arbidex=0.000170510950986198 at 1746552076881
+Opportunity detected at 1746717868611 between Arbidex and Uniswap
+⭕ Double check (opportunity_detected): uniswap=0.000169119061812166, arbswap=0.000169513943908304, arbidex=0.000169838931362105 at 1746717869445
+⭕ Double check (2s_after_opportunity): uniswap=0.000169107199620541, arbswap=0.000169513943908304, arbidex=0.000169838931362105 at 1746717872304
+⭕ Double check (opportunity_detected): uniswap=0.000168974915725789, arbswap=0.000169513943908304, arbidex=0.000169838931362105 at 1746717889163
+⭕ Double check (2s_after_opportunity): uniswap=0.000168909041008257, arbswap=0.000169513943908304, arbidex=0.000169838931362105 at 1746717892050
+Opportunity vanished after 621073 ms at 1746718489684
+Opportunity detected at 1746718833207 between Arbidex and Uniswap
+⭕ Double check (opportunity_detected): uniswap=0.000169101160973710, arbswap=0.000169513943908304, arbidex=0.000169838931362105 at 1746718834267
+Opportunity vanished after 2039 ms at 1746718835246
+⭕ Double check (2s_after_opportunity): uniswap=0.000169152466182024, arbswap=0.000169513943908304, arbidex=0.000169838931362105 at 1746718837311
+Opportunity detected at 1746719593611 between Arbidex and Uniswap
+⭕ Double check (opportunity_detected): uniswap=0.000169108587530521, arbswap=0.000169513943908304, arbidex=0.000169838931362105 at 1746719594698
+⭕ Double check (2s_after_opportunity): uniswap=0.000169108587530521, arbswap=0.000169513943908304, arbidex=0.000169838931362105 at 1746719597997
+Opportunity detected at 1746719666063 between Arbidex and Uniswap
+⭕ Double check (opportunity_detected): uniswap=0.000168878340882985, arbswap=0.000169513943908304, arbidex=0.000169838931362105 at 1746719667187
+⭕ Double check (2s_after_opportunity): uniswap=0.000168878340882985, arbswap=0.000169513943908304, arbidex=0.000169838931362105 at 1746719670250
+Opportunity detected at 1746719764029 between Arbidex and Uniswap
+⭕ Double check (opportunity_detected): uniswap=0.000168726581062831, arbswap=0.000169513943908304, arbidex=0.000169838931362105 at 1746719765061
+Opportunity detected at 1746720209519 between Arbidex and Uniswap
+⭕ Double check (opportunity_detected): uniswap=0.000169081054424778, arbswap=0.000169513943908304, arbidex=0.000169838931362105 at 1746720210546
+⭕ Double check (2s_after_opportunity): uniswap=0.000169081054424778, arbswap=0.000169513943908304, arbidex=0.000169838931362105 at 1746720213581
+Opportunity detected at 1746720857774 between Arbidex and Uniswap
+⭕ Double check (opportunity_detected): uniswap=0.000168782007586366, arbswap=0.000169513943908304, arbidex=0.000169838931362105 at 1746720858938
+⭕ Double check (2s_after_opportunity): uniswap=0.000168782039596947, arbswap=0.000169513943908304, arbidex=0.000169652751279262 at 1746720862104
+Opportunity detected at 1746721655290 between Uniswap and Arbswap
+⭕ Double check (opportunity_detected): uniswap=0.000169500292750401, arbswap=0.000168789587489482, arbidex=0.000169652751279262 at 1746721656352
+⭕ Double check (2s_after_opportunity): uniswap=0.000169500261047563, arbswap=0.000168842927701926, arbidex=0.000169652751279262 at 1746721659409
+Opportunity vanished after 8146 ms at 1746721663436
+Opportunity detected at 1746721715339 between Uniswap and Arbswap
+⭕ Double check (opportunity_detected): uniswap=0.000169566663712002, arbswap=0.000168842927701926, arbidex=0.000169652751279262 at 1746721716849
+⭕ Double check (2s_after_opportunity): uniswap=0.000169566632303449, arbswap=0.000168896374996216, arbidex=0.000169652751279262 at 1746721720183
+Opportunity vanished after 8563 ms at 1746721723902
+Opportunity detected at 1746772003742 between Arbidex and Uniswap
+Opportunity vanished after 7053 ms at 1746772010795
+Opportunity detected at 1746781868821 between PancakeSwapV3 and Uniswap
+Opportunity vanished after 611 ms at 1746781869432
+⭕ Double check (opportunity_detected): uniswap=0.001228333188405143, pancakeSwapV3=0.001226297426194633 at 1746781869438

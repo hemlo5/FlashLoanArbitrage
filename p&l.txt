@@ -1,0 +1,1617 @@
+
+Timestamp: 2025-04-30T05:07:37.573Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 3.023857113902751248 ARB (≈$1.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000003916650000000 WETH (≈$0.01 USD)
+Uniswap V3 Swap Fee: 0.000000275311232102 WETH (≈$0.00 USD)
+SushiSwap V2 Swap Fee: 0.000001651867392611 WETH (≈$0.00 USD)
+Net PnL: -0.000003916650000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000003916650000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-30T05:41:14.628Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 0.0 ARB (≈$0.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: No valid presigned transaction available or expired
+--------------------------------------------------
+
+Timestamp: 2025-04-30T05:42:04.318Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 0.0 ARB (≈$0.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: No valid presigned transaction available or expired
+--------------------------------------------------
+
+Timestamp: 2025-04-30T05:46:52.970Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 0.0 ARB (≈$0.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: data signature does not match function executeArbitrage. (argument="data", value="0x02f9017282a4b1808398968084016e3600830f42409498a652b3beb8508d6bfa62e464732dbdc69394a280b90104c450c472000000000000000000000000912ce59144191c1204e64559fe8253a0e49e65480000000000000000000000000000000000000000000000002a3de31b4ab326f000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000324d37491ad30000000000000000000000000000000000000000000000000438f1b509251a45000000000000000000000000000000000000000000000000000000006811b979000000000000000000000000000000000000", code=INVALID_ARGUMENT, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-30T05:54:45.343Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 3.041238924962485601 ARB (≈$1.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: nonce has already been used (transaction="0x02f9017282a4b1808398968084016e3600830f42409498a652b3beb8508d6bfa62e464732dbdc69394a280b90104c450c472000000000000000000000000912ce59144191c1204e64559fe8253a0e49e65480000000000000000000000000000000000000000000000002a34a6b0677ad56100000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000323a27fe2a7e0000000000000000000000000000000000000000000000000437621880e717b9000000000000000000000000000000000000000000000000000000006811bb510000000000000000000000000000000000000000000000000000000000000bb800000000000000000000000000000000000000000000000000000000000001f4c001a0ba81f878e81f394e6bf869189ffaa73f2fb7c0e1a4bff888769ab03d218d0a1ba05baf23c917d71965122766b6225455c3ff80c9d976c97a41761666ef2096ed2d", info={ "error": { "code": -32000, "message": "nonce too low: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d, tx: 0 state: 240" } }, code=NONCE_EXPIRED, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-30T06:06:07.632Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 3.041754934882093586 ARB (≈$1.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: could not coalesce error (error={ "code": -32000, "message": "nonce too high: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d, tx: 241 state: 240" }, payload={ "id": 3, "jsonrpc": "2.0", "method": "eth_sendRawTransaction", "params": [ "0x02f9017382a4b181f18398968084016e3600830f42409498a652b3beb8508d6bfa62e464732dbdc69394a280b90104c450c472000000000000000000000000912ce59144191c1204e64559fe8253a0e49e65480000000000000000000000000000000000000000000000002a367bff53704a12000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000003230907944fa00000000000000000000000000000000000000000000000004382e9ecf9c7e30000000000000000000000000000000000000000000000000000000006811bdfa0000000000000000000000000000000000000000000000000000000000000bb800000000000000000000000000000000000000000000000000000000000001f4c080a0faeb6c2d0e0419f3a2a5f84ffa0580bc88d051bb599b1aa9b1664b0d0c5eee7ba02188136c1c88b8ea653857e400ca28d664d800383a4b66c09cbe270e92f11d4b" ] }, code=UNKNOWN_ERROR, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-30T06:21:37.984Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 3.037684830266742075 ARB (≈$1.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000004101980000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000000275568432856 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000001653410597138 WETH (≈$0.00 USD)
+Net PnL: -0.000004101980000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000004101980000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-30T06:28:46.632Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 3.035172106315208396 ARB (≈$1.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000004079280000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000000275846241098 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000001655077446587 WETH (≈$0.00 USD)
+Net PnL: -0.000004079280000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000004079280000000 WETH (≈$-0.01 USD)
+Execution Time: 8580 ms
+--------------------------------------------------
+
+Timestamp: 2025-04-30T06:36:06.474Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 3.037240734751999849 ARB (≈$1.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000004128140000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000000276207470193 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000001657244821159 WETH (≈$0.00 USD)
+Net PnL: -0.000004128140000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000004128140000000 WETH (≈$-0.01 USD)
+Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 557 ms
+- Send to confirm: 8014 ms
+- Total execution time: 8572 ms
+--------------------------------------------------
+
+Timestamp: 2025-04-30T15:21:43.591Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 3.08846213629635491 ARB (≈$1.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000009789770000000 WETH (≈$0.02 USD)
+Uniswap Swap Fee: 0.000000282968908633 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000001697813451799 WETH (≈$0.00 USD)
+Net PnL: -0.000009789770000000 WETH (≈$-0.02 USD)
+Cumulative PnL: -0.000009789770000000 WETH (≈$-0.02 USD)
+Timing Details:
+- Detection to retrieve/generate: 2 ms
+- Retrieve/generate to send: 555 ms
+- Send to confirm: 7199 ms
+- Total execution time: 7756 ms
+--------------------------------------------------
+
+Timestamp: 2025-04-30T15:48:55.043Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 3.07956140245530996 ARB (≈$1.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000005478970000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000000282270077624 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000001693620465745 WETH (≈$0.00 USD)
+Net PnL: -0.000005478970000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000005478970000000 WETH (≈$-0.01 USD)
+Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 1019 ms
+- Send to confirm: 7328 ms
+- Total execution time: 8348 ms
+--------------------------------------------------
+
+Timestamp: 2025-04-30T15:55:41.218Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 3.082158883503606006 ARB (≈$1.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000005710290000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000000282398173133 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000001694389038796 WETH (≈$0.00 USD)
+Net PnL: -0.000005710290000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000005710290000000 WETH (≈$-0.01 USD)
+Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 7056 ms
+- Total execution time: 7059 ms
+--------------------------------------------------
+
+Timestamp: 2025-05-01T10:01:35.239Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 2.977026408262093859 ARB (≈$1.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000004184520000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000000274156924473 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000001644941546840 WETH (≈$0.00 USD)
+Net PnL: -0.000004184520000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000004184520000000 WETH (≈$-0.01 USD)
+Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 6781 ms
+- Total execution time: 6784 ms
+--------------------------------------------------
+
+Timestamp: 2025-05-01T10:12:54.883Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 0.0 ARB (≈$0.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Timing Details:
+- Detection to retrieve/generate: 890 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 890 ms
+Error: Failed to generate presigned transaction
+--------------------------------------------------
+
+Timestamp: 2025-05-01T10:28:49.524Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 2.937500931319890984 ARB (≈$1.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000017843383838000 WETH (≈$0.03 USD)
+Uniswap Swap Fee: 0.000000271011104149 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000001626066624893 WETH (≈$0.00 USD)
+Net PnL: -0.000017843383838000 WETH (≈$-0.03 USD)
+Cumulative PnL: -0.000017843383838000 WETH (≈$-0.03 USD)
+Timing Details:
+- Detection to retrieve/generate: 4 ms
+- Retrieve/generate to send: 8 ms
+- Send to confirm: 7067 ms
+- Total execution time: 7079 ms
+--------------------------------------------------
+
+Timestamp: 2025-05-01T10:29:55.112Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 2.93385353108502267 ARB (≈$1.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000019225981035000 WETH (≈$0.04 USD)
+Uniswap Swap Fee: 0.000000270485339512 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000001622912037070 WETH (≈$0.00 USD)
+Net PnL: -0.000019225981035000 WETH (≈$-0.04 USD)
+Cumulative PnL: -0.000019225981035000 WETH (≈$-0.04 USD)
+Timing Details:
+- Detection to retrieve/generate: 2 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 6886 ms
+- Total execution time: 6890 ms
+--------------------------------------------------
+
+Timestamp: 2025-05-02T06:03:12.341Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 2.953076610698568416 ARB (≈$1.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000004006240000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000000272161590771 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000001632969544626 WETH (≈$0.00 USD)
+Net PnL: -0.000004006240000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000004006240000000 WETH (≈$-0.01 USD)
+Timing Details:
+- Detection to retrieve/generate: 2 ms
+- Retrieve/generate to send: 4 ms
+- Send to confirm: 7477 ms
+- Total execution time: 7483 ms
+--------------------------------------------------
+
+Timestamp: 2025-05-02T06:19:56.471Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 2.948100113864506877 ARB (≈$1.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000004217560000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000000272085581120 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000001632513486719 WETH (≈$0.00 USD)
+Net PnL: -0.000004217560000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000004217560000000 WETH (≈$-0.01 USD)
+Timing Details:
+- Detection to retrieve/generate: 2 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 2822 ms
+- Total execution time: 2826 ms
+--------------------------------------------------
+
+Timestamp: 2025-05-02T06:27:33.133Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 2.947638629890438011 ARB (≈$1.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000004176920000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000000272029891995 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000001632179351971 WETH (≈$0.00 USD)
+Net PnL: -0.000004176920000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000004176920000000 WETH (≈$-0.01 USD)
+Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 2834 ms
+- Total execution time: 2837 ms
+--------------------------------------------------
+
+Timestamp: 2025-05-02T06:36:58.795Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 2.943752444444274641 ARB (≈$1.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000004186590000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000000271287596583 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000001627725579501 WETH (≈$0.00 USD)
+Net PnL: -0.000004186590000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000004186590000000 WETH (≈$-0.01 USD)
+Timing Details:
+- Detection to retrieve/generate: 2 ms
+- Retrieve/generate to send: 3 ms
+- Send to confirm: 2532 ms
+- Total execution time: 2537 ms
+--------------------------------------------------
+
+Timestamp: 2025-05-02T07:33:58.566Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 2.973342357098914146 ARB (≈$1.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000004101640000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000000273853287718 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000001643119726310 WETH (≈$0.00 USD)
+Net PnL: -0.000004101640000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000004101640000000 WETH (≈$-0.01 USD)
+Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 2624 ms
+- Total execution time: 2627 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-02T09:52:48.792Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Direction: Uniswap -> SushiSwap
+💸 Loan Amount: 39.02903280767228722 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⛽ Gas Cost: 0.000004133030000000 TOKEN_B (≈$0.01 USD)
+💲 Uniswap Swap Fee: 0.000001643489006192 TOKEN_B (≈$0.00 USD)
+💲 SushiSwap Swap Fee: 0.000001643489006192 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000004133030000000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000004133030000000 TOKEN_B (≈$-0.01 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 0 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 2612 ms
+- Total execution time: 2614 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-02T12:22:12.034Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Direction: SushiSwap -> Uniswap
+💸 Loan Amount: 3891.824834324989751622 TOKEN_A (≈$99.30 USD)
+💰 Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⛽ Gas Cost: 0.000004711170000000 TOKEN_B (≈$0.01 USD)
+💲 Uniswap Swap Fee: 0.000162555546492944 TOKEN_B (≈$0.30 USD)
+💲 SushiSwap Swap Fee: 0.000162555546492944 TOKEN_B (≈$0.30 USD)
+📈 Net PnL: -0.000004711170000000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000004711170000000 TOKEN_B (≈$-0.01 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 8166 ms
+- Total execution time: 8169 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-02T12:24:50.237Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Direction: SushiSwap -> Uniswap
+💸 Loan Amount: 38.938771845484758671 TOKEN_A (≈$0.99 USD)
+💰 Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⛽ Gas Cost: 0.000004560330000000 TOKEN_B (≈$0.01 USD)
+💲 Uniswap Swap Fee: 0.000001626412700099 TOKEN_B (≈$0.00 USD)
+💲 SushiSwap Swap Fee: 0.000001626412700099 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000004560330000000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000004560330000000 TOKEN_B (≈$-0.01 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 7689 ms
+- Total execution time: 7692 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-02T16:29:10.204Z
+🔢 Transaction #3
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Direction: camelot -> uniswap
+💸 Loan Amount: 0.275886491850424853 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 camelot Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 uniswap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 4792 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 4792 ms
+Error: could not coalesce error (error={ "code": -32000, "message": "nonce too high: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d, tx: 268 state: 264" }, payload={ "id": 6, "jsonrpc": "2.0", "method": "eth_sendRawTransaction", "params": [ "0x02f9019482a4b182010c839896808401312d00830f42409462a091312e82c99b8826cd87c44a1945b76b543180b90124b952303f000000000000000000000000e461f84c3fe6bcdd1162eb0ef4284f3bb6e4cad3000000000000000000000000b08a8794a5d3ccca3725d92964696858d32019090000000000000000000000000c880f6761f1af8d9aa9c466984b80dab9a8c9e800000000000000000000000000000000000000000000000003d4254d7912c2150000000000000000000000000000000000000000000000000001b7bfd14a3e780000000000000000000000000000000000000000000000000372ce15e1ba08b2000000000000000000000000000000000000000000000000000000006814f30000000000000000000000000000000000000000000000000000000000000001f400000000000000000000000000000000000000000000000000000000000001f4c080a018114199b20ad5787fd336e769abcec9f0ccbf1e5e21f871d299319c861e0ed3a067301f7981853712c9e94732b82faf6ff03f2d033fc35a28fe7157ec862266d1" ] }, code=UNKNOWN_ERROR, version=6.13.5)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-02T16:29:10.208Z
+🔢 Transaction #3
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Direction: camelot -> sushiSwap
+💸 Loan Amount: 0.275886491850424853 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 camelot Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 sushiSwap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 4795 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 4795 ms
+Error: could not coalesce error (error={ "code": -32000, "message": "nonce too high: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d, tx: 269 state: 264" }, payload={ "id": 7, "jsonrpc": "2.0", "method": "eth_sendRawTransaction", "params": [ "0x02f9019482a4b182010d839896808401312d00830f42409462a091312e82c99b8826cd87c44a1945b76b543180b90124b952303f000000000000000000000000e461f84c3fe6bcdd1162eb0ef4284f3bb6e4cad3000000000000000000000000bfca4230115de8341f3a3d5e8845ffb3337b2be30000000000000000000000000c880f6761f1af8d9aa9c466984b80dab9a8c9e800000000000000000000000000000000000000000000000003d4254d7912c2150000000000000000000000000000000000000000000000000001b7bfd14a3e780000000000000000000000000000000000000000000000000370e21758c24ddd000000000000000000000000000000000000000000000000000000006814f30000000000000000000000000000000000000000000000000000000000000001f40000000000000000000000000000000000000000000000000000000000000bb8c080a0089bd9e532cc93003a35886e1743e514b52439f983b7fbb62b568b0329083356a07604b87d03e342f2abbe5ab0369687e3d2bf0850834fe78cc8ed84aee6ba9a37" ] }, code=UNKNOWN_ERROR, version=6.13.5)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-02T16:29:12.110Z
+🔢 Transaction #3
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Direction: uniswap -> sushiSwap
+💸 Loan Amount: 0.276373552053664762 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 uniswap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 sushiSwap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 6702 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 6702 ms
+Error: dexMap is not defined
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-03T04:03:07.739Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Direction: camelot -> uniswap
+💸 Loan Amount: 0.280890572993761189 TOKEN_A (≈$0.99 USD)
+💰 Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 camelot Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 uniswap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 3677 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 3677 ms
+Error: could not coalesce error (error={ "code": -32000, "message": "nonce too high: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d, tx: 269 state: 265" }, payload={ "id": 5, "jsonrpc": "2.0", "method": "eth_sendRawTransaction", "params": [ "0x02f9019482a4b182010d839896808401312d00830f42409462a091312e82c99b8826cd87c44a1945b76b543180b90124b952303f000000000000000000000000e461f84c3fe6bcdd1162eb0ef4284f3bb6e4cad3000000000000000000000000b08a8794a5d3ccca3725d92964696858d32019090000000000000000000000000c880f6761f1af8d9aa9c466984b80dab9a8c9e800000000000000000000000000000000000000000000000003e5ec7ce80c8fa50000000000000000000000000000000000000000000000000001bdc889577ca00000000000000000000000000000000000000000000000000385c2cffa402c3500000000000000000000000000000000000000000000000000000000681595a600000000000000000000000000000000000000000000000000000000000001f400000000000000000000000000000000000000000000000000000000000001f4c001a0e3a5f71a7937a8c6336d7cb803c609da69336c8471315b91e8a30ccfaa86be5ea020ab12b35d55ec65f29fdf5bd76756332b08359b6d29efb6f7336b66543eed0a" ] }, code=UNKNOWN_ERROR, version=6.13.5)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-03T04:11:05.143Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Direction: camelot -> uniswap
+💸 Loan Amount: 0.280788656446167628 TOKEN_A (≈$0.99 USD)
+💰 Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⛽ Gas Cost: 0.000000283250000000 TOKEN_B (≈$0.00 USD)
+💲 camelot Swap Fee: 0.000000272254551412 TOKEN_B (≈$0.00 USD)
+💲 uniswap Swap Fee: 0.000000272254551412 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000000283250000000 TOKEN_B (≈$-0.00 USD)
+📊 Cumulative PnL: -0.000000283250000000 TOKEN_B (≈$-0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 1144 ms
+- Send to confirm: 7218 ms
+- Total execution time: 8363 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-03T05:24:47.296Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Direction: camelot -> uniswap
+💸 Loan Amount: 0.281933117855891147 TOKEN_A (≈$0.99 USD)
+💰 Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⛽ Gas Cost: 0.000001330710000000 TOKEN_B (≈$0.00 USD)
+💲 camelot Swap Fee: 0.000000272131906708 TOKEN_B (≈$0.00 USD)
+💲 uniswap Swap Fee: 0.000000272131906708 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000001330710000000 TOKEN_B (≈$-0.00 USD)
+📊 Cumulative PnL: -0.000001330710000000 TOKEN_B (≈$-0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 1109 ms
+- Send to confirm: 2773 ms
+- Total execution time: 3883 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-03T05:30:48.580Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Direction: camelot -> uniswap
+💸 Loan Amount: 0.282076551075134241 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⛽ Gas Cost: 0.000001739630000000 TOKEN_B (≈$0.00 USD)
+💲 camelot Swap Fee: 0.000000272270353570 TOKEN_B (≈$0.00 USD)
+💲 uniswap Swap Fee: 0.000000272270353570 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000001739630000000 TOKEN_B (≈$-0.00 USD)
+📊 Cumulative PnL: -0.000001739630000000 TOKEN_B (≈$-0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 1041 ms
+- Send to confirm: 2809 ms
+- Total execution time: 3851 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-03T05:44:38.841Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Direction: camelot -> uniswap
+💸 Loan Amount: 0.282207053417998399 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⛽ Gas Cost: 0.000001742440000000 TOKEN_B (≈$0.00 USD)
+💲 camelot Swap Fee: 0.000000272261458123 TOKEN_B (≈$0.00 USD)
+💲 uniswap Swap Fee: 0.000000272261458123 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000001742440000000 TOKEN_B (≈$-0.00 USD)
+📊 Cumulative PnL: -0.000001742440000000 TOKEN_B (≈$-0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 2 ms
+- Retrieve/generate to send: 1107 ms
+- Send to confirm: 2925 ms
+- Total execution time: 4034 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-03T05:49:48.983Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Direction: camelot -> sushiSwap
+💸 Loan Amount: 0.0 TOKEN_A (≈$0.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 camelot Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 sushiSwap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 1149 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 1149 ms
+Error: Failed to generate presigned transaction for this pair
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-03T05:51:35.592Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Direction: camelot -> sushiSwap
+💸 Loan Amount: 0.0 TOKEN_A (≈$0.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 camelot Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 sushiSwap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 1140 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 1140 ms
+Error: Failed to generate presigned transaction for this pair
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-03T05:53:07.029Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Direction: camelot -> sushiSwap
+💸 Loan Amount: 0.282578748870891294 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⛽ Gas Cost: 0.000001738380000000 TOKEN_B (≈$0.00 USD)
+💲 camelot Swap Fee: 0.000000272620054214 TOKEN_B (≈$0.00 USD)
+💲 sushiSwap Swap Fee: 0.000001635720325282 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000001738380000000 TOKEN_B (≈$-0.00 USD)
+📊 Cumulative PnL: -0.000001738380000000 TOKEN_B (≈$-0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 1129 ms
+- Send to confirm: 2872 ms
+- Total execution time: 4002 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-03T06:02:22.109Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Direction: camelot -> uniswap
+💸 Loan Amount: 0.28281060143870923 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⛽ Gas Cost: 0.000001733820000000 TOKEN_B (≈$0.00 USD)
+💲 camelot Swap Fee: 0.000000272842506569 TOKEN_B (≈$0.00 USD)
+💲 uniswap Swap Fee: 0.000000272842506569 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000001733820000000 TOKEN_B (≈$-0.00 USD)
+📊 Cumulative PnL: -0.000001733820000000 TOKEN_B (≈$-0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 1117 ms
+- Send to confirm: 2663 ms
+- Total execution time: 3781 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-03T06:25:11.151Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Direction: camelot -> uniswap
+💸 Loan Amount: 0.284804327243136424 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+⛽ Gas Cost: 0.000001714150000000 TOKEN_B (≈$0.00 USD)
+💲 camelot Swap Fee: 0.000002930188545080 TOKEN_B (≈$0.01 USD)
+💲 uniswap Swap Fee: 0.000000273491557316 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000001714150000000 TOKEN_B (≈$-0.00 USD)
+📊 Cumulative PnL: -0.000001714150000000 TOKEN_B (≈$-0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 1080 ms
+- Send to confirm: 2726 ms
+- Total execution time: 3807 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T04:36:38.720Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4832e0a194281d1ffE464C654E4E938f642DD362 -> 0x39511b74722afe77d532eb70632b4b59c559019b
+💸 Loan Amount: 3.157444892925433066 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 6946 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 6946 ms
+Error: Cannot mix BigInt and other types, use explicit conversions
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T04:48:44.678Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4832e0a194281d1ffE464C654E4E938f642DD362 -> 0x39511b74722afe77d532eb70632b4b59c559019b
+💸 Loan Amount: 3.151165320354139432 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: -0.025610620657751083 TOKEN_A (≈$-0.01 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 8275 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 8275 ms
+Error: profitInTokenA.toFixed is not a function
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T04:50:50.497Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4832e0a194281d1ffE464C654E4E938f642DD362 -> 0x39511b74722afe77d532eb70632b4b59c559019b
+💸 Loan Amount: 3152.420649516658158973 TOKEN_A (≈$1000.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 8469 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 8469 ms
+Error: Cannot mix BigInt and other types, use explicit conversions
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T04:51:45.567Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4832e0a194281d1ffE464C654E4E938f642DD362 -> 0x39511b74722afe77d532eb70632b4b59c559019b
+💸 Loan Amount: 315.221075404405041809 TOKEN_A (≈$100.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 7663 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 7663 ms
+Error: Cannot mix BigInt and other types, use explicit conversions
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T04:53:04.268Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4832e0a194281d1ffE464C654E4E938f642DD362 -> 0x39511b74722afe77d532eb70632b4b59c559019b
+💸 Loan Amount: 3.152210754044050489 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: -0.025043859698158848 TOKEN_A (≈$-0.01 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 7151 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 7151 ms
+Error: profitInTokenA.toFixed is not a function
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T05:45:35.514Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0x4832e0a194281d1ffE464C654E4E938f642DD362
+💸 Loan Amount: 31.643448360543587228 TOKEN_A (≈$10.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 7113 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 7113 ms
+Error: Cannot mix BigInt and other types, use explicit conversions
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T07:05:19.829Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4832e0a194281d1ffE464C654E4E938f642DD362 -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 3.146411546581807883 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 7280 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 7280 ms
+Error: Cannot mix BigInt and other types, use explicit conversions
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T12:42:43.730Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x39511b74722afe77d532eb70632b4b59c559019b
+💸 Loan Amount: 3.197869939560475938 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: -0.026734487749446811 TOKEN_A (≈$-0.01 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 8567 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 8567 ms
+Error: profitInTokenA.toFixed is not a function
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T12:44:01.643Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x39511b74722afe77d532eb70632b4b59c559019b
+💸 Loan Amount: 31.978702293796509082 TOKEN_A (≈$10.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 7450 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 7450 ms
+Error: Cannot mix BigInt and other types, use explicit conversions
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T13:49:52.334Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x4832e0a194281d1ffE464C654E4E938f642DD362
+💸 Loan Amount: 3.225812384299565405 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 7556 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 7556 ms
+Error: Cannot mix BigInt and other types, use explicit conversions
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T14:42:38.948Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x4832e0a194281d1ffE464C654E4E938f642DD362
+💸 Loan Amount: 32.206605903368775046 TOKEN_A (≈$10.05 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 8150 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 8150 ms
+Error: Cannot mix BigInt and other types, use explicit conversions
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T15:40:08.582Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4832e0a194281d1ffE464C654E4E938f642DD362 -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 32.206596316573744332 TOKEN_A (≈$9.99 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: -0.018748420885556678 TOKEN_A (≈$-0.01 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 7092 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 7092 ms
+Error: profitInTokenA.toFixed is not a function
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T15:44:37.346Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 323.232197566799527522 TOKEN_A (≈$99.97 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 6783 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 6783 ms
+Error: Cannot mix BigInt and other types, use explicit conversions
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T15:47:25.983Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4832e0a194281d1ffE464C654E4E938f642DD362 -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 323.746294349717231853 TOKEN_A (≈$99.87 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 6614 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 6614 ms
+Error: Cannot mix BigInt and other types, use explicit conversions
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T15:47:55.211Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4832e0a194281d1ffE464C654E4E938f642DD362 -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 325.001233919200672062 TOKEN_A (≈$100.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 6711 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 6711 ms
+Error: Cannot mix BigInt and other types, use explicit conversions
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T15:48:27.472Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 32.500123391920070048 TOKEN_A (≈$10.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 6933 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 6933 ms
+Error: Cannot mix BigInt and other types, use explicit conversions
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-05T16:05:01.718Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x4832e0a194281d1ffE464C654E4E938f642DD362
+💸 Loan Amount: 322.41448260385834601 TOKEN_A (≈$99.89 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 3053 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 3053 ms
+Error: Cannot mix BigInt and other types, use explicit conversions
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-06T07:40:04.919Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4832e0a194281d1ffE464C654E4E938f642DD362 -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 323.741212056156939525 TOKEN_A (≈$100.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 7421 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 7421 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000007582)
+Error: Cannot mix BigInt and other types, use explicit conversions
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-06T09:01:21.630Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4832e0a194281d1ffE464C654E4E938f642DD362 -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 325.666237856964130515 TOKEN_A (≈$99.93 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 7790 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 7790 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0000004619) after 8749 ms
+Error: Cannot mix BigInt and other types, use explicit conversions
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-06T09:37:08.006Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4832e0a194281d1ffE464C654E4E938f642DD362 -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 3.26720895116317811 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+📊 Cumulative PnL: -0.017805407477440603 TOKEN_A (≈$-0.01 USD)
+⏱️ Timing Details:
+- Detection to retrieve/generate: 8561 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 8561 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0000006595)
+Error: profitInTokenA.toFixed is not a function
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-06T11:29:21.074Z
+🔢 Transaction #2
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0x4832e0a194281d1ffE464C654E4E938f642DD362 -> 0x39511b74722afe77d532eb70632b4b59c559019b
+💸 Loan Amount: 3.295218714552086592 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.002035336547485077 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000004563360000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000280160851747 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000001680965110480 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.024801513032838163 TOKEN_A (≈$-0.01 USD)
+📊 Cumulative PnL: -0.024801513032838163 TOKEN_A (≈$-0.01 USD)
+🏆 Winning Streak: 1
+💔 Losing Streak: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 16 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 7156 ms
+- Total execution time: 7174 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000009718)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-06T11:38:57.801Z
+🔢 Transaction #1
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0x4832e0a194281d1ffE464C654E4E938f642DD362 -> 0x39511b74722afe77d532eb70632b4b59c559019b
+💸 Loan Amount: 3.30621561465000946 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.002651896401868498 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000009826792560000 TOKEN_B (≈$0.02 USD)
+💲 Buy Swap Fee: 0.000000281114837163 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000001686689022976 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.055134976983612451 TOKEN_A (≈$-0.02 USD)
+📊 Cumulative PnL: -0.055134976983612451 TOKEN_A (≈$-0.02 USD)
+🏆 Winning Streak: 1
+💔 Losing Streak: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 4 ms
+- Retrieve/generate to send: 3 ms
+- Send to confirm: 8279 ms
+- Total execution time: 8286 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000010036)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-06T11:47:57.034Z
+🔢 Transaction #1
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0x4832e0a194281d1ffE464C654E4E938f642DD362 -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 3.311793048377674964 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.001803863009006775 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000005556260000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000281393466270 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000001688360797621 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.030892673067129190 TOKEN_A (≈$-0.01 USD)
+📊 Cumulative PnL: -0.030892673067129190 TOKEN_A (≈$-0.01 USD)
+🏆 Winning Streak: 1
+💔 Losing Streak: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 4 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 7709 ms
+- Total execution time: 7715 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000009711)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-06T15:46:03.682Z
+🔢 Transaction #1
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 3.308990707632438077 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.004277613773451491 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000005394000000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000281994513290 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000001691967079741 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000004664917496803 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000004664917496803 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 1
+💔 Losing Streak: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 3 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 6823 ms
+- Total execution time: 6828 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0000006795)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-06T15:46:24.707Z
+🔢 Transaction #2
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 3.308990707632438077 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.002606797470199535 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000005147030000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000281926311981 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000001691557871887 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000004702831232587 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000009367748729391 TOKEN_B (≈$-0.02 USD)
+🏆 Winning Streak: 2
+💔 Losing Streak: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 2 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 6991 ms
+- Total execution time: 6995 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0000006126)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-06T15:47:10.452Z
+🔢 Transaction #3
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 3.309412341660317836 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.002910588497164675 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000005160750000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000281790626060 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000001690743756358 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000004665087042264 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000014032835771655 TOKEN_B (≈$-0.02 USD)
+🏆 Winning Streak: 3
+💔 Losing Streak: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 5 ms
+- Retrieve/generate to send: 6 ms
+- Send to confirm: 6886 ms
+- Total execution time: 6897 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0000006084)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-06T15:50:04.375Z
+🔢 Transaction #5
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 3.313722518854251398 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.002843939041632874 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000005496240000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000281985346979 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000001691912081874 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000005012222926827 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000019045058698482 TOKEN_B (≈$-0.03 USD)
+🏆 Winning Streak: 1
+💔 Losing Streak: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 8 ms
+- Retrieve/generate to send: 6 ms
+- Send to confirm: 6844 ms
+- Total execution time: 6858 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0000006043) after 6858 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-06T17:09:58.325Z
+🔢 Transaction #1
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x4832e0a194281d1ffE464C654E4E938f642DD362
+💸 Loan Amount: 3.315346649087379305 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.002640688821206471 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000003549990000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000282720648220 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000001696323889321 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000003099613412390 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000003099613412390 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 1
+💔 Losing Streak: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 3 ms
+- Retrieve/generate to send: 3 ms
+- Send to confirm: 7991 ms
+- Total execution time: 7997 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000007158)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-06T17:10:06.103Z
+🔢 Transaction #2
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x4832e0a194281d1ffE464C654E4E938f642DD362
+💸 Loan Amount: 3.315346649087379305 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.001924980892214987 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000003459020000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000282713255527 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000001696279533162 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000003130717911279 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000006230331323669 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 2
+💔 Losing Streak: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 9193 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 6654 ms
+- Total execution time: 15849 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0000006792) after 15849 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-06T17:10:35.723Z
+🔢 Transaction #1
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x4832e0a194281d1ffE464C654E4E938f642DD362
+💸 Loan Amount: 6.626173631884502591 TOKEN_A (≈$2.00 USD)
+💰 Profit: 0.003090190177994699 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000003446350000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000565137068587 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000003390822411522 TOKEN_B (≈$0.01 USD)
+📈 Net PnL: -0.000002919234015546 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000002919234015546 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 1
+💔 Losing Streak: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 2 ms
+- Retrieve/generate to send: 3 ms
+- Send to confirm: 7374 ms
+- Total execution time: 7379 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0000006437) after 7379 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-06T17:11:29.353Z
+🔢 Transaction #2
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x4832e0a194281d1ffE464C654E4E938f642DD362
+💸 Loan Amount: 6.626173631884502591 TOKEN_A (≈$2.00 USD)
+💰 Profit: 0.003505974934253874 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000003461990000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000565386718896 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000003392320313374 TOKEN_B (≈$0.01 USD)
+📈 Net PnL: -0.000002863686431536 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000005782920447082 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 2
+💔 Losing Streak: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 7427 ms
+- Total execution time: 7430 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0000006546) after 7430 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-08T15:24:30.170Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 5.903622513997581756 TOKEN_A (≈$2.01 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 708 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 708 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000007622)
+Error: could not coalesce error (error={ "code": -32000, "message": "max fee per gas less than block base fee: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d, maxFeePerGas: 100159200 baseFee: 145708000" }, payload={ "id": 3, "jsonrpc": "2.0", "method": "eth_sendRawTransaction", "params": [ "0x02f9019482a4b1820161839896808405f84ee0830f424094830d692c06295601aadeed71ca98bcc55433d48080b90124b952303f00000000000000000000000039511b74722afe77d532eb70632b4b59c559019b000000000000000000000000c6f780497a95e246eb9449f5e4770916dcd6396a000000000000000000000000912ce59144191c1204e64559fe8253a0e49e654800000000000000000000000000000000000000000000000051ede165d2d30dbc0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000681ccd4a0000000000000000000000000000000000000000000000000000000000000bb800000000000000000000000000000000000000000000000000000000000001f4c001a0321e316d3395175408963a3ec8f097047bb290c683ebf3c25b927d0474c2b8d8a014f29a33ecdb8529c569ccb45235042888cb4820686cb310f93bb0e5dc13e500" ] }, code=UNKNOWN_ERROR, version=6.13.5)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-08T15:24:49.593Z
+🔢 Transaction #2
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 5.903622513997581756 TOKEN_A (≈$2.01 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 2
+🏆 Total Wins: 0
+💔 Total Losses: 2
+⏱️ Timing Details:
+- Detection to retrieve/generate: 19989 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 19989 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000008399)
+Error: could not coalesce error (error={ "code": -32000, "message": "max fee per gas less than block base fee: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d, maxFeePerGas: 100159200 baseFee: 210684000" }, payload={ "id": 4, "jsonrpc": "2.0", "method": "eth_sendRawTransaction", "params": [ "0x02f9019482a4b1820161839896808405f84ee0830f424094830d692c06295601aadeed71ca98bcc55433d48080b90124b952303f00000000000000000000000039511b74722afe77d532eb70632b4b59c559019b000000000000000000000000c6f780497a95e246eb9449f5e4770916dcd6396a000000000000000000000000912ce59144191c1204e64559fe8253a0e49e654800000000000000000000000000000000000000000000000051ede165d2d30dbc0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000681ccd4a0000000000000000000000000000000000000000000000000000000000000bb800000000000000000000000000000000000000000000000000000000000001f4c001a0321e316d3395175408963a3ec8f097047bb290c683ebf3c25b927d0474c2b8d8a014f29a33ecdb8529c569ccb45235042888cb4820686cb310f93bb0e5dc13e500" ] }, code=UNKNOWN_ERROR, version=6.13.5)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-08T15:40:34.658Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 5.787061602864954857 TOKEN_A (≈$2.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 435 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 435 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000007057)
+Error: could not coalesce error (error={ "code": -32000, "message": "max fee per gas less than block base fee: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d, maxFeePerGas: 10000000 baseFee: 383167000" }, payload={ "id": 3, "jsonrpc": "2.0", "method": "eth_sendRawTransaction", "params": [ "0x02f9019382a4b18201618398968083989680830f424094830d692c06295601aadeed71ca98bcc55433d48080b90124b952303f00000000000000000000000039511b74722afe77d532eb70632b4b59c559019b000000000000000000000000c6f780497a95e246eb9449f5e4770916dcd6396a000000000000000000000000912ce59144191c1204e64559fe8253a0e49e6548000000000000000000000000000000000000000000000000504fc5dddc117de90000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000681cd1ce0000000000000000000000000000000000000000000000000000000000000bb800000000000000000000000000000000000000000000000000000000000001f4c080a0850bd1b9ef44c6ad69b4c3a94d2f265fcab6f9e6c66472f057da7c1126e326efa02d056f0f32bc6266789e76045fd26b004675bdc2e095f7d7b9d1dd04fb895e2e" ] }, code=UNKNOWN_ERROR, version=6.13.5)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-08T15:53:15.201Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 5.789806186748902128 TOKEN_A (≈$2.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 477 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 477 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000007303)
+Error: insufficient funds for intrinsic transaction cost (transaction="0x02f9019582a4b18201618405f5e100846fe3d450830f424094830d692c06295601aadeed71ca98bcc55433d48080b90124b952303f00000000000000000000000039511b74722afe77d532eb70632b4b59c559019b000000000000000000000000c6f780497a95e246eb9449f5e4770916dcd6396a000000000000000000000000912ce59144191c1204e64559fe8253a0e49e65480000000000000000000000000000000000000000000000005059860d1786faf00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000681cd4d00000000000000000000000000000000000000000000000000000000000000bb800000000000000000000000000000000000000000000000000000000000001f4c001a0f8c76b0e8cfbcb81fdc8bf333b728b00ab061117c5916dcb0e975e4575560659a07c01b38dc3de2d6c069e20c56a8057910875cdb6e4b8208ae03c8479afb7da84", info={ "error": { "code": -32000, "message": "insufficient funds for gas * price + value: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d have 594355592721397 want 1877202000000000" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-08T15:54:27.567Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 5.791610902101532510 TOKEN_A (≈$2.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 452 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 452 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000009606)
+Error: insufficient funds for intrinsic transaction cost (transaction="0x02f9019482a4b18201618405f5e10084588e49c0830f424094830d692c06295601aadeed71ca98bcc55433d48080b90124b952303f00000000000000000000000039511b74722afe77d532eb70632b4b59c559019b000000000000000000000000c6f780497a95e246eb9449f5e4770916dcd6396a000000000000000000000000912ce59144191c1204e64559fe8253a0e49e6548000000000000000000000000000000000000000000000000505fef6e210a9f5e0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000681cd5180000000000000000000000000000000000000000000000000000000000000bb800000000000000000000000000000000000000000000000000000000000001f4c080a08c6358d96d22105551452a6a5f69fbaa0b03c20134d989acb4a62d79a769bd3a9fff6807134fb847abc5f3c43859753282af9c7de3e42edf1a12cf14d719d472", info={ "error": { "code": -32000, "message": "insufficient funds for gas * price + value: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d have 594355592721397 want 1485720000000000" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-08T15:56:05.519Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 5.812475171602901725 TOKEN_A (≈$2.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 471 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 471 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000011124)
+Error: could not coalesce error (error={ "code": -32000, "message": "max fee per gas less than block base fee: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d, maxFeePerGas: 10000000 baseFee: 461369000" }, payload={ "id": 3, "jsonrpc": "2.0", "method": "eth_sendRawTransaction", "params": [ "0x02f9019382a4b18201618398968083989680830f424094830d692c06295601aadeed71ca98bcc55433d48080b90124b952303f00000000000000000000000039511b74722afe77d532eb70632b4b59c559019b000000000000000000000000c6f780497a95e246eb9449f5e4770916dcd6396a000000000000000000000000912ce59144191c1204e64559fe8253a0e49e654800000000000000000000000000000000000000000000000050aa0f5f6d2b2add0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000681cd57a0000000000000000000000000000000000000000000000000000000000000bb800000000000000000000000000000000000000000000000000000000000001f4c001a0fbda2f8c183081a970c785b2be4e38cc13a2fbaaa1af28e88270a4633b4281bba0697fea72b9e0c75e43c3a287f95054bbdd628dad943dde5b54f9af5c64c1c71c" ] }, code=UNKNOWN_ERROR, version=6.13.5)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-08T16:03:30.908Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 5.775452429391194187 TOKEN_A (≈$2.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 407 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 407 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000007579)
+Error: insufficient funds for intrinsic transaction cost (transaction="0x02f9019482a4b182016183b71b00842e6cca40830f424094830d692c06295601aadeed71ca98bcc55433d48080b90124b952303f00000000000000000000000039511b74722afe77d532eb70632b4b59c559019b000000000000000000000000c6f780497a95e246eb9449f5e4770916dcd6396a000000000000000000000000912ce59144191c1204e64559fe8253a0e49e6548000000000000000000000000000000000000000000000000502687628707684b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000681cd7350000000000000000000000000000000000000000000000000000000000000bb800000000000000000000000000000000000000000000000000000000000001f4c001a0e804e7c0ec634cf92a357299e43fd18b218c952cc80b6fce2f22da6e365fff8ca040225d7cc0b49648ae2c1ae04a07d658b1d759ac26055b72dd95d2c9194db5bf", info={ "error": { "code": -32000, "message": "insufficient funds for gas * price + value: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d have 594355592721397 want 778881600000000" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-08T16:14:21.691Z
+🔢 Transaction #1
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 5.768226481685303497 TOKEN_A (≈$2.00 USD)
+💰 Profit: 0.015545900488002666 TOKEN_A (≈$0.01 USD)
+⛽ Gas Cost: 0.000050219312559000 TOKEN_B (≈$0.10 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000047594963323439 TOKEN_B (≈$-0.10 USD)
+📊 Cumulative PnL: -0.000047594963323439 TOKEN_B (≈$-0.10 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 3 ms
+- Retrieve/generate to send: 4 ms
+- Send to confirm: 2739 ms
+- Total execution time: 2746 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000008707)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-08T16:27:43.435Z
+🔢 Transaction #1
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x4832e0a194281d1ffE464C654E4E938f642DD362
+💸 Loan Amount: 5.748546338338750950 TOKEN_A (≈$2.00 USD)
+💰 Profit: 0.003100945919648950 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000022841461060000 TOKEN_B (≈$0.05 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000022315849917125 TOKEN_B (≈$-0.05 USD)
+📊 Cumulative PnL: -0.000022315849917125 TOKEN_B (≈$-0.05 USD)
+🏆 Winning Streak: 1
+💔 Losing Streak: 0
+🏆 Total Wins: 1
+💔 Total Losses: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 3 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 7069 ms
+- Total execution time: 7074 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000008098)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-08T16:28:43.900Z
+🔢 Transaction #2
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x4832e0a194281d1ffE464C654E4E938f642DD362
+💸 Loan Amount: 5.756923131483580924 TOKEN_A (≈$2.00 USD)
+💰 Profit: 0.003538980043679334 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000021227718784000 TOKEN_B (≈$0.04 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000020627625856204 TOKEN_B (≈$-0.04 USD)
+📊 Cumulative PnL: -0.000042943475773329 TOKEN_B (≈$-0.09 USD)
+🏆 Winning Streak: 2
+💔 Losing Streak: 0
+🏆 Total Wins: 2
+💔 Total Losses: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 7234 ms
+- Total execution time: 7237 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000007564)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-09T06:26:51.623Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 27.144498424743929377 TOKEN_A (≈$9.99 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000011290118479000 TOKEN_B (≈$0.03 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000011290118479000 TOKEN_B (≈$-0.03 USD)
+📊 Cumulative PnL: -0.000011290118479000 TOKEN_B (≈$-0.03 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 4 ms
+- Retrieve/generate to send: 4 ms
+- Send to confirm: 7045 ms
+- Total execution time: 7053 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0000006989) after 7053 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-09T09:11:09.433Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0xf0346b437fe43e64fa799c2bd3cf5db1f7e9327c -> 0x4cef551255ec96d89fec975446301b5c4e164c59
+💸 Loan Amount: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 9 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 9 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0000020358) after 611 ms
+Error: Failed to generate presigned transaction
+--------------------------------------------------

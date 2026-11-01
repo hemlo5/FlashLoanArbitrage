@@ -1,0 +1,23 @@
+[2025-03-09T12:08:27.525Z] Initialization failed: Cannot read properties of undefined (reading 'JsonRpcProvider')
+[2025-03-09T12:08:33.160Z] Initialization failed: Cannot read properties of undefined (reading 'JsonRpcProvider')
+[2025-03-09T12:11:04.410Z] Initialization failed: Cannot read properties of undefined (reading 'JsonRpcProvider')
+[2025-03-09T12:19:08.706Z] Initialization failed: Cannot read properties of undefined (reading 'JsonRpcProvider')
+[2025-03-09T12:29:33.057Z] ✅ Bot initialized on Arbitrum
+[2025-03-09T12:29:33.059Z] Checking for arbitrage opportunity...
+[2025-03-09T12:29:33.687Z] Error fetching 1inch quote: Cannot convert undefined to a BigInt
+[2025-03-09T12:29:38.059Z] Checking for arbitrage opportunity...
+[2025-03-09T12:29:38.311Z] Error fetching 1inch quote: Cannot convert undefined to a BigInt
+[2025-03-09T12:29:43.066Z] Checking for arbitrage opportunity...
+[2025-03-09T12:29:43.362Z] Error fetching 1inch quote: Cannot convert undefined to a BigInt
+[2025-03-09T12:36:13.188Z] ✅ Bot initialized on Arbitrum
+[2025-03-09T12:36:13.190Z] Checking for arbitrage opportunity...
+Double-check at 2025-04-06T09:47:44.837Z: Uniswap=0.000169704503268082, SushiSwap=0.000170166428751815, PriceDiff=0.000000461925483733
+Price difference exceeds threshold. Proceeding with arbitrage.
+Double-check at 2025-04-06T09:54:31.601Z: Uniswap=0.000169697377889523, SushiSwap=0.000170251651060863, PriceDiff=0.000000554273171341
+Price difference does not meet the threshold.
+Double-check at 2025-04-06T09:54:31.673Z: Uniswap=0.000169697377889523, SushiSwap=0.000170251651060863, PriceDiff=0.000000554273171341
+Price difference does not meet the threshold.
+Double-check at 2025-04-06T09:54:52.659Z: Uniswap=0.000169712032297374, SushiSwap=0.000170290810135457, PriceDiff=0.000000578777838083
+Price difference does not meet the threshold.
+Double-check at 2025-04-06T09:54:52.669Z: Uniswap=0.000169712032297374, SushiSwap=0.000170290810135457, PriceDiff=0.000000578777838083
+Price difference does not meet the threshold.

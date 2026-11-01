@@ -1,0 +1,955 @@
+
+Timestamp: 2025-04-12T12:37:54.278Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 511.544770298119601648 ARB (≈$10.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000605550000000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000062691109930429 WETH (≈$0.10 USD)
+SushiSwap V2 Swap Fee: 0.000018807332979129 WETH (≈$0.03 USD)
+Net PnL: -0.000000605550000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000000605550000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-12T13:05:46.441Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 0.006199314147930243 WETH (≈$10.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000006128852124000 WETH (≈$0.01 USD)
+Uniswap V3 Swap Fee: 0.000061993141479302 WETH (≈$0.10 USD)
+SushiSwap V2 Swap Fee: 0.000018597942443791 WETH (≈$0.03 USD)
+Net PnL: -0.000006128852124000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000006128852124000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-12T13:16:24.347Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 0.006177625940590049 WETH (≈$10.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000005610826024000 WETH (≈$0.01 USD)
+Uniswap V3 Swap Fee: 0.000061776259405901 WETH (≈$0.10 USD)
+SushiSwap V2 Swap Fee: 0.000018532877821770 WETH (≈$0.03 USD)
+Net PnL: -0.000005610826024000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000005610826024000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-12T13:18:31.917Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 0.061790280697797635 WETH (≈$100.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000005316349928000 WETH (≈$0.01 USD)
+Uniswap V3 Swap Fee: 0.000617902806977976 WETH (≈$1.00 USD)
+SushiSwap V2 Swap Fee: 0.000185370842093393 WETH (≈$0.30 USD)
+Net PnL: -0.000005316349928000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000005316349928000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-12T13:27:21.199Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 0.006207582008504126 WETH (≈$10.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000003756260000000 WETH (≈$0.01 USD)
+Uniswap V3 Swap Fee: 0.000062075820085041 WETH (≈$0.10 USD)
+SushiSwap V2 Swap Fee: 0.000018622746025512 WETH (≈$0.03 USD)
+Net PnL: -0.000003756260000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000003756260000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-14T15:07:03.134Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 0.0 ARB (≈$0.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: R_A.mul is not a function
+--------------------------------------------------
+
+Timestamp: 2025-04-14T15:58:32.084Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 33.728122877999538787 ARB (≈$9.97 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000005325797568000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000003056423903173 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000018338543419038 WETH (≈$0.03 USD)
+Net PnL: -0.000005325797568000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000005325797568000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-14T16:55:28.032Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 33.784869381742922201 ARB (≈$9.97 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000003433490000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000003059621544856 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000018357729269137 WETH (≈$0.03 USD)
+Net PnL: -0.000003433490000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000003433490000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-14T17:05:09.676Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 33.843199732708924898 ARB (≈$9.97 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000002170910000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000003062288967073 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000018373733802438 WETH (≈$0.03 USD)
+Net PnL: -0.000002170910000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000002170910000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-14T17:10:12.298Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 33.729150262530403381 ARB (≈$9.97 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000001574140000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000003058128651554 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000018348771909324 WETH (≈$0.03 USD)
+Net PnL: -0.000001574140000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000001574140000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-14T17:36:10.847Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 550.311607423298028152 ARB (≈$10.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000006627290000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000018317478538021 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018317478538021 WETH (≈$0.03 USD)
+Net PnL: -0.000006627290000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000006627290000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-14T17:43:13.001Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 0.0 ARB (≈$0.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: calculateLoan537Amount is not defined
+--------------------------------------------------
+
+Timestamp: 2025-04-14T17:48:44.888Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 549.610240083500002584 ARB (≈$10.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000006458900000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000018294133071524 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018294133071524 WETH (≈$0.03 USD)
+Net PnL: -0.000006458900000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000006458900000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-14T17:54:52.630Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 546.961933964309650946 ARB (≈$10.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000006419610000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000018205982485845 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018205982485845 WETH (≈$0.03 USD)
+Net PnL: -0.000006419610000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000006419610000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-15T14:24:54.843Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 550.29374211270237538 ARB (≈$9.93 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: insufficient funds for intrinsic transaction cost (transaction="0x02f9017482a4b181af8420b124008436ff97008316e36094c93b3220a7ed03de4e4d9b07d68021cb61f8f9ac80b9010476a00fa7000000000000000000000000000000000000000000025933125367f8d135823d000000000000000000000000000000000000000000000001bc55f02b7a90eda700000000000000000000000000000000000000000000001dd4dc1adecc0aa5d40000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000001195ddad34d5ec000000000000000000000000000000000000000000000017b8e2c973f897c9f80000000000000000000000000000000000000000000000000000000067fe6c630000000000000000000000000000000000000000000000000000000000000bb8c080a01b5ce04f76e8ba99a638c140c3913ce7a4e0432174215427eedffb795de6ed25a07263c718d78295339e35d0b4bcb720bb32cf44321ee1411c6c48e9194ee961d8", info={ "error": { "code": -32000, "message": "insufficient funds for gas * price + value: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d have 510690418489594 want 1384080000000000" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-15T14:47:23.772Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 546.244285449085964501 ARB (≈$9.93 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000049977350514000 WETH (≈$0.08 USD)
+Uniswap Swap Fee: 0.000018347838693104 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018347838693104 WETH (≈$0.03 USD)
+Net PnL: -0.000049977350514000 WETH (≈$-0.08 USD)
+Cumulative PnL: -0.000049977350514000 WETH (≈$-0.08 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-15T14:58:14.235Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 546.598766696879238225 ARB (≈$9.93 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000020397732300000 WETH (≈$0.03 USD)
+Uniswap Swap Fee: 0.000018359745389298 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018359745389298 WETH (≈$0.03 USD)
+Net PnL: -0.000020397732300000 WETH (≈$-0.03 USD)
+Cumulative PnL: -0.000020397732300000 WETH (≈$-0.03 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-15T16:11:31.181Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 544.84666723210557393 ARB (≈$10.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: insufficient funds for intrinsic transaction cost (transaction="0x02f9017482a4b181b38401312d008407bfa480832625a0944d8d2d002a96e56d08d589b1cdb67d772ffdd5e280b9010476a00fa7000000000000000000000000000000000000000000025932fe8cf9eb26d719e3000000000000000000000000000000000000000000000001bc55fed44a25450700000000000000000000000000000000000000000000001d89443520511dae2a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000117411154abc080000000000000000000000000000000000000000000000177cc604ccc743125e0000000000000000000000000000000000000000000000000000000067fe855f0000000000000000000000000000000000000000000000000000000000000bb8c001a079755e79123e8fc2dc5502281ab12b2c572335ac873dc37948733d8deebfef18a02a54b3bee3f8e3e9a922d8a3459a4cc3f298fe646c9ba03fc539d918317313c6", info={ "error": { "code": -32000, "message": "insufficient funds for gas * price + value: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d have 142855972774594 want 325000000000000" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-15T16:12:19.821Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 546.137218659210134319 ARB (≈$10.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: insufficient funds for intrinsic transaction cost (transaction="0x02f9017482a4b181b38401312d008407bfa480832625a0944d8d2d002a96e56d08d589b1cdb67d772ffdd5e280b9010476a00fa7000000000000000000000000000000000000000000025932fe8cf9eb26d719e3000000000000000000000000000000000000000000000001bc55fed44a25450700000000000000000000000000000000000000000000001d9b2d2acfc20e832f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000117667e1f10f1a0000000000000000000000000000000000000000000000178b0403002c646cb70000000000000000000000000000000000000000000000000000000067fe85900000000000000000000000000000000000000000000000000000000000000bb8c001a01c832ca36e8dcbcb4e9802f16a8618a8236c014996cd9bd5d911e404a32750f0a006a69b5545e7af2626084efea8e5f97ba264c0675fbf97e8a7f1fa19d111ba60", info={ "error": { "code": -32000, "message": "insufficient funds for gas * price + value: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d have 142855972774594 want 325000000000000" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-15T16:12:49.164Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 546.137218659210134319 ARB (≈$10.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: insufficient funds for intrinsic transaction cost (transaction="0x02f9017482a4b181b38401312d008407bfa480832625a0944d8d2d002a96e56d08d589b1cdb67d772ffdd5e280b9010476a00fa7000000000000000000000000000000000000000000025932fe8cf9eb26d719e3000000000000000000000000000000000000000000000001bc55fed44a25450700000000000000000000000000000000000000000000001d9b2d2acfc20e832f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000117667e1f10f1a0000000000000000000000000000000000000000000000178b0403002c646cb70000000000000000000000000000000000000000000000000000000067fe85ad0000000000000000000000000000000000000000000000000000000000000bb8c080a00f4611d41e92ba02a31c6cac6157e7bcd315d1fe7dd0d39e12e0553a04bbdccba00c2ba251eb5f159a9c7c7083483c04e7010ce82b1cf1c28f3c4ab9f9fc144617", info={ "error": { "code": -32000, "message": "insufficient funds for gas * price + value: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d have 142855972774594 want 325000000000000" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-15T16:13:16.214Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 546.137218659210134319 ARB (≈$10.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: insufficient funds for intrinsic transaction cost (transaction="0x02f9017482a4b181b38401312d008407bfa4808316e360944d8d2d002a96e56d08d589b1cdb67d772ffdd5e280b9010476a00fa7000000000000000000000000000000000000000000025932fe8cf9eb26d719e3000000000000000000000000000000000000000000000001bc55fed44a25450700000000000000000000000000000000000000000000001d9b2d2acfc20e832f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000117667e1f10f1a0000000000000000000000000000000000000000000000178b0403002c646cb70000000000000000000000000000000000000000000000000000000067fe85c80000000000000000000000000000000000000000000000000000000000000bb8c001a02b2a8d0077bbee7377383b0f232dc293f551517778c9a723566249007d8f2930a0450204cffb35c173172770c167d07ba8ae3e99414ecf732d0bbfc92304742280", info={ "error": { "code": -32000, "message": "insufficient funds for gas * price + value: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d have 142855972774594 want 195000000000000" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-15T16:26:35.968Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 545.98219717179847521 ARB (≈$10.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: insufficient funds for intrinsic transaction cost (transaction="0x02f9017482a4b181b38401312d008407bfa4808316e360944d8d2d002a96e56d08d589b1cdb67d772ffdd5e280b9010476a00fa7000000000000000000000000000000000000000000025932fe8cf9eb26d719e3000000000000000000000000000000000000000000000001bc55fed44a25450700000000000000000000000000000000000000000000001d99066b97105501ca000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000117523097569f0000000000000000000000000000000000000000000000017894e0dc427ed34840000000000000000000000000000000000000000000000000000000067fe88e80000000000000000000000000000000000000000000000000000000000000bb8c080a0c1b0adb6ab1745e15d9867bff20cebf0b67296b6438de982dff548195f1225c1a06c79943cce5f52c331000b25e9da1927666782cc577149ac4205e34c0c209ad6", info={ "error": { "code": -32000, "message": "insufficient funds for gas * price + value: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d have 142855972774594 want 195000000000000" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-15T18:02:44.979Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 548.463452435021622478 ARB (≈$9.95 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000008142600000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000018457782928563 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018457782928563 WETH (≈$0.03 USD)
+Net PnL: -0.000008142600000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000008142600000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-15T18:18:31.224Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 551.301580598799205291 ARB (≈$9.95 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000016439153389000 WETH (≈$0.03 USD)
+Uniswap Swap Fee: 0.000018553296227285 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018553296227285 WETH (≈$0.03 USD)
+Net PnL: -0.000016439153389000 WETH (≈$-0.03 USD)
+Cumulative PnL: -0.000016439153389000 WETH (≈$-0.03 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-15T18:27:31.628Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 550.64856731382712951 ARB (≈$9.95 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000008365600000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000018531319963580 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018531319963580 WETH (≈$0.03 USD)
+Net PnL: -0.000008365600000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000008365600000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-16T06:44:34.313Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 549.178593459986927883 ARB (≈$10.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000007241610000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000019026961204026 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000019026961204026 WETH (≈$0.03 USD)
+Net PnL: -0.000007241610000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000007241610000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-16T06:52:48.940Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 548.336983082010988255 ARB (≈$10.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000005983150000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000018997802587501 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018997802587501 WETH (≈$0.03 USD)
+Net PnL: -0.000005983150000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000005983150000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-16T15:53:13.496Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 550.343450463819181095 ARB (≈$9.99 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000010914560000000 WETH (≈$0.02 USD)
+Uniswap Swap Fee: 0.000018811374744124 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018811374744124 WETH (≈$0.03 USD)
+Net PnL: -0.000010914560000000 WETH (≈$-0.02 USD)
+Cumulative PnL: -0.000010914560000000 WETH (≈$-0.02 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-16T16:03:31.136Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 550.783421888379848497 ARB (≈$9.97 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: too many arguments: types/values length mismatch (count=9, expectedCount=8, code=UNEXPECTED_ARGUMENT, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-16T16:08:13.723Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 550.535944601482583494 ARB (≈$9.97 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: too many arguments: types/values length mismatch (count=9, expectedCount=8, code=UNEXPECTED_ARGUMENT, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-16T16:09:55.809Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 549.715940774321211393 ARB (≈$9.97 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: too many arguments: types/values length mismatch (count=9, expectedCount=8, code=UNEXPECTED_ARGUMENT, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-16T16:11:31.685Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 549.099408588441519896 ARB (≈$9.97 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: too many arguments: types/values length mismatch (count=9, expectedCount=8, code=UNEXPECTED_ARGUMENT, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-16T16:14:18.501Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 550.247276183262897575 ARB (≈$9.97 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000001825340000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000018776918795292 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018776918795292 WETH (≈$0.03 USD)
+Net PnL: -0.000001825340000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000001825340000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-16T16:30:33.268Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 552.969547522240759463 ARB (≈$9.97 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000667920000000 WETH (≈$0.00 USD)
+Uniswap Swap Fee: 0.000018869814971399 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018869814971399 WETH (≈$0.03 USD)
+Net PnL: -0.000000667920000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000000667920000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-16T16:40:53.414Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 555.306555758402737411 ARB (≈$9.93 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000008495278528000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000018882562212767 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018882562212767 WETH (≈$0.03 USD)
+Net PnL: -0.000008495278528000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000008495278528000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-16T17:14:22.902Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 549.447114170055442628 ARB (≈$9.93 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000008750479938000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000018683318625281 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018683318625281 WETH (≈$0.03 USD)
+Net PnL: -0.000008750479938000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000008750479938000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-16T17:24:53.435Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 546.883284878326435319 ARB (≈$9.93 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000051315180000000 WETH (≈$0.08 USD)
+Uniswap Swap Fee: 0.000018596138552217 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018596138552217 WETH (≈$0.03 USD)
+Net PnL: -0.000051315180000000 WETH (≈$-0.08 USD)
+Cumulative PnL: -0.000051315180000000 WETH (≈$-0.08 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-17T09:44:27.087Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 555.209288035951999518 ARB (≈$9.96 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000008403540000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000018724416795072 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018724416795072 WETH (≈$0.03 USD)
+Net PnL: -0.000008403540000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000008403540000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-17T10:04:36.147Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 555.418124373864543486 ARB (≈$9.95 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000009240300000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000018722986351333 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018722986351333 WETH (≈$0.03 USD)
+Net PnL: -0.000009240300000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000009240300000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-17T10:11:13.364Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 555.048663329766100105 ARB (≈$9.94 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000009187920000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000018680047898946 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018680047898946 WETH (≈$0.03 USD)
+Net PnL: -0.000009187920000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000009187920000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-17T10:14:16.548Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 556.50407220070007952 ARB (≈$9.94 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000009513430000000 WETH (≈$0.02 USD)
+Uniswap Swap Fee: 0.000018729029383305 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018729029383305 WETH (≈$0.03 USD)
+Net PnL: -0.000009513430000000 WETH (≈$-0.02 USD)
+Cumulative PnL: -0.000009513430000000 WETH (≈$-0.02 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-17T10:27:55.202Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 556.195370824878295934 ARB (≈$9.92 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000007916850000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000018687457978949 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018687457978949 WETH (≈$0.03 USD)
+Net PnL: -0.000007916850000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000007916850000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-17T10:47:20.515Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 560.577486361688443139 ARB (≈$10.00 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000008848310000000 WETH (≈$0.01 USD)
+Uniswap Swap Fee: 0.000018834691494811 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018834691494811 WETH (≈$0.03 USD)
+Net PnL: -0.000008848310000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000008848310000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-17T15:58:20.789Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 562.320705157686688835 ARB (≈$9.99 USD)
+Profit: 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000010396810000000 WETH (≈$0.02 USD)
+Uniswap Swap Fee: 0.000018926881600960 WETH (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018926881600960 WETH (≈$0.03 USD)
+Net PnL: -0.000010396810000000 WETH (≈$-0.02 USD)
+Cumulative PnL: -0.000010396810000000 WETH (≈$-0.02 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-17T16:47:11.991Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 0.0 TOKEN_A (≈$0.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Error: TOKEN_A/USD price not available
+--------------------------------------------------
+
+Timestamp: 2025-04-17T16:48:51.095Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 0.0 TOKEN_A (≈$0.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Error: TOKEN_A/USD price not available
+--------------------------------------------------
+
+Timestamp: 2025-04-17T16:55:48.011Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 551.754425912903457174 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000015947440000000 TOKEN_B (≈$0.03 USD)
+Uniswap Swap Fee: 0.000018713508658117 TOKEN_B (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018713508658117 TOKEN_B (≈$0.03 USD)
+Net PnL: -0.000015947440000000 TOKEN_B (≈$-0.03 USD)
+Cumulative PnL: -0.000015947440000000 TOKEN_B (≈$-0.03 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-17T17:53:19.032Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 544.763119460764869473 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000009436220000000 TOKEN_B (≈$0.02 USD)
+Uniswap Swap Fee: 0.000018506646814867 TOKEN_B (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018506646814867 TOKEN_B (≈$0.03 USD)
+Net PnL: -0.000009436220000000 TOKEN_B (≈$-0.02 USD)
+Cumulative PnL: -0.000009436220000000 TOKEN_B (≈$-0.02 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-18T04:50:34.064Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 555.151513806404864226 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Error: Do not know how to serialize a BigInt
+--------------------------------------------------
+
+Timestamp: 2025-04-18T05:31:39.486Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 558.052685005052012457 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Error: Do not know how to serialize a BigInt
+--------------------------------------------------
+
+Timestamp: 2025-04-18T05:40:13.831Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 557.448452241567224519 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Error: suggestedFeeData is not defined
+--------------------------------------------------
+
+Timestamp: 2025-04-18T05:49:17.854Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 551.196945396872592937 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000007988550000000 TOKEN_B (≈$0.01 USD)
+Uniswap Swap Fee: 0.000019045279408231 TOKEN_B (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000019045279408231 TOKEN_B (≈$0.03 USD)
+Net PnL: -0.000007988550000000 TOKEN_B (≈$-0.01 USD)
+Cumulative PnL: -0.000007988550000000 TOKEN_B (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-18T06:02:04.237Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 550.198629989291248421 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000008155420000000 TOKEN_B (≈$0.01 USD)
+Uniswap Swap Fee: 0.000019062041122082 TOKEN_B (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000019062041122082 TOKEN_B (≈$0.03 USD)
+Net PnL: -0.000008155420000000 TOKEN_B (≈$-0.01 USD)
+Cumulative PnL: -0.000008155420000000 TOKEN_B (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-18T07:11:02.211Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 550.856841945960013618 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000007984330000000 TOKEN_B (≈$0.01 USD)
+Uniswap Swap Fee: 0.000019184684996810 TOKEN_B (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000019184684996810 TOKEN_B (≈$0.03 USD)
+Net PnL: -0.000007984330000000 TOKEN_B (≈$-0.01 USD)
+Cumulative PnL: -0.000007984330000000 TOKEN_B (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-18T16:26:18.760Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 533.199092500512506376 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000008803410000000 TOKEN_B (≈$0.01 USD)
+Uniswap Swap Fee: 0.000018944181467373 TOKEN_B (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018944181467373 TOKEN_B (≈$0.03 USD)
+Net PnL: -0.000008803410000000 TOKEN_B (≈$-0.01 USD)
+Cumulative PnL: -0.000008803410000000 TOKEN_B (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-18T16:32:47.973Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 533.139606976391519311 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000008954830000000 TOKEN_B (≈$0.01 USD)
+Uniswap Swap Fee: 0.000018942067989350 TOKEN_B (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018942067989350 TOKEN_B (≈$0.03 USD)
+Net PnL: -0.000008954830000000 TOKEN_B (≈$-0.01 USD)
+Cumulative PnL: -0.000008954830000000 TOKEN_B (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-19T17:30:01.754Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 501.083497282815358176 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000008217130000000 TOKEN_B (≈$0.01 USD)
+Uniswap Swap Fee: 0.000018669822908704 TOKEN_B (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018669822908704 TOKEN_B (≈$0.03 USD)
+Net PnL: -0.000008217130000000 TOKEN_B (≈$-0.01 USD)
+Cumulative PnL: -0.000008217130000000 TOKEN_B (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-21T15:46:22.818Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 456.98257264178710102 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000011199260000000 TOKEN_B (≈$0.02 USD)
+Uniswap Swap Fee: 0.000018429764017439 TOKEN_B (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018429764017439 TOKEN_B (≈$0.03 USD)
+Net PnL: -0.000011199260000000 TOKEN_B (≈$-0.02 USD)
+Cumulative PnL: -0.000011199260000000 TOKEN_B (≈$-0.02 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-21T16:16:15.521Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 457.438522621742208685 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Error: insufficient funds for intrinsic transaction cost (transaction="0x02f9017082a4b181e68084068e7780831e84809480bd8f4d515fcb9ae23336320401345ac287901580b9010476a00fa700000000000000000000000000000000000000000002268d3b25fc40bada0a34000000000000000000000000000000000000000000000001e5a8457c41ecccef000000000000000000000000000000000000000000000018cc3c18b6186ed6ad000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000117286e60e2bfe000000000000000000000000000000000000000000000013b9514016be3d7ece0000000000000000000000000000000000000000000000000000000068066f7c0000000000000000000000000000000000000000000000000000000000000bb8c080a088e7b75fdb0a279b45dc945ff995e809dafee0fdf13dce3275e4d7f905bba3eda02f44de1be50cfb2821947a3216fc64598e9c919e1c1575250836d01febeca7a0", info={ "error": { "code": -32000, "message": "insufficient funds for gas * price + value: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d have 164593628157397 want 220000000000000" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-21T16:21:20.962Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 458.66126371707321141 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Error: insufficient funds for intrinsic transaction cost (transaction="0x02f9017082a4b181e68084068e7780831e84809480bd8f4d515fcb9ae23336320401345ac287901580b9010476a00fa700000000000000000000000000000000000000000002268d3b25fc40bada0a34000000000000000000000000000000000000000000000001e5a8457c41ecccef000000000000000000000000000000000000000000000018dd34254257e8d012000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000117e774f2b434b000000000000000000000000000000000000000000000013c6696a2628e6768400000000000000000000000000000000000000000000000000000000680670ad0000000000000000000000000000000000000000000000000000000000000bb8c001a0d171a3da7c2073fe345e62e9d8f6bdbb34e2329cb41081a5e4779850ab2061b0a009485265fd501210b2d56562a0cb5cd255921d860514fd1311a350b31b547f2a", info={ "error": { "code": -32000, "message": "insufficient funds for gas * price + value: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d have 164593628157397 want 220000000000000" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-21T16:47:03.953Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 461.814574160600329833 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000018714049992000 TOKEN_B (≈$0.03 USD)
+Uniswap Swap Fee: 0.000018702450552375 TOKEN_B (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000018702450552375 TOKEN_B (≈$0.03 USD)
+Net PnL: -0.000018714049992000 TOKEN_B (≈$-0.03 USD)
+Cumulative PnL: -0.000018714049992000 TOKEN_B (≈$-0.03 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-24T10:53:01.639Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 444.393800207274182412 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Amount Out 1: 0.0 TOKEN_A (≈$0.00 USD)
+Amount Out 2: 0.0 TOKEN_B (≈$0.00 USD)
+Error: Cannot access 'minAmountOut2' before initialization
+--------------------------------------------------
+
+Timestamp: 2025-05-02T08:59:23.384Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 395.055245138373209102 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000008152050000000 TOKEN_B (≈$0.01 USD)
+Uniswap Swap Fee: 0.000016609652418779 TOKEN_B (≈$0.03 USD)
+SushiSwap Swap Fee: 0.000016609652418779 TOKEN_B (≈$0.03 USD)
+Net PnL: -0.000008152050000000 TOKEN_B (≈$-0.01 USD)
+Cumulative PnL: -0.000008152050000000 TOKEN_B (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-05-21T07:17:13.720Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 373.991119470841908878 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Amount Out 1: 0.0 TOKEN_B (≈$0.00 USD)
+Amount Out 2: 0.0 TOKEN_A (≈$0.00 USD)
+Error: insufficient funds for intrinsic transaction cost (transaction="0x02f901b182a4b182019e8084080471c8831e848094e6a4c5a9cd57a0cc57c0f01407288a8e1404e48780b90144a361b6ab00000000000000000000000000000000000000000002801dcb8a3269b1c921ef000000000000000000000000000000000000000000000001b9a514ec18d93a24000000000000000000000000000000000000000000000014462b5dab3a354e8e00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000682d7e260000000000000000000000000000000000000000000000000000000000000bb8000000000000000000000000000000000000000000000000000000000028ccc40000000000000000000000000000000000000000000000000000003bafb5d5c0c080a07aefbf458c2479c5d78529a569671abca490f8593c6c0f8b9b22a99be0055595a030f69fb2dce9a9649db692ac8c5d3f58cf5cc2a1b6afa0af0b0c5c6fe6efbedc", info={ "error": { "code": -32000, "message": "insufficient funds for gas * price + value: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d have 76354292136566 want 269018000000000" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-05-21T07:20:06.775Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 373.744727379813696189 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Amount Out 1: 0.0 TOKEN_B (≈$0.00 USD)
+Amount Out 2: 0.0 TOKEN_A (≈$0.00 USD)
+Error: insufficient funds for intrinsic transaction cost (transaction="0x02f901b182a4b18201a08084084562c8831e848094e6a4c5a9cd57a0cc57c0f01407288a8e1404e48780b90144a361b6ab00000000000000000000000000000000000000000002801dcb8a3269b1c921ef000000000000000000000000000000000000000000000001b9a514ec18d93a2400000000000000000000000000000000000000000000001442c0015e150182bd00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000682d7ed30000000000000000000000000000000000000000000000000000000000000bb8000000000000000000000000000000000000000000000000000000000028d3a70000000000000000000000000000000000000000000000000000003bb9c89200c001a0d7a8e0c5951bf7d1fa026858bc3362f496b1b772399905376aa127a466735aeba001be650dab51cd5b1d5e24358b0b42f69df2348b824534288b56a22a5b7eed6d", info={ "error": { "code": -32000, "message": "insufficient funds for gas * price + value: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d have 92906964025599 want 277530000000000" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-05-21T07:27:01.686Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 375.254405167639220053 TOKEN_A (≈$10.00 USD)
+Profit: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Uniswap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+SushiSwap Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+Amount Out 1: 0.0 TOKEN_B (≈$0.00 USD)
+Amount Out 2: 0.0 TOKEN_A (≈$0.00 USD)
+Error: could not coalesce error (error={ "code": -32000, "message": "intrinsic gas too low" }, payload={ "id": 3, "jsonrpc": "2.0", "method": "eth_sendRawTransaction", "params": [ "0x02f901ae82a4b18201a080840990e2108094e6a4c5a9cd57a0cc57c0f01407288a8e1404e48780b90144a361b6ab00000000000000000000000000000000000000000002801dcb8a3269b1c921ef000000000000000000000000000000000000000000000001b9a514ec18d93a2400000000000000000000000000000000000000000000001457b3755121a4cf5500000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000682d80720000000000000000000000000000000000000000000000000000000000000bb8000000000000000000000000000000000000000000000000000000000028a99b0000000000000000000000000000000000000000000000000000003b7c458000c001a07d09ba45ccccaab4760fdef75b57dbdd8ca1320c5895c9a8e77fe0d7a6a9e028a01fd9622a26bc1ba8bba933acefe9931a80b0d32830717e18116382e9ad17fde0" ] }, code=UNKNOWN_ERROR, version=6.13.5)
+--------------------------------------------------

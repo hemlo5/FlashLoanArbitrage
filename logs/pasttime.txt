@@ -1,0 +1,893 @@
+Opportunity lasted: 37 ms, pricediff: 0.0006021402869240133
+Error during fresh price check: missing revert data (action="call", data=null, reason=null, transaction={ "data": "0x3850c7bd", "to": "0xAE81FAc689A1b4b1e06e7ef4a2ab4CD8aC0A087D" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.12.0)
+Opportunity lasted: 7 ms, pricediff: 0.0008562816780821603
+Opportunity lasted: 9 ms, pricediff: 0.0007953321877756658
+Error during fresh price check: missing revert data (action="call", data=null, reason=null, transaction={ "data": "0x3850c7bd", "to": "0xAE81FAc689A1b4b1e06e7ef4a2ab4CD8aC0A087D" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.12.0)
+Error during fresh price check: missing revert data (action="call", data=null, reason=null, transaction={ "data": "0x3850c7bd", "to": "0xAE81FAc689A1b4b1e06e7ef4a2ab4CD8aC0A087D" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.12.0)
+Opportunity lasted: 22 ms, pricediff: 0.0009412752623471077
+Opportunity lasted: 186 ms, pricediff: 0.0008998053122092897
+Opportunity lasted: 22 ms, pricediff: 0.0007609427817379388
+Error during fresh price check: missing revert data (action="call", data=null, reason=null, transaction={ "data": "0x3850c7bd", "to": "0xAE81FAc689A1b4b1e06e7ef4a2ab4CD8aC0A087D" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.12.0)
+Error during fresh price check: missing revert data (action="call", data=null, reason=null, transaction={ "data": "0x3850c7bd", "to": "0xAE81FAc689A1b4b1e06e7ef4a2ab4CD8aC0A087D" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.12.0)
+Error during fresh price check: missing revert data (action="call", data=null, reason=null, transaction={ "data": "0x3850c7bd", "to": "0xAE81FAc689A1b4b1e06e7ef4a2ab4CD8aC0A087D" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.12.0)
+Opportunity lasted: 12 ms, pricediff: 0.0008049902309166801
+Error during fresh price check: missing revert data (action="call", data=null, reason=null, transaction={ "data": "0x3850c7bd", "to": "0xAE81FAc689A1b4b1e06e7ef4a2ab4CD8aC0A087D" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.12.0)
+Opportunity lasted: 5 ms, pricediff: 0.0005309171706784355
+Error during fresh price check: missing revert data (action="call", data=null, reason=null, transaction={ "data": "0x3850c7bd", "to": "0xAE81FAc689A1b4b1e06e7ef4a2ab4CD8aC0A087D" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.12.0)
+Opportunity lasted: 6 ms, pricediff: 0.0006248206506950793
+Error during fresh price check: missing revert data (action="call", data=null, reason=null, transaction={ "data": "0x3850c7bd", "to": "0xAE81FAc689A1b4b1e06e7ef4a2ab4CD8aC0A087D" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.12.0)
+Price difference after 2s: 0.000000061097699660 at 1741613703139
+Price difference after 2s: 0.000000030078392051 at 1741613830121
+Arbitrage #1: Total latency 641 ms, signing 8 ms, submission 625 ms
+Price difference after 2s: 0.000000368001784500 at 1741614654282
+Arbitrage #2: Total latency 808 ms, signing 16 ms, submission 748 ms
+Arbitrage #2: Total latency 793 ms, signing 2 ms, submission 786 ms
+Arbitrage #3: Total latency 966 ms, signing 3 ms, submission 960 ms
+Arbitrage #4: Total latency 533 ms, signing 3 ms, submission 524 ms
+Arbitrage #5: Total latency 1173 ms, signing 2 ms, submission 1166 ms
+Arbitrage #7: Total latency 775 ms, signing 2 ms, submission 769 ms
+Opportunity lasted: 28069 ms, pricediff: 0.0000001846
+Arbitrage #7: Total latency 715 ms, signing 3 ms, submission 709 ms
+Price difference after 2s: 0.000000260424408334 at 1741619251449
+Arbitrage #2: Total latency 1347 ms, signing 9 ms, submission 1305 ms
+Arbitrage #2: Total latency 1102 ms, signing 2 ms, submission 1095 ms
+Opportunity lasted: 6834 ms, pricediff: 0.0000001889
+Price difference after 2s: 0.000000129520444368 at 1741619349641
+Arbitrage #4: Total latency 1842 ms, signing 3 ms, submission 1835 ms
+Arbitrage #4: Total latency 1397 ms, signing 4 ms, submission 1386 ms
+Opportunity lasted: 7891 ms, pricediff: 0.0000001160
+Price difference after 2s: 0.000000369445694072 at 1741619395495
+Arbitrage #5: Total latency 779 ms, signing 4 ms, submission 770 ms
+Arbitrage #7: Total latency 1012 ms, signing 3 ms, submission 1006 ms
+Arbitrage #8: Total latency 731 ms, signing 2 ms, submission 725 ms
+Arbitrage #8: Total latency 829 ms, signing 2 ms, submission 822 ms
+Arbitrage #9: Total latency 1127 ms, signing 2 ms, submission 1121 ms
+Arbitrage #11: Total latency 1121 ms, signing 2 ms, submission 1115 ms
+Arbitrage #12: Total latency 1093 ms, signing 4 ms, submission 1085 ms
+Arbitrage #12: Total latency 563 ms, signing 2 ms, submission 555 ms
+Arbitrage #14: Total latency 564 ms, signing 2 ms, submission 559 ms
+Arbitrage #14: Total latency 515 ms, signing 2 ms, submission 510 ms
+Arbitrage #16: Total latency 645 ms, signing 2 ms, submission 638 ms
+Arbitrage #17: Total latency 1156 ms, signing 2 ms, submission 1149 ms
+Arbitrage #17: Total latency 764 ms, signing 3 ms, submission 756 ms
+Arbitrage #19: Total latency 1177 ms, signing 2 ms, submission 1171 ms
+Arbitrage #20: Total latency 639 ms, signing 3 ms, submission 631 ms
+Arbitrage #21: Total latency 1596 ms, signing 2 ms, submission 1587 ms
+Arbitrage #21: Total latency 860 ms, signing 4 ms, submission 850 ms
+Opportunity lasted: 94232 ms, pricediff: 0.0000001051
+Arbitrage #1: Total latency 1395 ms, signing 21 ms, submission 803 ms
+Arbitrage #1: Total latency 1619 ms, signing 10 ms, submission 878 ms
+Arbitrage #1: Total latency 1214 ms, signing 21 ms, submission 570 ms
+Arbitrage #1: Total latency 1256 ms, signing 24 ms, submission 559 ms
+Arbitrage #1: Total latency 1267 ms, signing 12 ms, submission 769 ms
+Double-check at opportunity detection: Uniswap=0.000172744621294113, SushiSwap=0.000172847939883863, PriceDiff=0.000000103318589751 at 1741699981688
+Arbitrage #1: Total latency 1282 ms, signing 14 ms, submission 885 ms
+Double-check at opportunity detection: Uniswap=0.000173113713501101, SushiSwap=0.000172847939883863, PriceDiff=0.000000265773617237 at 1741700252354
+Price difference after 2s for detection #2: 0.000000265773617237 at 1741700254352
+Double-check at opportunity detection: Uniswap=0.000173235022504962, SushiSwap=0.000172847939883863, PriceDiff=0.000000387082621099 at 1741700286387
+Price difference after 2s for detection #2: 0.000000387082621099 at 1741700288343
+Arbitrage #1: Total latency 811 ms, signing 9 ms, submission 432 ms
+Arbitrage #1: Total latency 1281 ms, signing 7 ms, submission 793 ms
+Arbitrage #1: Total latency 1166 ms, signing 8 ms, submission 760 ms
+Double-check at opportunity detection: Uniswap=0.000172711070917117, SushiSwap=0.000173214463562175, PriceDiff=0.000000503392645057 at 1741703111107
+Price difference after 2s for detection #2: 0.000000503392645057 at 1741703113109
+Arbitrage #1: Total latency 1223 ms, signing 6 ms, submission 654 ms
+Arbitrage #1: Total latency 1238 ms, signing 11 ms, submission 708 ms
+Double-check at opportunity detection: Uniswap=0.000174039967956362, SushiSwap=0.000174117091144634, PriceDiff=0.000000077123188272 at 1741713944233
+Price difference after 2s for detection #2: 0.000000077123188272 at 1741713946332
+Double-check at opportunity detection: Uniswap=0.000173551519549769, SushiSwap=0.000173835923922821, PriceDiff=0.000000284404373052 at 1741714070946
+Price difference after 2s for detection #2: 0.000000284404373052 at 1741714072969
+Arbitrage #1: Total latency 1619 ms, signing 7 ms, submission 1224 ms
+Double-check at opportunity detection: Uniswap=0.000179306710025279, SushiSwap=0.000178887440477827, PriceDiff=0.000000419269547452 at 1741770504743
+Double-check at opportunity detection: Uniswap=0.000182005460630343, SushiSwap=0.000182191246959835, PriceDiff=0.000000185786329492 at 1741783475157
+Price difference after 2s for detection #2: 0.000000185786329492 at 1741783477187
+Double-check at opportunity detection: Uniswap=0.000182059924694217, SushiSwap=0.000182191246959835, PriceDiff=0.000000131322265618 at 1741783530288
+Price difference after 2s for detection #2: 0.000000131322265618 at 1741783532286
+Arbitrage #1: Total latency 1330 ms, signing 11 ms, submission 757 ms
+Arbitrage #1: Total latency 1182 ms, signing 9 ms, submission 733 ms
+Arbitrage #1: Total latency 2008 ms, signing 12 ms, submission 924 ms
+Double-check at opportunity detection: Uniswap=0.000183743442374200, SushiSwap=0.000184105061626662, PriceDiff=0.000000361619252462 at 1741855133970
+Price difference after 2s for detection #2: 0.000000361619252462 at 1741855135942
+Arbitrage #1: Total latency 1255 ms, signing 13 ms, submission 712 ms
+
+Timestamp: 2025-03-13T17:31:00.956Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap V2 -> Uniswap V3
+Loan Amount: 22.71297162671083214 ARB (≈$7.61 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000002027530845000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000002063512522208 WETH (≈$0.00 USD)
+SushiSwap V2 Swap Fee: 0.000012381075133249 WETH (≈$0.02 USD)
+Net PnL: -0.000002027530845000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000002027530845000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-14T07:28:23.295Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 28.755812912215901633 ARB (≈$10.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000278590000000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000002640696298800 WETH (≈$0.01 USD)
+SushiSwap V3 Swap Fee: 0.000002640696298800 WETH (≈$0.01 USD)
+Net PnL: -0.000000278590000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000000278590000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-14T08:41:02.797Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 28.562685779560450072 ARB (≈$9.98 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000556369680000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000002633543341795 WETH (≈$0.00 USD)
+SushiSwap V3 Swap Fee: 0.000002633543341795 WETH (≈$0.00 USD)
+Net PnL: -0.000000556369680000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000000556369680000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-14T11:04:18.607Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 28.530943186789262001 ARB (≈$10.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000001843690000000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000002631806888496 WETH (≈$0.01 USD)
+SushiSwap V3 Swap Fee: 0.000002631806888496 WETH (≈$0.01 USD)
+Net PnL: -0.000001843690000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000001843690000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-14T13:46:46.089Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 28.435813470981990747 ARB (≈$10.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000003956043105000 WETH (≈$0.01 USD)
+Uniswap V3 Swap Fee: 0.000002631551246829 WETH (≈$0.01 USD)
+SushiSwap V3 Swap Fee: 0.000002631551246829 WETH (≈$0.01 USD)
+Net PnL: -0.000003956043105000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000003956043105000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-14T15:32:35.007Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 27.523304144797045012 ARB (≈$10.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000005395774824000 WETH (≈$0.01 USD)
+Uniswap V3 Swap Fee: 0.000002580463341955 WETH (≈$0.01 USD)
+SushiSwap V3 Swap Fee: 0.000002580463341955 WETH (≈$0.01 USD)
+Net PnL: -0.000005395774824000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000005395774824000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-14T16:57:03.556Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 27.441334058550808095 ARB (≈$10.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000002832190000000 WETH (≈$0.01 USD)
+Uniswap V3 Swap Fee: 0.000002581302575730 WETH (≈$0.01 USD)
+SushiSwap V3 Swap Fee: 0.000002581302575730 WETH (≈$0.01 USD)
+Net PnL: -0.000002832190000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000002832190000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-14T17:15:34.433Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 27.486642855964085186 ARB (≈$10.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000002753940000000 WETH (≈$0.01 USD)
+Uniswap V3 Swap Fee: 0.000002586419124767 WETH (≈$0.01 USD)
+SushiSwap V3 Swap Fee: 0.000002586419124767 WETH (≈$0.01 USD)
+Net PnL: -0.000002753940000000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000002753940000000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-14T17:33:41.571Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 27.491343998714043551 ARB (≈$9.99 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000002507320000000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000002583690142264 WETH (≈$0.00 USD)
+SushiSwap V3 Swap Fee: 0.000002583690142264 WETH (≈$0.00 USD)
+Net PnL: -0.000002507320000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000002507320000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-15T05:34:00.270Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 27.561409329213809372 ARB (≈$9.99 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000001508200000000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000002593486651394 WETH (≈$0.00 USD)
+SushiSwap V3 Swap Fee: 0.000002593486651394 WETH (≈$0.00 USD)
+Net PnL: -0.000001508200000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000001508200000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-15T05:50:12.827Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 27.514898620217714154 ARB (≈$10.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000001487330000000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000002591014233733 WETH (≈$0.01 USD)
+SushiSwap V3 Swap Fee: 0.000002591014233733 WETH (≈$0.01 USD)
+Net PnL: -0.000001487330000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000001487330000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-15T06:06:01.865Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 27.568799992236108665 ARB (≈$9.99 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000001514510000000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000002594108300176 WETH (≈$0.00 USD)
+SushiSwap V3 Swap Fee: 0.000002594108300176 WETH (≈$0.00 USD)
+Net PnL: -0.000001514510000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000001514510000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-15T06:24:20.360Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> SushiSwap
+Loan Amount: 27.541316339068263375 ARB (≈$10.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000001827980000000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000002590985698960 WETH (≈$0.01 USD)
+SushiSwap V3 Swap Fee: 0.000002590985698960 WETH (≈$0.01 USD)
+Net PnL: -0.000001827980000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000001827980000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-15T06:36:02.049Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 27.582011210571849347 ARB (≈$9.99 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000001870910000000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000002591284361259 WETH (≈$0.00 USD)
+SushiSwap V3 Swap Fee: 0.000002591284361259 WETH (≈$0.00 USD)
+Net PnL: -0.000001870910000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000001870910000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-15T07:00:46.597Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 27.580670235148801339 ARB (≈$9.99 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000275260000000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000002590735011131 WETH (≈$0.00 USD)
+SushiSwap V3 Swap Fee: 0.000002590735011131 WETH (≈$0.00 USD)
+Net PnL: -0.000000275260000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000000275260000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-15T07:14:29.167Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 27.681230122738174515 ARB (≈$9.99 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000001865110000000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000002596179811373 WETH (≈$0.00 USD)
+SushiSwap V3 Swap Fee: 0.000002596179811373 WETH (≈$0.00 USD)
+Net PnL: -0.000001865110000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000001865110000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-15T07:15:56.849Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 27.701143880916710316 ARB (≈$10.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000001865110000000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000002598048131460 WETH (≈$0.00 USD)
+SushiSwap V3 Swap Fee: 0.000002598048131460 WETH (≈$0.00 USD)
+Net PnL: -0.000001865110000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000001865110000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-15T15:12:33.988Z
+Transaction #1
+Status: Failed to send
+Error: Transaction submission failed: insufficient funds for intrinsic transaction cost (transaction="0x02f901713880844190ab008483215600830f42409426c1b0ac65b0320375bf112a6357addeba2b747180b90104c450c472000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c0000000000000000000000000000000000000000000000000000196cddccedb600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005f02ecbba35aa0000000000000000000000000000000000000000000000000000028bf05aa55e0000000000000000000000000000000000000000000000000000000067d5990d000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000009c4c001a0b2ecc7bdafdee0905ca80fb6125a99d7ac2d80fc30ac1027b18bbd58ffa1fcf3a033bd693a6604643c5a4e25f7a789bd48e3a8a341966457028e3fb8794dcda83f", info={ "error": { "code": -32000, "message": "internal_error: insufficient funds" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-03-15T15:12:33.994Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> PanWBNBSwap
+Loan Amount: 0.000027955368357302 WBNB (≈$10.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 BUSD (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 BUSD (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000000000000000000 BUSD (≈$0.00 USD)
+PanWBNBSwap V2 Swap Fee: 0.000000000000000000 BUSD (≈$0.00 USD)
+Net PnL: 0.000000000000000000 BUSD (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 BUSD (≈$0.00 USD)
+Error: Transaction submission failed: insufficient funds for intrinsic transaction cost (transaction="0x02f901713880844190ab008483215600830f42409426c1b0ac65b0320375bf112a6357addeba2b747180b90104c450c472000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c0000000000000000000000000000000000000000000000000000196cddccedb600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005f02ecbba35aa0000000000000000000000000000000000000000000000000000028bf05aa55e0000000000000000000000000000000000000000000000000000000067d5990d000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000009c4c001a0b2ecc7bdafdee0905ca80fb6125a99d7ac2d80fc30ac1027b18bbd58ffa1fcf3a033bd693a6604643c5a4e25f7a789bd48e3a8a341966457028e3fb8794dcda83f", info={ "error": { "code": -32000, "message": "internal_error: insufficient funds" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-03-15T17:24:59.856Z
+Transaction #1
+Status: Failed to send
+Error: Transaction submission failed: insufficient funds for intrinsic transaction cost (transaction="0x02f901713880844190ab008483215600830f42409426c1b0ac65b0320375bf112a6357addeba2b747180b90104c450c472000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c00000000000000000000000000000000000000000000000000001816d72c54a500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005c8b421827f11000000000000000000000000000000000000000000000000000002691d9a90900000000000000000000000000000000000000000000000000000000067d5b817000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000009c4c080a02e000b9670c9fa11d9b9420c78ca065c3e266500a69ada9151d3df5e74539c44a02315cb21b03ca823805811abdb8cb5d136b9a7008a15f5bca9d00ef1a6591129", info={ "error": { "code": -32000, "message": "internal_error: insufficient funds" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-03-15T17:24:59.858Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: Uniswap -> PanWBNBSwap
+Loan Amount: 0.000026486378353829 WBNB (≈$10.00 USD)
+Profit (before gas and swap fees): 0.000000000000000000 BUSD (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 BUSD (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000000000000000000 BUSD (≈$0.00 USD)
+PanWBNBSwap V2 Swap Fee: 0.000000000000000000 BUSD (≈$0.00 USD)
+Net PnL: 0.000000000000000000 BUSD (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 BUSD (≈$0.00 USD)
+Error: Transaction submission failed: insufficient funds for intrinsic transaction cost (transaction="0x02f901713880844190ab008483215600830f42409426c1b0ac65b0320375bf112a6357addeba2b747180b90104c450c472000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c00000000000000000000000000000000000000000000000000001816d72c54a500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005c8b421827f11000000000000000000000000000000000000000000000000000002691d9a90900000000000000000000000000000000000000000000000000000000067d5b817000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000009c4c080a02e000b9670c9fa11d9b9420c78ca065c3e266500a69ada9151d3df5e74539c44a02315cb21b03ca823805811abdb8cb5d136b9a7008a15f5bca9d00ef1a6591129", info={ "error": { "code": -32000, "message": "internal_error: insufficient funds" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-03-16T06:57:21.696Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap V2 -> Uniswap V3
+Loan Amount: 27.009400706577569196 ARB (≈$9.85 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000274140000000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000002550385837895 WETH (≈$0.00 USD)
+SushiSwap V2 Swap Fee: 0.000015302315027370 WETH (≈$0.03 USD)
+Net PnL: -0.000000274140000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000000274140000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-17T16:59:28.468Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 27.264429474413748977 ARB (≈$9.99 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000002596930000000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000002610457946113 WETH (≈$0.00 USD)
+SushiSwap V3 Swap Fee: 0.000002610457946113 WETH (≈$0.00 USD)
+Net PnL: -0.000002596930000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000002596930000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-03-17T17:02:59.423Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 27.23039096335506315 ARB (≈$9.99 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000002535640000000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000002607956678169 WETH (≈$0.00 USD)
+SushiSwap V3 Swap Fee: 0.000002607956678169 WETH (≈$0.00 USD)
+Net PnL: -0.000002535640000000 WETH (≈$-0.00 USD)
+Cumulative PnL: -0.000002535640000000 WETH (≈$-0.00 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-04T15:54:20.201Z
+Transaction #1
+Status: Failed to send
+Error: Transaction submission failed: insufficient funds for intrinsic transaction cost (transaction="0x02f9017382a4b16b84027aa0d8840ab17128830f42409498a652b3beb8508d6bfa62e464732dbdc69394a280b90104c450c472000000000000000000000000912ce59144191c1204e64559fe8253a0e49e6548000000000000000000000000000000000000000000000001bb8167b6ce6e4c4900000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000001f849242c8c6a0000000000000000000000000000000000000000000000002c5bbbec41f88f1c0000000000000000000000000000000000000000000000000000000067f000d80000000000000000000000000000000000000000000000000000000000000bb800000000000000000000000000000000000000000000000000000000000001f4c001a0fbf24895d0b56cc7141e9aa4b990e842c9a624059aaeaf8e18382ed1515046cfa07c83cce81f09a51ac66c9cc24e16bbde28522a84c8e2e2337a6329e03b51f4c3", info={ "error": { "code": -32000, "message": "insufficient funds for gas * price + value: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d have 121972781699000 want 179401000000000" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-04T15:54:20.202Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 31.957938465642794057 ARB (≈$9.96 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000000000000000000 WETH (≈$0.00 USD)
+Uniswap V3 Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+SushiSwap V2 Swap Fee: 0.000000000000000000 WETH (≈$0.00 USD)
+Net PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Cumulative PnL: 0.000000000000000000 WETH (≈$0.00 USD)
+Error: Transaction submission failed: insufficient funds for intrinsic transaction cost (transaction="0x02f9017382a4b16b84027aa0d8840ab17128830f42409498a652b3beb8508d6bfa62e464732dbdc69394a280b90104c450c472000000000000000000000000912ce59144191c1204e64559fe8253a0e49e6548000000000000000000000000000000000000000000000001bb8167b6ce6e4c4900000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000001f849242c8c6a0000000000000000000000000000000000000000000000002c5bbbec41f88f1c0000000000000000000000000000000000000000000000000000000067f000d80000000000000000000000000000000000000000000000000000000000000bb800000000000000000000000000000000000000000000000000000000000001f4c001a0fbf24895d0b56cc7141e9aa4b990e842c9a624059aaeaf8e18382ed1515046cfa07c83cce81f09a51ac66c9cc24e16bbde28522a84c8e2e2337a6329e03b51f4c3", info={ "error": { "code": -32000, "message": "insufficient funds for gas * price + value: address 0x928071A6B3F10B10dF1e607314B73a8B82Bfe82d have 121972781699000 want 179401000000000" } }, code=INSUFFICIENT_FUNDS, version=6.13.5)
+--------------------------------------------------
+
+Timestamp: 2025-04-04T16:41:58.256Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 32.009776956349462296 ARB (≈$9.94 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000007043056686000 WETH (≈$0.01 USD)
+Uniswap V3 Swap Fee: 0.000002768534983120 WETH (≈$0.00 USD)
+SushiSwap V2 Swap Fee: 0.000016611209898719 WETH (≈$0.03 USD)
+Net PnL: -0.000007043056686000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000007043056686000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Timestamp: 2025-04-04T18:30:08.285Z
+Transaction #1
+Status: Failed
+Transaction Hash: N/A
+Direction: SushiSwap -> Uniswap
+Loan Amount: 31.894459846014697746 ARB (≈$9.96 USD)
+Profit (before gas and swap fees): 0.000000000000000000 WETH (≈$0.00 USD)
+Gas Cost: 0.000004846562450000 WETH (≈$0.01 USD)
+Uniswap V3 Swap Fee: 0.000002750445529536 WETH (≈$0.00 USD)
+SushiSwap V2 Swap Fee: 0.000016502673177214 WETH (≈$0.03 USD)
+Net PnL: -0.000004846562450000 WETH (≈$-0.01 USD)
+Cumulative PnL: -0.000004846562450000 WETH (≈$-0.01 USD)
+--------------------------------------------------
+
+Double-check at opportunity detection: Uniswap=0.000184129408043016, SushiSwap=0.000184664758866703, PriceDiff=0.000000535350823687 at 1741868212581
+Price difference after 2s for detection #2: 0.000000535350823687 at 1741868214744
+Double-check at opportunity detection: Uniswap=0.000183941477611440, SushiSwap=0.000184696173388028, PriceDiff=0.000000754695776589 at 1741869334233
+Price difference after 2s for detection #2: 0.000000754695776589 at 1741869336166
+Arbitrage #1: Total latency 1522 ms, signing 22 ms, submission 929 ms
+Arbitrage #1: Total latency 1357 ms, signing 17 ms, submission 753 ms
+Double-check at opportunity detection: Uniswap=0.000181602307802003, SushiSwap=0.000181726698524599, PriceDiff=0.000000124390722596 at 1741884670572
+Price difference after 2s for detection #2: 0.000000124390722596 at 1741884672542
+Double-check at opportunity detection: Uniswap=0.000181684268283292, SushiSwap=0.000182245857902104, PriceDiff=0.000000561589618812 at 1741884735780
+Price difference after 2s for detection #2: 0.000000561589618812 at 1741884737725
+Arbitrage #1: Total latency 1048 ms, signing 6 ms, submission 617 ms
+Arbitrage #1: Total latency 1435 ms, signing 22 ms, submission 851 ms
+Double-check at opportunity detection: Uniswap=0.000183663477493155, SushiSwap=0.000183624048429848, PriceDiff=0.000000039429063307 at 1741937300600
+Price difference after 2s for detection #2: 0.000000039429063307 at 1741937302606
+Arbitrage #1: Total latency 1832 ms, signing 12 ms, submission 877 ms
+Arbitrage #1: Total latency 1238 ms, signing 9 ms, submission 723 ms
+Double-check at opportunity detection: Uniswap=0.000184475804600486, SushiSwap=0.000184395358988262, PriceDiff=0.000000080445612224 at 1741950252852
+Price difference after 2s for detection #2: 0.000000080445612224 at 1741950254825
+Arbitrage #1: Total latency 895 ms, signing 7 ms, submission 516 ms
+Double-check at opportunity detection: Uniswap=0.000185087108516478, SushiSwap=0.000184736735578307, PriceDiff=0.000000350372938170 at 1741959999540
+Price difference after 2s for detection #2: 0.000000350372938170 at 1741960001436
+Arbitrage #1: Total latency 1567 ms, signing 14 ms, submission 949 ms
+Double-check at opportunity detection: Uniswap=0.000187506586798208, SushiSwap=0.000187102261497428, PriceDiff=0.000000404325300780 at 1741966348111
+Price difference after 2s for detection #2: 0.000000404325300780 at 1741966350063
+Arbitrage #1: Total latency 1537 ms, signing 12 ms, submission 831 ms
+Double-check at opportunity detection: Uniswap=0.000188132440662163, SushiSwap=0.000187984598607625, PriceDiff=0.000000147842054538 at 1741971417517
+Price difference after 2s for detection #2: 0.000000147842054538 at 1741971419463
+Arbitrage #1: Total latency 1231 ms, signing 28 ms, submission 779 ms
+Arbitrage #1: Total latency 1118 ms, signing 17 ms, submission 636 ms
+Double-check at opportunity detection: Uniswap=0.000187963901829259, SushiSwap=0.000188135231423818, PriceDiff=0.000000171329594559 at 1741973615345
+Price difference after 2s for detection #2: 0.000000171329594559 at 1741973617316
+Arbitrage #1: Total latency 1240 ms, signing 31 ms, submission 712 ms
+Double-check at opportunity detection: Uniswap=0.000188196954692352, SushiSwap=0.000188446318563745, PriceDiff=0.000000249363871392 at 1742016834246
+Price difference after 2s for detection #2: 0.000000249363871392 at 1742016836283
+Arbitrage #1: Total latency 1196 ms, signing 8 ms, submission 806 ms
+Double-check at opportunity detection: Uniswap=0.000188335364741600, SushiSwap=0.000188312474568754, PriceDiff=0.000000022890172846 at 1742017806893
+Price difference after 2s for detection #2: 0.000000022890172846 at 1742017808821
+Arbitrage #1: Total latency 1082 ms, signing 11 ms, submission 671 ms
+Double-check at opportunity detection: Uniswap=0.000188191600715754, SushiSwap=0.000188312474568754, PriceDiff=0.000000120873853000 at 1742018756000
+Price difference after 2s for detection #2: 0.000000120873853000 at 1742018757956
+Arbitrage #1: Total latency 1065 ms, signing 9 ms, submission 672 ms
+Double-check at opportunity detection: Uniswap=0.000188152640713452, SushiSwap=0.000188075562363050, PriceDiff=0.000000077078350403 at 1742019854613
+Price difference after 2s for detection #2: 0.000000077078350403 at 1742019856614
+Arbitrage #1: Total latency 900 ms, signing 8 ms, submission 516 ms
+Double-check at opportunity detection: Uniswap=0.000187896694079089, SushiSwap=0.000188075562363050, PriceDiff=0.000000178868283961 at 1742020556516
+Price difference after 2s for detection #2: 0.000000178868283961 at 1742020558491
+Arbitrage #1: Total latency 987 ms, signing 8 ms, submission 607 ms
+Double-check at opportunity detection: Uniswap=0.000187870478357438, SushiSwap=0.000187963332059872, PriceDiff=0.000000092853702433 at 1742022040679
+Price difference after 2s for detection #2: 0.000000092853702433 at 1742022042734
+Arbitrage #1: Total latency 1082 ms, signing 11 ms, submission 690 ms
+Double-check at opportunity detection: Uniswap=0.000187576910409097, SushiSwap=0.000187742256781961, PriceDiff=0.000000165346372864 at 1742022862976
+Price difference after 2s for detection #2: 0.000000165346372864 at 1742022865007
+Arbitrage #1: Total latency 1229 ms, signing 13 ms, submission 839 ms
+Double-check at opportunity detection: Uniswap=0.000187576956578311, SushiSwap=0.000187607292900414, PriceDiff=0.000000030336322103 at 1742022950941
+Price difference after 2s for detection #2: 0.000000030336322103 at 1742022952924
+Arbitrage #1: Total latency 1052 ms, signing 9 ms, submission 661 ms
+Double-check at opportunity detection: Uniswap=601.785711286538571585, PanWBNBSwap=601.573304699897448700, PriceDiff=0.212406586641122885 at 1742053813834
+Price difference after 2s for detection #2: 0.212406586641122885 at 1742053816001
+Double-check at opportunity detection: Uniswap=613.841718987305171140, PanWBNBSwap=612.709282074938528240, PriceDiff=1.132436912366642900 at 1742059499566
+Arbitrage #1: Total latency 1028 ms, signing 12 ms, submission 641 ms
+Opportunity lasted: 287 ms, pricediff: 0.0000005527
+Double-check at opportunity detection: Uniswap=0.000188714791127705, SushiSwap=0.000189267498108287, PriceDiff=0.000000552706980582 at 1742108562702
+Price difference after 2s for detection #2: 0.000000552706980582 at 1742108564723
+Opportunity lasted: 253 ms, pricediff: 0.0000006560
+Double-check at opportunity detection: Uniswap=0.000188715118779698, SushiSwap=0.000189371128514621, PriceDiff=0.000000656009734923 at 1742108742774
+Double-check at opportunity detection: Uniswap=0.000188715118779698, SushiSwap=0.000189371128514621, PriceDiff=0.000000656009734923 at 1742108743010
+Price difference after 2s for detection #4: 0.000000656009734923 at 1742108744796
+Price difference after 2s for detection #4: 0.000000656009734923 at 1742108745009
+Opportunity lasted: 243 ms, pricediff: 0.0000006566
+Double-check at opportunity detection: Uniswap=0.000188716068898678, SushiSwap=0.000189372628479977, PriceDiff=0.000000656559581299 at 1742108758786
+Double-check at opportunity detection: Uniswap=0.000188716068898678, SushiSwap=0.000189372628479977, PriceDiff=0.000000656559581299 at 1742108759064
+Price difference after 2s for detection #6: 0.000000656559581299 at 1742108760838
+Price difference after 2s for detection #6: 0.000000656559581299 at 1742108761024
+Opportunity lasted: 213 ms, pricediff: 0.0000004925
+Double-check at opportunity detection: Uniswap=0.000188700498046380, SushiSwap=0.000189192952902789, PriceDiff=0.000000492454856409 at 1742109051627
+Price difference after 2s for detection #2: 0.000000492454856409 at 1742109053624
+Opportunity lasted: 3 ms, pricediff: 0.0000006038
+Double-check at opportunity detection: Uniswap=0.000188698956107179, SushiSwap=0.000189302732824869, PriceDiff=0.000000603776717690 at 1742110918138
+Price difference after 2s for detection #2: 0.000000603776717690 at 1742110920098
+Opportunity lasted: 315 ms, pricediff: 0.0000006195
+Double-check at opportunity detection: Uniswap=0.000188701513728779, SushiSwap=0.000189321047883210, PriceDiff=0.000000619534154431 at 1742110934176
+Double-check at opportunity detection: Uniswap=0.000188701513728779, SushiSwap=0.000189321047883210, PriceDiff=0.000000619534154431 at 1742110934451
+Price difference after 2s for detection #4: 0.000000619534154431 at 1742110936170
+Price difference after 2s for detection #4: 0.000000619534154431 at 1742110936505
+Opportunity lasted: 321 ms, pricediff: 0.0000006574
+Double-check at opportunity detection: Uniswap=0.000188699794568308, SushiSwap=0.000189357186357344, PriceDiff=0.000000657391789036 at 1742111025919
+Double-check at opportunity detection: Uniswap=0.000188699794568308, SushiSwap=0.000189357186357344, PriceDiff=0.000000657391789036 at 1742111026303
+Price difference after 2s for detection #6: 0.000000657391789036 at 1742111027960
+Price difference after 2s for detection #6: 0.000000657391789036 at 1742111028244
+Opportunity lasted: 257 ms, pricediff: 0.0000006606
+Double-check at opportunity detection: Uniswap=0.000188701032329937, SushiSwap=0.000189361644197952, PriceDiff=0.000000660611868015 at 1742111062006
+Double-check at opportunity detection: Uniswap=0.000188701032329937, SushiSwap=0.000189361644197952, PriceDiff=0.000000660611868015 at 1742111062299
+Price difference after 2s for detection #8: 0.000000660611868015 at 1742111064024
+Price difference after 2s for detection #8: 0.000000660611868015 at 1742111064293
+Opportunity lasted: 314 ms, pricediff: 0.0000005890
+Double-check at opportunity detection: Uniswap=0.000188701032329937, SushiSwap=0.000189290036234016, PriceDiff=0.000000589003904079 at 1742111101115
+Price difference after 2s for detection #9: 0.000000589003904079 at 1742111103074
+Opportunity lasted: 231 ms, pricediff: 0.0000006280
+Double-check at opportunity detection: Uniswap=0.000188631061833504, SushiSwap=0.000189259030314442, PriceDiff=0.000000627968480938 at 1742111211957
+Price difference after 2s for detection #10: 0.000000627968480938 at 1742111214033
+Opportunity lasted: 2 ms, pricediff: 0.0000006548
+Double-check at opportunity detection: Uniswap=0.000188613058155568, SushiSwap=0.000189281403910803, PriceDiff=0.000000668345755235 at 1742111289981
+Price difference after 2s for detection #11: 0.000000681847455049 at 1742111292022
+Opportunity lasted: 377 ms, pricediff: 0.0000006292
+Double-check at opportunity detection: Uniswap=0.000189704463378412, SushiSwap=0.000190343018459948, PriceDiff=0.000000638555081537 at 1742190213129
+Double-check at opportunity detection: Uniswap=0.000189713863973431, SushiSwap=0.000190343018459948, PriceDiff=0.000000629154486517 at 1742190213541
+Price difference after 2s for detection #3: 0.000000629154486517 at 1742190215224
+Price difference after 2s for detection #3: 0.000000629154486517 at 1742190215618
+Opportunity lasted: 300 ms, pricediff: 0.0000007583
+Double-check at opportunity detection: Uniswap=0.000189735170991713, SushiSwap=0.000190493491224649, PriceDiff=0.000000758320232936 at 1742190315169
+Price difference after 2s for detection #4: 0.000000758320232936 at 1742190317230
+Double-check at opportunity detection: Uniswap=0.000192868912754779, SushiSwap=0.000192817465264168, PriceDiff=0.000000051447490611 at 1742201025192
+Price difference after 2s for detection #2: 0.000000051447490611 at 1742201027342
+Double-check at opportunity detection: Uniswap=0.000196020281900419, SushiSwap=0.000196404507704945, PriceDiff=0.000000384225804525 at 1742206275244
+Double-check at opportunity detection: Uniswap=0.000196027710644562, SushiSwap=0.000196404507704945, PriceDiff=0.000000376797060383 at 1742206275391
+Double-check at opportunity detection: Uniswap=0.000196027710644562, SushiSwap=0.000196404507704945, PriceDiff=0.000000376797060383 at 1742206275527
+Price difference after 2s for detection #4: 0.000000376797060383 at 1742206277357
+Price difference after 2s for detection #4: 0.000000376797060383 at 1742206277367
+Price difference after 2s for detection #4: 0.000000376797060383 at 1742206277623
+Double-check at opportunity detection: Uniswap=0.000196035139529468, SushiSwap=0.000196404507704945, PriceDiff=0.000000369368175477 at 1742206288444
+Price difference after 2s for detection #5: 0.000000369368175477 at 1742206290428
+Opportunity lasted: 28133 ms, pricediff: 0.0000000220
+Opportunity lasted: 462 ms, pricediff: 0.0000001157
+Double-check at opportunity detection: Uniswap=0.000195673371277895, SushiSwap=0.000195774278522716, PriceDiff=0.000000100907244822 at 1742206677025
+Double-check at opportunity detection: Uniswap=0.000195658566303374, SushiSwap=0.000195774278522716, PriceDiff=0.000000115712219342 at 1742206677505
+Price difference after 2s for detection #7: 0.000000130513984544 at 1742206679052
+Price difference after 2s for detection #7: 0.000000130513984544 at 1742206679525
+Double-check at opportunity detection: Uniswap=0.000195418184913740, SushiSwap=0.000195774278522716, PriceDiff=0.000000356093608976 at 1742206721888
+Price difference after 2s for detection #8: 0.000000356093608976 at 1742206723879
+Opportunity lasted: 11235 ms, pricediff: 0.0000003487
+Double-check at opportunity detection: Uniswap=0.000195406233414106, SushiSwap=0.000195774278522716, PriceDiff=0.000000368045108611 at 1742206736169
+Price difference after 2s for detection #9: 0.000000368045108611 at 1742206738156
+Double-check at opportunity detection: Uniswap=0.000195413607515633, SushiSwap=0.000195774278522716, PriceDiff=0.000000360671007084 at 1742206745849
+Price difference after 2s for detection #10: 0.000000360671007084 at 1742206747890
+Opportunity lasted: 18285 ms, pricediff: 0.0000000507
+Double-check at opportunity detection: Uniswap=0.000191491844607486, SushiSwap=0.000191668444555505, PriceDiff=0.000000176599948020 at 1742230689331
+Price difference after 2s for detection #2: 0.000000176599948020 at 1742230691304
+Double-check at opportunity detection: Uniswap=0.000191491844607486, SushiSwap=0.000191668444555505, PriceDiff=0.000000176599948020 at 1742230725385
+Price difference after 2s for detection #2: 0.000000176599948020 at 1742230727395
+Double-check at opportunity detection: Uniswap=0.000191491844607486, SushiSwap=0.000191668444555505, PriceDiff=0.000000176599948020 at 1742230761934
+Price difference after 2s for detection #2: 0.000000176599948020 at 1742230763849
+Arbitrage #1: Total latency 1543 ms, signing 27 ms, submission 519 ms
+Double-check at opportunity detection: Uniswap=0.000191527813145216, SushiSwap=0.000191668444555505, PriceDiff=0.000000140631410289 at 1742230973284
+Arbitrage #1: Total latency 1224 ms, signing 30 ms, submission 744 ms
+Double-check at opportunity detection: Uniswap=0.000183620431592495, SushiSwap=0.000183511491923112, PriceDiff=0.000000108939669383 at 1743348168369
+Price difference after 2s for detection #2: 0.000000108939669383 at 1743348170304
+Double-check at opportunity detection: Uniswap=0.000169860225743086, SushiSwap=0.000170335956069860, PriceDiff=0.000000475730326774 at 1743693603598
+Double-check at opportunity detection: Uniswap=0.000173541090436781, SushiSwap=0.000174220260150664, PriceDiff=0.000000679169713883 at 1743781987858
+Price difference after 2s for detection #2: 0.000000679169713883 at 1743781989800
+Double-check at opportunity detection: Uniswap=0.000173382108274914, SushiSwap=0.000174021365532174, PriceDiff=0.000000639257257260 at 1743782060275
+Double-check at opportunity detection: Uniswap=0.000172980585706370, SushiSwap=0.000173675351541654, PriceDiff=0.000000694765835284 at 1743784911125
+Arbitrage #1: Total latency 1611 ms, signing 13 ms, submission 901 ms
+Arbitrage #1: Total latency 1984 ms, signing 13 ms, submission 1243 ms
+Arbitrage #1: Total latency 1345 ms, signing 8 ms, submission 804 ms
+Double-check at opportunity detection: Uniswap=267284066.332363814115524292, SushiSwap=266976274.054525524377822876, PriceDiff=307792.277838289737701416 at 1743875067443
+Price difference after 2s for detection #2: 307792.277838289737701416 at 1743875069430
+Double-check at opportunity detection: Uniswap=268326826.170877307653427124, SushiSwap=267529862.747482746839523315, PriceDiff=796963.423394560813903809 at 1743875637278
+Arbitrage #1: Total latency 1441 ms, signing 22 ms, submission 683 ms
+Arbitrage #1: Total latency 2131 ms, signing 40 ms, submission 822 ms
+⭕Double check (opportunity_detected): Uniswap=0.000169536803388412, SushiSwap=0.000169919689183239, PriceDiff=0.000000382885794827 at 1743934114361
+⭕Double check (opportunity_detected): Uniswap=0.000169543938500180, SushiSwap=0.000170030059620864, PriceDiff=0.000000486121120683 at 1743934183709
+⭕Double check (2s_after_opportunity): Uniswap=0.000169543938500180, SushiSwap=0.000170030059620864, PriceDiff=0.000000486121120683 at 1743934186126
+⭕Double check (opportunity_detected): Uniswap=0.000169552524022484, SushiSwap=0.000170129831311460, PriceDiff=0.000000577307288977 at 1743934560107
+⭕Double check (opportunity_detected): Uniswap=0.000169176575334829, SushiSwap=0.000169728259059913, PriceDiff=0.000000551683725084 at 1743936071248
+⭕Double check (opportunity_detected): Uniswap=0.000169326223695469, SushiSwap=0.000168982098180590, PriceDiff=0.000000344125514879 at 1743940247946
+Opportunity lasted: 589 ms, pricediff: 5.3675127936
+Double-check at opportunity detection: Uniswap=1777.207574797614142881, SushiSwap=1782.518883572049162467, PriceDiff=5.311308774435019586 at 1743944572443
+Double-check at opportunity detection: Uniswap=1777.151370778492946556, SushiSwap=1781.993007087499790941, PriceDiff=4.841636309006844385 at 1743944572692
+Double-check at opportunity detection: Uniswap=1777.151370778492946556, SushiSwap=1781.993007087499790941, PriceDiff=4.841636309006844385 at 1743944572962
+Price difference after 2s for detection #4: 4.841636309006844385 at 1743944574468
+Price difference after 2s for detection #4: 4.841636309006844385 at 1743944574740
+Price difference after 2s for detection #4: 4.841636309006844385 at 1743944574887
+⭕Double check (opportunity_detected): Uniswap=42293668.107567198574542999, SushiSwap=42245526.816362805664539337, PriceDiff=48141.291204392910003662 at 1743945006598
+⭕Double check (2s_after_opportunity): Uniswap=42293668.107567198574542999, SushiSwap=42245526.816362805664539337, PriceDiff=48141.291204392910003662 at 1743945009056
+⭕Double check (opportunity_detected): Uniswap=0.000166984323155458, SushiSwap=0.000167383732057435, PriceDiff=0.000000399408901977 at 1743949949398
+⭕Double check (2s_after_opportunity): Uniswap=0.000166984323155458, SushiSwap=0.000167383732057435, PriceDiff=0.000000399408901977 at 1743949951732
+⭕Double check (opportunity_detected): Uniswap=0.000166801401429972, SushiSwap=0.000167383732057435, PriceDiff=0.000000582330627462 at 1743950012361
+⭕Double check (2s_after_opportunity): Uniswap=0.000166801401429972, SushiSwap=0.000167383732057435, PriceDiff=0.000000582330627462 at 1743950014690
+⭕Double check (opportunity_detected): Uniswap=0.000166801401429972, SushiSwap=0.000167410244997320, PriceDiff=0.000000608843567348 at 1743950047675
+⭕Double check (opportunity_detected): Uniswap=0.000166801401429972, SushiSwap=0.000167410244997320, PriceDiff=0.000000608843567348 at 1743950047812
+⭕Double check (2s_after_opportunity): Uniswap=0.000166801401429972, SushiSwap=0.000167410244997320, PriceDiff=0.000000608843567348 at 1743950050006
+⭕Double check (2s_after_opportunity): Uniswap=0.000166801401429972, SushiSwap=0.000167410244997320, PriceDiff=0.000000608843567348 at 1743950050115
+⭕Double check (opportunity_detected): Uniswap=0.000166829540006377, SushiSwap=0.000167410244997320, PriceDiff=0.000000580704990943 at 1743950053973
+⭕Double check (opportunity_detected): Uniswap=0.000166850814455668, SushiSwap=0.000167410244997320, PriceDiff=0.000000559430541652 at 1743950055570
+⭕Double check (2s_after_opportunity): Uniswap=0.000166850814455668, SushiSwap=0.000167410244997320, PriceDiff=0.000000559430541652 at 1743950056391
+⭕Double check (2s_after_opportunity): Uniswap=0.000166850814455668, SushiSwap=0.000167410244997320, PriceDiff=0.000000559430541652 at 1743950057880
+⭕Double check (opportunity_detected): Uniswap=0.000166850791557116, SushiSwap=0.000167410244997320, PriceDiff=0.000000559453440204 at 1743950096708
+⭕Double check (2s_after_opportunity): Uniswap=0.000166850791557116, SushiSwap=0.000167410244997320, PriceDiff=0.000000559453440204 at 1743950099027
+⭕Double check (opportunity_detected): Uniswap=0.000166854259321954, SushiSwap=0.000167437620488562, PriceDiff=0.000000583361166607 at 1743950101718
+⭕Double check (opportunity_detected): Uniswap=0.000166854259321954, SushiSwap=0.000167437620488562, PriceDiff=0.000000583361166607 at 1743950101902
+⭕Double check (opportunity_detected): Uniswap=0.000166854259321954, SushiSwap=0.000167437620488562, PriceDiff=0.000000583361166607 at 1743950101965
+⭕Double check (2s_after_opportunity): Uniswap=0.000166854259321954, SushiSwap=0.000167437620488562, PriceDiff=0.000000583361166607 at 1743950104027
+⭕Double check (2s_after_opportunity): Uniswap=0.000166854259321954, SushiSwap=0.000167437620488562, PriceDiff=0.000000583361166607 at 1743950104217
+⭕Double check (2s_after_opportunity): Uniswap=0.000166854259321954, SushiSwap=0.000167437620488562, PriceDiff=0.000000583361166607 at 1743950104253
+⭕Double check (opportunity_detected): Uniswap=0.000166854259321954, SushiSwap=0.000167422576939090, PriceDiff=0.000000568317617136 at 1743950114423
+⭕Double check (2s_after_opportunity): Uniswap=0.000166854259321954, SushiSwap=0.000167422576939090, PriceDiff=0.000000568317617136 at 1743950116802
+⭕Double check (opportunity_detected): Uniswap=0.000166859487307550, SushiSwap=0.000167439573924286, PriceDiff=0.000000580086616737 at 1743950122536
+⭕Double check (opportunity_detected): Uniswap=0.000166859487307550, SushiSwap=0.000167439573924286, PriceDiff=0.000000580086616737 at 1743950122537
+⭕Double check (opportunity_detected): Uniswap=0.000166859487307550, SushiSwap=0.000167439573924286, PriceDiff=0.000000580086616737 at 1743950122819
+⭕Double check (2s_after_opportunity): Uniswap=0.000166859487307550, SushiSwap=0.000167439573924286, PriceDiff=0.000000580086616737 at 1743950124868
+⭕Double check (2s_after_opportunity): Uniswap=0.000166859487307550, SushiSwap=0.000167439573924286, PriceDiff=0.000000580086616737 at 1743950124869
+⭕Double check (2s_after_opportunity): Uniswap=0.000166859487307550, SushiSwap=0.000167439573924286, PriceDiff=0.000000580086616737 at 1743950125135
+⭕Double check (opportunity_detected): Uniswap=0.000166889159206684, SushiSwap=0.000167439573924286, PriceDiff=0.000000550414717603 at 1743950134078
+⭕Double check (opportunity_detected): Uniswap=0.000166889159206684, SushiSwap=0.000167439573924286, PriceDiff=0.000000550414717603 at 1743950134313
+⭕Double check (opportunity_detected): Uniswap=0.000166889157524555, SushiSwap=0.000167439573924286, PriceDiff=0.000000550416399732 at 1743950134776
+⭕Double check (2s_after_opportunity): Uniswap=0.000166889157524555, SushiSwap=0.000167439573924286, PriceDiff=0.000000550416399732 at 1743950136369
+⭕Double check (2s_after_opportunity): Uniswap=0.000166889157524555, SushiSwap=0.000167439573924286, PriceDiff=0.000000550416399732 at 1743950136633
+⭕Double check (2s_after_opportunity): Uniswap=0.000166889157524555, SushiSwap=0.000167439573924286, PriceDiff=0.000000550416399732 at 1743950137187
+⭕Double check (opportunity_detected): Uniswap=0.000166903148162176, SushiSwap=0.000167474293978798, PriceDiff=0.000000571145816622 at 1743950140555
+⭕Double check (opportunity_detected): Uniswap=0.000166903148162176, SushiSwap=0.000167474293978798, PriceDiff=0.000000571145816622 at 1743950140607
+⭕Double check (opportunity_detected): Uniswap=0.000166903148162176, SushiSwap=0.000167474293978798, PriceDiff=0.000000571145816622 at 1743950140842
+⭕Double check (2s_after_opportunity): Uniswap=0.000166903148162176, SushiSwap=0.000167474293978798, PriceDiff=0.000000571145816622 at 1743950142856
+⭕Double check (2s_after_opportunity): Uniswap=0.000166903148162176, SushiSwap=0.000167474293978798, PriceDiff=0.000000571145816622 at 1743950142873
+⭕Double check (2s_after_opportunity): Uniswap=0.000166903148162176, SushiSwap=0.000167474293978798, PriceDiff=0.000000571145816622 at 1743950143140
+⭕Double check (opportunity_detected): Uniswap=0.000166908388051607, SushiSwap=0.000167474293978798, PriceDiff=0.000000565905927191 at 1743950143738
+⭕Double check (2s_after_opportunity): Uniswap=0.000166908388051607, SushiSwap=0.000167474293978798, PriceDiff=0.000000565905927191 at 1743950146098
+⭕Double check (opportunity_detected): Uniswap=0.000166977437581499, SushiSwap=0.000167739102447496, PriceDiff=0.000000761664865998 at 1743950156122
+⭕Double check (opportunity_detected): Uniswap=0.000166977437581499, SushiSwap=0.000167739102447496, PriceDiff=0.000000761664865998 at 1743950156125
+⭕Double check (opportunity_detected): Uniswap=0.000166977437581499, SushiSwap=0.000167739102447496, PriceDiff=0.000000761664865998 at 1743950156138
+⭕Double check (opportunity_detected): Uniswap=0.000166977437581499, SushiSwap=0.000167553034974111, PriceDiff=0.000000575597392612 at 1743950156547
+⭕Double check (opportunity_detected): Uniswap=0.000166977437581499, SushiSwap=0.000167553034974111, PriceDiff=0.000000575597392612 at 1743950156548
+⭕Double check (opportunity_detected): Uniswap=0.000166977437581499, SushiSwap=0.000167553034974111, PriceDiff=0.000000575597392612 at 1743950156862
+⭕Double check (2s_after_opportunity): Uniswap=0.000166977437581499, SushiSwap=0.000167553034974111, PriceDiff=0.000000575597392612 at 1743950158415
+⭕Double check (2s_after_opportunity): Uniswap=0.000166977437581499, SushiSwap=0.000167553034974111, PriceDiff=0.000000575597392612 at 1743950158425
+⭕Double check (2s_after_opportunity): Uniswap=0.000166977437581499, SushiSwap=0.000167553034974111, PriceDiff=0.000000575597392612 at 1743950158434
+⭕Double check (2s_after_opportunity): Uniswap=0.000166977437581499, SushiSwap=0.000167553034974111, PriceDiff=0.000000575597392612 at 1743950158838
+⭕Double check (2s_after_opportunity): Uniswap=0.000166977437581499, SushiSwap=0.000167553034974111, PriceDiff=0.000000575597392612 at 1743950158854
+⭕Double check (2s_after_opportunity): Uniswap=0.000166977437581499, SushiSwap=0.000167553034974111, PriceDiff=0.000000575597392612 at 1743950159136
+⭕Double check (opportunity_detected): Uniswap=0.000166977437581499, SushiSwap=0.000167447160342698, PriceDiff=0.000000469722761199 at 1743950160754
+⭕Double check (opportunity_detected): Uniswap=0.000166977435874923, SushiSwap=0.000167447160342698, PriceDiff=0.000000469724467775 at 1743950161126
+⭕Double check (2s_after_opportunity): Uniswap=0.000166977435874923, SushiSwap=0.000167447160342698, PriceDiff=0.000000469724467775 at 1743950163055
+⭕Double check (2s_after_opportunity): Uniswap=0.000166977435874923, SushiSwap=0.000167447160342698, PriceDiff=0.000000469724467775 at 1743950163410
+⭕Double check (opportunity_detected): Uniswap=0.000166977435874923, SushiSwap=0.000168593294738023, PriceDiff=0.000001615858863100 at 1743950172638
+⭕Double check (opportunity_detected): Uniswap=0.000167004939397287, SushiSwap=0.000167402205799647, PriceDiff=0.000000397266402360 at 1743950172903
+⭕Double check (opportunity_detected): Uniswap=0.000167004939397287, SushiSwap=0.000167402205799647, PriceDiff=0.000000397266402360 at 1743950173002
+⭕Double check (opportunity_detected): Uniswap=0.000167004939397287, SushiSwap=0.000167402205799647, PriceDiff=0.000000397266402360 at 1743950173102
+⭕Double check (opportunity_detected): Uniswap=0.000167004939397287, SushiSwap=0.000167402205799647, PriceDiff=0.000000397266402360 at 1743950173104
+⭕Double check (opportunity_detected): Uniswap=0.000167004939397287, SushiSwap=0.000167402205799647, PriceDiff=0.000000397266402360 at 1743950173255
+⭕Double check (opportunity_detected): Uniswap=0.000167004939397287, SushiSwap=0.000167402205799647, PriceDiff=0.000000397266402360 at 1743950173289
+⭕Double check (2s_after_opportunity): Uniswap=0.000167004939397287, SushiSwap=0.000167402205799647, PriceDiff=0.000000397266402360 at 1743950174954
+⭕Double check (2s_after_opportunity): Uniswap=0.000167004939397287, SushiSwap=0.000167402205799647, PriceDiff=0.000000397266402360 at 1743950175211
+⭕Double check (2s_after_opportunity): Uniswap=0.000167004939397287, SushiSwap=0.000167402205799647, PriceDiff=0.000000397266402360 at 1743950175279
+⭕Double check (2s_after_opportunity): Uniswap=0.000167004939397287, SushiSwap=0.000167402205799647, PriceDiff=0.000000397266402360 at 1743950175383
+⭕Double check (2s_after_opportunity): Uniswap=0.000167004939397287, SushiSwap=0.000167402205799647, PriceDiff=0.000000397266402360 at 1743950175388
+⭕Double check (2s_after_opportunity): Uniswap=0.000167004939397287, SushiSwap=0.000167402205799647, PriceDiff=0.000000397266402360 at 1743950175518
+⭕Double check (2s_after_opportunity): Uniswap=0.000167004939397287, SushiSwap=0.000167402205799647, PriceDiff=0.000000397266402360 at 1743950175566
+⭕Double check (opportunity_detected): Uniswap=0.000166997551308490, SushiSwap=0.000167402205799647, PriceDiff=0.000000404654491156 at 1743950191586
+⭕Double check (2s_after_opportunity): Uniswap=0.000166997551308490, SushiSwap=0.000167402205799647, PriceDiff=0.000000404654491156 at 1743950193914
+⭕Double check (opportunity_detected): Uniswap=0.000166996751357267, SushiSwap=0.000167402205799647, PriceDiff=0.000000405454442380 at 1743950197695
+⭕Double check (2s_after_opportunity): Uniswap=0.000166996751357267, SushiSwap=0.000167402205799647, PriceDiff=0.000000405454442380 at 1743950200062
+⭕Double check (opportunity_detected): Uniswap=0.000167001547891871, SushiSwap=0.000167585506575745, PriceDiff=0.000000583958683874 at 1743950200662
+⭕Double check (opportunity_detected): Uniswap=0.000167001547891871, SushiSwap=0.000167585506575745, PriceDiff=0.000000583958683874 at 1743950200665
+⭕Double check (opportunity_detected): Uniswap=0.000167001547891871, SushiSwap=0.000167585506575745, PriceDiff=0.000000583958683874 at 1743950200962
+⭕Double check (2s_after_opportunity): Uniswap=0.000167001547891871, SushiSwap=0.000167585506575745, PriceDiff=0.000000583958683874 at 1743950202972
+⭕Double check (2s_after_opportunity): Uniswap=0.000167001547891871, SushiSwap=0.000167585506575745, PriceDiff=0.000000583958683874 at 1743950202973
+⭕Double check (2s_after_opportunity): Uniswap=0.000167001547891871, SushiSwap=0.000167585506575745, PriceDiff=0.000000583958683874 at 1743950203246
+⭕Double check (opportunity_detected): Uniswap=0.000167001547891871, SushiSwap=0.000167479699154044, PriceDiff=0.000000478151262173 at 1743950211244
+⭕Double check (2s_after_opportunity): Uniswap=0.000167001547891871, SushiSwap=0.000167479699154044, PriceDiff=0.000000478151262173 at 1743950213533
+⭕Double check (opportunity_detected): Uniswap=0.000166995128395573, SushiSwap=0.000167499572831236, PriceDiff=0.000000504444435664 at 1743950226068
+⭕Double check (2s_after_opportunity): Uniswap=0.000166995128395573, SushiSwap=0.000167499572831236, PriceDiff=0.000000504444435664 at 1743950228349
+⭕Double check (opportunity_detected): Uniswap=0.000166995128395573, SushiSwap=0.000167615114618519, PriceDiff=0.000000619986222946 at 1743950232784
+⭕Double check (opportunity_detected): Uniswap=0.000166995128395573, SushiSwap=0.000167615114618519, PriceDiff=0.000000619986222946 at 1743950233089
+⭕Double check (opportunity_detected): Uniswap=0.000166995128395573, SushiSwap=0.000167615114618519, PriceDiff=0.000000619986222946 at 1743950233223
+⭕Double check (2s_after_opportunity): Uniswap=0.000166995128395573, SushiSwap=0.000167615114618519, PriceDiff=0.000000619986222946 at 1743950235113
+⭕Double check (2s_after_opportunity): Uniswap=0.000166995128395573, SushiSwap=0.000167615114618519, PriceDiff=0.000000619986222946 at 1743950235377
+⭕Double check (2s_after_opportunity): Uniswap=0.000166995128395573, SushiSwap=0.000167615114618519, PriceDiff=0.000000619986222946 at 1743950235502
+⭕Double check (opportunity_detected): Uniswap=0.000167005688799606, SushiSwap=0.000167644473469740, PriceDiff=0.000000638784670134 at 1743950296993
+⭕Double check (opportunity_detected): Uniswap=0.000167005688799606, SushiSwap=0.000167644473469740, PriceDiff=0.000000638784670134 at 1743950297260
+⭕Double check (opportunity_detected): Uniswap=0.000167005688799606, SushiSwap=0.000167644473469740, PriceDiff=0.000000638784670134 at 1743950297482
+⭕Double check (2s_after_opportunity): Uniswap=0.000167005688799606, SushiSwap=0.000167644473469740, PriceDiff=0.000000638784670134 at 1743950299270
+⭕Double check (2s_after_opportunity): Uniswap=0.000167005688799606, SushiSwap=0.000167644473469740, PriceDiff=0.000000638784670134 at 1743950299536
+⭕Double check (2s_after_opportunity): Uniswap=0.000167005688799606, SushiSwap=0.000167644473469740, PriceDiff=0.000000638784670134 at 1743950299773
+Opportunity lasted: 6025 ms, pricediff: 0.0000005300
+⭕Double check (opportunity_detected): Uniswap=0.000179069832556992, SushiSwap=0.000178819338510525, PriceDiff=0.000000250494046468 at 1744130351082
+⭕Double check (opportunity_detected): Uniswap=0.000179093467657584, SushiSwap=0.000178819338510525, PriceDiff=0.000000274129147059 at 1744130351540
+⭕Double check (2s_after_opportunity): Uniswap=0.000179093467657584, SushiSwap=0.000178819338510525, PriceDiff=0.000000274129147059 at 1744130353532
+⭕Double check (2s_after_opportunity): Uniswap=0.000179093467657584, SushiSwap=0.000178819338510525, PriceDiff=0.000000274129147059 at 1744130353981
+Opportunity lasted: 7227 ms, pricediff: 0.0000002741
+⭕Double check (opportunity_detected): Uniswap=0.000179117417669382, SushiSwap=0.000179901757778631, PriceDiff=0.000000784340109248 at 1744133353886
+⭕Double check (opportunity_detected): Uniswap=0.000178773973093980, SushiSwap=0.000179599554339319, PriceDiff=0.000000825581245339 at 1744133849491
+⭕Double check (2s_after_opportunity): Uniswap=0.000178773973093980, SushiSwap=0.000179599554339319, PriceDiff=0.000000825581245339 at 1744133851922
+⭕Double check (opportunity_detected): Uniswap=0.000183433738642052, SushiSwap=0.000183821555539332, PriceDiff=0.000000387816897280 at 1744179201580
+⭕Double check (opportunity_detected): Uniswap=0.000183636276269061, SushiSwap=0.000184161689222837, PriceDiff=0.000000525412953776 at 1744179450959
+⭕Double check (opportunity_detected): Uniswap=0.000183350446367595, SushiSwap=0.000183975474879863, PriceDiff=0.000000625028512267 at 1744179537999
+⭕Double check (2s_after_opportunity): Uniswap=0.000183350446367595, SushiSwap=0.000183975474879863, PriceDiff=0.000000625028512267 at 1744179540342
+⭕Double check (opportunity_detected): Uniswap=0.000183982802679009, SushiSwap=0.000184535472666137, PriceDiff=0.000000552669987128 at 1744181365390
+⭕Double check (2s_after_opportunity): Uniswap=0.000183982802679009, SushiSwap=0.000184535472666137, PriceDiff=0.000000552669987128 at 1744181367826
+⭕Double check (opportunity_detected): Uniswap=0.000184602626322167, SushiSwap=0.000184989930285894, PriceDiff=0.000000387303963727 at 1744181750711
+⭕Double check (2s_after_opportunity): Uniswap=0.000184602626322167, SushiSwap=0.000184989930285894, PriceDiff=0.000000387303963727 at 1744181752325
+⭕Double check (opportunity_detected): Uniswap=0.000184635057667620, SushiSwap=0.000185375534219593, PriceDiff=0.000000740476551973 at 1744182182847
+⭕Double check (opportunity_detected): Uniswap=0.000185392524661180, SushiSwap=0.000186062456825174, PriceDiff=0.000000669932163993 at 1744182969490
+⭕Double check (2s_after_opportunity): Uniswap=0.000185392524661180, SushiSwap=0.000186062456825174, PriceDiff=0.000000669932163993 at 1744182971505
+⭕Double check (opportunity_detected): Uniswap=0.000185345025843093, SushiSwap=0.000185991317175420, PriceDiff=0.000000646291332327 at 1744186569514
+⭕Double check (2s_after_opportunity): Uniswap=0.000185312500263147, SushiSwap=0.000185991317175420, PriceDiff=0.000000678816912273 at 1744186570992
+⭕Double check (opportunity_detected): Uniswap=0.000184840824744023, SushiSwap=0.000185212085111087, PriceDiff=0.000000371260367064 at 1744217999624
+⭕Double check (2s_after_opportunity): Uniswap=0.000184840824744023, SushiSwap=0.000185212085111087, PriceDiff=0.000000371260367064 at 1744218001597
+⭕Double check (opportunity_detected): Uniswap=0.000184431327943782, SushiSwap=0.000185070525596832, PriceDiff=0.000000639197653050 at 1744218156164
+⭕Double check (opportunity_detected): Uniswap=0.000184345521667655, SushiSwap=0.000185070525596832, PriceDiff=0.000000725003929177 at 1744218209124
+⭕Double check (opportunity_detected): Uniswap=0.000184144974743603, SushiSwap=0.000184818378166256, PriceDiff=0.000000673403422653 at 1744218236758
+⭕Double check (opportunity_detected): Uniswap=0.000184144974743603, SushiSwap=0.000184638512104595, PriceDiff=0.000000493537360992 at 1744218271159
+⭕Double check (opportunity_detected): Uniswap=0.000184263797092531, SushiSwap=0.000184638512104595, PriceDiff=0.000000374715012064 at 1744218320612
+⭕Double check (2s_after_opportunity): Uniswap=0.000184263797092531, SushiSwap=0.000184638512104595, PriceDiff=0.000000374715012064 at 1744218322568
+⭕Double check (opportunity_detected): Uniswap=0.000183798630544132, SushiSwap=0.000183634956907306, PriceDiff=0.000000163673636826 at 1744219289143
+⭕Double check (opportunity_detected): Uniswap=0.000184002885677983, SushiSwap=0.000183634956907306, PriceDiff=0.000000367928770677 at 1744219340636
+⭕Double check (opportunity_detected): Uniswap=0.000183845151076188, SushiSwap=0.000183634956907306, PriceDiff=0.000000210194168882 at 1744219361785
+⭕Double check (opportunity_detected): Uniswap=0.000183378665798859, SushiSwap=0.000183634956907306, PriceDiff=0.000000256291108446 at 1744219410934
+⭕Double check (opportunity_detected): Uniswap=0.000182427000796288, SushiSwap=0.000183634956907306, PriceDiff=0.000001207956111018 at 1744219471319
+⭕Double check (opportunity_detected): Uniswap=0.000181781007616323, SushiSwap=0.000183212490832394, PriceDiff=0.000001431483216071 at 1744219540692
+⭕Double check (opportunity_detected): Uniswap=0.000177264226612826, SushiSwap=0.000177689279830918, PriceDiff=0.000000425053218092 at 1744278144406
+⭕Double check (2s_after_opportunity): Uniswap=0.000177264226612826, SushiSwap=0.000177689279830918, PriceDiff=0.000000425053218092 at 1744278146408
+Arbitrage #2 timings:
+- Detection to loan calculation: 54 ms
+- Loan calculation to encoding: 8 ms
+- Encoding to signing: 642 ms
+- Signing to submission: 709 ms
+- Submission to confirmation: 5801 ms
+- Total from detection to confirmation: 7214 ms
+
+Arbitrage #1 timings:
+- Detection to loan calculation: 1 ms
+- Loan calculation to encoding: 4 ms
+- Encoding to signing: 549 ms
+- Signing to submission: 890 ms
+- Submission to confirmation: 5919 ms
+- Total from detection to confirmation: 7363 ms
+
+Arbitrage #1 timings:
+- Detection to loan calculation: 1 ms
+- Loan calculation to encoding: 3 ms
+- Encoding to signing: 12 ms
+- Signing to submission: 574 ms
+- Submission to confirmation: 5457 ms
+- Total from detection to confirmation: 6047 ms
+
+Arbitrage #1 timings:
+- Detection to loan calculation: 1 ms
+- Loan calculation to encoding: 5 ms
+- Encoding to signing: 17 ms
+- Signing to submission: 845 ms
+- Submission to confirmation: 5730 ms
+- Total from detection to confirmation: 6598 ms
+
+Arbitrage #1 timings:
+- Detection to loan calculation: 1 ms
+- Loan calculation to encoding: 5 ms
+- Encoding to signing: 394 ms
+- Signing to submission: 508 ms
+- Submission to confirmation: 5461 ms
+- Total from detection to confirmation: 6369 ms
+
+Arbitrage #1 timings:
+- Detection to loan calculation: 1 ms
+- Loan calculation to encoding: 3 ms
+- Encoding to signing: 10 ms
+- Signing to submission: 866 ms
+- Submission to confirmation: 5936 ms
+- Total from detection to confirmation: 6816 ms
+
+Arbitrage #1 timings:
+- Detection to loan calculation: 1 ms
+- Loan calculation to encoding: 7 ms
+- Encoding to signing: 475 ms
+- Signing to submission: 613 ms
+- Submission to confirmation: 5710 ms
+- Total from detection to confirmation: 6806 ms
+
+Arbitrage #1 timings:
+- Detection to loan calculation: 0 ms
+- Loan calculation to encoding: 5 ms
+- Encoding to signing: 14 ms
+- Signing to submission: 897 ms
+- Submission to confirmation: 6002 ms
+- Total from detection to confirmation: 6918 ms
+
+Arbitrage #1 timings:
+- Detection to loan calculation: 1 ms
+- Loan calculation to encoding: 3 ms
+- Encoding to signing: 12 ms
+- Signing to submission: 762 ms
+- Submission to confirmation: 5430 ms
+- Total from detection to confirmation: 6208 ms
+
+Arbitrage #1 timings:
+- Detection to loan calculation: 1 ms
+- Loan calculation to encoding: 3 ms
+- Encoding to signing: 10 ms
+- Signing to submission: 787 ms
+- Submission to confirmation: 5736 ms
+- Total from detection to confirmation: 6537 ms
+
+Arbitrage #1 timings:
+- Detection to loan calculation: 6 ms
+- Loan calculation to encoding: 28 ms
+- Encoding to signing: 38 ms
+- Signing to submission: 793 ms
+- Submission to confirmation: 5462 ms
+- Total from detection to confirmation: 6327 ms
+
+Arbitrage #1 timings:
+- Detection to loan calculation: 1 ms
+- Loan calculation to encoding: 5 ms
+- Encoding to signing: 15 ms
+- Signing to submission: 649 ms
+- Submission to confirmation: 5558 ms
+- Total from detection to confirmation: 6228 ms
+
+Arbitrage #1 timings:
+- Detection to loan calculation: 1 ms
+- Loan calculation to encoding: 5 ms
+- Encoding to signing: 17 ms
+- Signing to submission: 688 ms
+- Submission to confirmation: 5497 ms
+- Total from detection to confirmation: 6208 ms
+
+
+
+
+npx hardhat run scripts/monitor-arbitrage-binance.js --network bsc
+npx hardhat run scripts/deploy.js --network arbitrum
+
+node scripts/arbitrum.js 
+node scripts/avalanche.js
+node scripts/sei.js
+node scripts/sonic.js 
+node scripts/core.js 
+node scripts/arbitrage.js
+node scripts/polygon.js  
+npx hardhat run scripts/monitor-arbitrage-arbsustest.js --network arbitrum
+npx hardhat run scripts/monitor-arbitrage-arbsequencer.js --network arbitrum
+ npx hardhat run mutants/arbitrage.js --network arbitrum

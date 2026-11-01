@@ -1,0 +1,811 @@
+
+🕒 Timestamp: 2025-05-10T12:06:44.505Z
+🔢 Transaction #1
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x4832e0a194281d1ffE464C654E4E938f642DD362
+💸 Loan Amount: 25.233489459698574819 TOKEN_A (≈$10.02 USD)
+💰 Profit: 0.002383148271341594 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000003601569150000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000003206876221493 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000003206876221493 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 1
+💔 Losing Streak: 0
+🏆 Total Wins: 1
+💔 Total Losses: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 4 ms
+- Retrieve/generate to send: 8 ms
+- Send to confirm: 6813 ms
+- Total execution time: 6825 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0000004830) after 6825 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-10T12:13:55.507Z
+🔢 Transaction #2
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x4832e0a194281d1ffE464C654E4E938f642DD362
+💸 Loan Amount: 25.175342430694044538 TOKEN_A (≈$10.02 USD)
+💰 Profit: 0.003662283538527366 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000003780711396000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000003172706895200 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000006379583116693 TOKEN_B (≈$-0.02 USD)
+🏆 Winning Streak: 2
+💔 Losing Streak: 0
+🏆 Total Wins: 2
+💔 Total Losses: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 1 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 2153 ms
+- Total execution time: 2156 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0000006326) after 2156 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-10T12:22:09.528Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x39511b74722afe77d532eb70632b4b59c559019b
+💸 Loan Amount: 25.080112281109418149 TOKEN_A (≈$10.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000005097670000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000005097670000000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000005097670000000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 13 ms
+- Retrieve/generate to send: 9 ms
+- Send to confirm: 2312 ms
+- Total execution time: 2334 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000007815)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-10T12:23:11.674Z
+🔢 Transaction #2
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x39511b74722afe77d532eb70632b4b59c559019b
+💸 Loan Amount: 25.074550504757677771 TOKEN_A (≈$10.02 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000006875436232000 TOKEN_B (≈$0.02 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000006875436232000 TOKEN_B (≈$-0.02 USD)
+📊 Cumulative PnL: -0.000011973106232000 TOKEN_B (≈$-0.03 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 2
+🏆 Total Wins: 0
+💔 Total Losses: 2
+⏱️ Timing Details:
+- Detection to retrieve/generate: 62446 ms
+- Retrieve/generate to send: 1 ms
+- Send to confirm: 2028 ms
+- Total execution time: 64475 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000007887)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-10T12:54:11.628Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x4832e0a194281d1ffE464C654E4E938f642DD362
+💸 Loan Amount: 24.973337890123072924 TOKEN_A (≈$10.03 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000003543370000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000003543370000000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000003543370000000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 4 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 7019 ms
+- Total execution time: 7025 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0000005298) after 7025 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-10T12:57:06.322Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x39511b74722afe77d532eb70632b4b59c559019b
+💸 Loan Amount: 24.907625106765184597 TOKEN_A (≈$10.01 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000005223780000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000005223780000000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000005223780000000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 2 ms
+- Retrieve/generate to send: 3 ms
+- Send to confirm: 7204 ms
+- Total execution time: 7209 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000007179)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-10T12:58:09.081Z
+🔢 Transaction #2
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x39511b74722afe77d532eb70632b4b59c559019b
+💸 Loan Amount: 24.871960757350798588 TOKEN_A (≈$10.04 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000005235710000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000005235710000000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000010459490000000 TOKEN_B (≈$-0.03 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 2
+🏆 Total Wins: 0
+💔 Total Losses: 2
+⏱️ Timing Details:
+- Detection to retrieve/generate: 67869 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 2159 ms
+- Total execution time: 70030 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000008386)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-10T13:12:45.257Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0xc6f780497a95e246eb9449f5e4770916dcd6396a -> 0x39511b74722afe77d532eb70632b4b59c559019b
+💸 Loan Amount: 24.437917269082447547 TOKEN_A (≈$10.01 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000005137390000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000005137390000000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000005137390000000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 3 ms
+- Retrieve/generate to send: 3 ms
+- Send to confirm: 2452 ms
+- Total execution time: 2458 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000007923)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-11T06:44:42.251Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 21.099761906981811421 TOKEN_A (≈$9.98 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000006394931280000 TOKEN_B (≈$0.02 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000006394931280000 TOKEN_B (≈$-0.02 USD)
+📊 Cumulative PnL: -0.000006394931280000 TOKEN_B (≈$-0.02 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 20 ms
+- Retrieve/generate to send: 13 ms
+- Send to confirm: 6880 ms
+- Total execution time: 6913 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000007958)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-11T06:45:30.252Z
+🔢 Transaction #1
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 2.116366652797579739 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.003447886408530623 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000004796195020000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000004150710483835 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000004150710483835 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 1
+💔 Losing Streak: 0
+🏆 Total Wins: 1
+💔 Total Losses: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 4 ms
+- Retrieve/generate to send: 5 ms
+- Send to confirm: 2308 ms
+- Total execution time: 2317 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000008549)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-11T06:47:11.613Z
+🔢 Transaction #1
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0x39511b74722afe77d532eb70632b4b59c559019b -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 2.122347591633400476 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.001926011369986075 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000005690610960000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000005330679728393 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000005330679728393 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 1
+💔 Losing Streak: 0
+🏆 Total Wins: 1
+💔 Total Losses: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 2 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 2584 ms
+- Total execution time: 2588 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0000006977) after 2588 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-11T07:01:35.862Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4832e0a194281d1ffE464C654E4E938f642DD362 -> 0xc6f780497a95e246eb9449f5e4770916dcd6396a
+💸 Loan Amount: 21.263015366296393438 TOKEN_A (≈$9.96 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000004060070000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000004060070000000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000004060070000000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 3 ms
+- Retrieve/generate to send: 3 ms
+- Send to confirm: 6538 ms
+- Total execution time: 6544 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0000007152)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-13T14:21:26.994Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0xd203eab4e8c741473f7456a9f32ce310d521fa41 -> 0x95dcc9e9bf80980375494346e00fc5aef6883ef7
+💸 Loan Amount: 12.035606140000000508 TOKEN_A
+💰 Profit: 0.000000000000000000 TOKEN_A
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B
+📈 Net PnL: 0.000000000000000000 TOKEN_B
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 1042 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm: 0 ms
+- Total execution time: 1042 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Percentage diff: 0.0306%)
+Error: could not coalesce error (error={ "code": -32000, "message": "transaction underpriced: tip needed 30000000000, tip permitted 10000000" }, payload={ "id": 17, "jsonrpc": "2.0", "method": "eth_sendRawTransaction", "params": [ "0x02f9019182045c808398968083989680830f424094830d692c06295601aadeed71ca98bcc55433d48980b90124b952303f000000000000000000000000d203eab4e8c741473f7456a9f32ce310d521fa4100000000000000000000000095dcc9e9bf80980375494346e00fc5aef6883ef700000000000000000000000040375c92d9faf44d2f9db9bd9ba41a3317a2404f000000000000000000000000000000000000000000000000a70710045735d8000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000682356af00000000000000000000000000000000000000000000000000000000000001f400000000000000000000000000000000000000000000000000000000000001f4c001a051d4309d78e61beb788b95763ce53ee25674cd7203ecf96e73d15cac27e86a12a03b4a5953968b8251ce2e4d7f13bbd26daaf325056b6720fa6281d581b78276c3" ] }, code=UNKNOWN_ERROR, version=6.13.5)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-13T17:34:52.757Z
+🔢 Transaction #1
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0x4bfc22a4da7f31f8a912a79a7e44a822398b4390 -> 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69
+💸 Loan Amount: 0.000009610000000000 TOKEN_A (≈$1.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000015915004164000 TOKEN_B (≈$0.04 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000015915004164000 TOKEN_B (≈$-0.04 USD)
+📊 Cumulative PnL: -0.000015915004164000 TOKEN_B (≈$-0.04 USD)
+🏆 Winning Streak: 1
+💔 Losing Streak: 0
+🏆 Total Wins: 1
+💔 Total Losses: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 8 ms
+- Retrieve/generate to send: 4 ms
+- Send to confirm: 6093 ms
+- Total execution time: 6105 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.1617364312) after 6105 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-14T04:18:06.948Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69 -> 0x2f5e87c9312fa29aed5c179e456625d79015299c
+💸 Loan Amount: 0.000968020000000000 TOKEN_A (≈$100.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000003207120000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000003207120000000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000003207120000000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 3 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm: 1996 ms
+- Total execution time: 2001 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0436763530, Percent: 0.1115%)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-14T04:25:11.757Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69 -> 0xd845f7d4f4deb9ff5bcf09d140ef13718f6f6c71
+💸 Loan Amount: 0.000483440000000000 TOKEN_A (≈$50.01 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000002299050470000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000002299050470000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000002299050470000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 3 ms
+- Retrieve/generate to send: 3 ms
+- Send to confirm: 6724 ms
+- Total execution time: 6730 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0326195724, Percent: 0.0835%) after 6730 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-14T04:36:30.188Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69 -> 0xd845f7d4f4deb9ff5bcf09d140ef13718f6f6c71
+💸 Loan Amount: 0.000483090000000000 TOKEN_A (≈$49.94 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000002224220000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000002224220000000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000002224220000000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 4 ms
+- Retrieve/generate to send: 3 ms
+- Send to confirm: 7210 ms
+- Total execution time: 7217 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.1407924527, Percent: 0.3612%)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-14T12:43:53.883Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4bfc22a4da7f31f8a912a79a7e44a822398b4390 -> 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69
+💸 Loan Amount: 0.000481270000000000 TOKEN_A (≈$50.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000004311400000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000004311400000000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000004311400000000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 6 ms
+- Retrieve/generate to send: 3 ms
+- Send to confirm: 2428 ms
+- Total execution time: 2437 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.1045273884, Percent: 0.2641%)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-14T12:46:13.416Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4bfc22a4da7f31f8a912a79a7e44a822398b4390 -> 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69
+💸 Loan Amount: 0.000480890000000000 TOKEN_A (≈$50.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000004264580000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000004264580000000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000004264580000000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 3 ms
+- Retrieve/generate to send: 3 ms
+- Send to confirm: 3619 ms
+- Total execution time: 3625 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.1114349508, Percent: 0.2815%)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-14T13:01:38.704Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4bfc22a4da7f31f8a912a79a7e44a822398b4390 -> 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69
+💸 Loan Amount: 0.000481460000000000 TOKEN_A (≈$50.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000004921648739000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000004921648739000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000004921648739000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 3 ms
+- Retrieve/generate to send: 3 ms
+- Send to confirm: 3320 ms
+- Total execution time: 3326 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.1024361165, Percent: 0.2582%)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-14T13:19:50.141Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4bfc22a4da7f31f8a912a79a7e44a822398b4390 -> 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69
+💸 Loan Amount: 0.000481720000000000 TOKEN_A (≈$50.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000004774915464000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000004774915464000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000004774915464000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 2 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm:
+  - Time to get transaction hash: 1126 ms
+  - Time from hash to confirmation: 2089 ms
+  - Total send to confirm: 3215 ms
+- Total execution time: 3219 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0586867264, Percent: 0.1479%)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-14T13:20:09.804Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4bfc22a4da7f31f8a912a79a7e44a822398b4390 -> 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69
+💸 Loan Amount: 0.000481720000000000 TOKEN_A (≈$50.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000004581037809000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000004581037809000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000004581037809000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 2 ms
+- Retrieve/generate to send: 1 ms
+- Send to confirm:
+  - Time to get transaction hash: 854 ms
+  - Time from hash to confirmation: 1207 ms
+  - Total send to confirm: 2061 ms
+- Total execution time: 2064 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0537881653, Percent: 0.1356%)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-15T07:47:08.431Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4bfc22a4da7f31f8a912a79a7e44a822398b4390 -> 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69
+💸 Loan Amount: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 366 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm:
+  - Time to get transaction hash: 0 ms
+  - Time from hash to confirmation: 0 ms
+  - Total send to confirm: 0 ms
+- Total execution time: 366 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.1023828952, Percent: 0.2546%)
+Error: Insufficient funds: have 0.000099151960016397 ETH, need 0.000114438 ETH
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-15T07:47:56.417Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x4bfc22a4da7f31f8a912a79a7e44a822398b4390 -> 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69
+💸 Loan Amount: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 359 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm:
+  - Time to get transaction hash: 0 ms
+  - Time from hash to confirmation: 0 ms
+  - Total send to confirm: 0 ms
+- Total execution time: 359 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.1455212547, Percent: 0.3618%)
+Error: Insufficient funds: have 0.000099151960016397 ETH, need 0.000125488 ETH
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-15T08:11:11.248Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69 -> 0x4bfc22a4da7f31f8a912a79a7e44a822398b4390
+💸 Loan Amount: 0.000490740000000000 TOKEN_A (≈$50.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 6 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm:
+  - Time to get transaction hash: 0 ms
+  - Time from hash to confirmation: 0 ms
+  - Total send to confirm: 0 ms
+- Total execution time: 6 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0561422249, Percent: 0.1400%)
+Error: txProvider.sendTransaction is not a function
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-15T08:14:55.799Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69 -> 0x2f5e87c9312fa29aed5c179e456625d79015299c
+💸 Loan Amount: 0.000490710000000000 TOKEN_A (≈$50.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 1309 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm:
+  - Time to get transaction hash: 0 ms
+  - Time from hash to confirmation: 0 ms
+  - Total send to confirm: 0 ms
+- Total execution time: 1309 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0653604785, Percent: 0.1631%)
+Error: unsupported operation (operation="eth_blockNumber", info={ "error": { "code": -32601, "message": "the method eth_blockNumber does not exist/is not available" }, "payload": { "id": 2, "jsonrpc": "2.0", "method": "eth_blockNumber", "params": [  ] } }, code=UNSUPPORTED_OPERATION, version=6.13.5)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-15T08:53:27.218Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69 -> 0x2f5e87c9312fa29aed5c179e456625d79015299c
+💸 Loan Amount: 0.000489420000000000 TOKEN_A (≈$50.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000003311540000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000003311540000000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000003311540000000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 5 ms
+- Retrieve/generate to send: 3 ms
+- Send to confirm:
+  - Time to get transaction hash: 1280 ms
+  - Time from hash to confirmation: 5657 ms
+  - Total send to confirm: 6937 ms
+- Total execution time: 6945 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0898150185, Percent: 0.2249%)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-15T08:57:23.628Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69 -> 0x4bfc22a4da7f31f8a912a79a7e44a822398b4390
+💸 Loan Amount: 0.000489370000000000 TOKEN_A (≈$50.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000003681840000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000003681840000000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000003681840000000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 3 ms
+- Retrieve/generate to send: 3 ms
+- Send to confirm:
+  - Time to get transaction hash: 1117 ms
+  - Time from hash to confirmation: 5573 ms
+  - Total send to confirm: 6690 ms
+- Total execution time: 6696 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.1524838258, Percent: 0.3825%)
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-15T09:32:39.530Z
+🔢 Transaction #1
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0x4bfc22a4da7f31f8a912a79a7e44a822398b4390 -> 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69
+💸 Loan Amount: 0.000490490000000000 TOKEN_A (≈$50.06 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000003063870000000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000003063870000000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000003063870000000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 1
+💔 Losing Streak: 0
+🏆 Total Wins: 1
+💔 Total Losses: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 3 ms
+- Retrieve/generate to send: 2 ms
+- Send to confirm:
+  - Time to get transaction hash: 1557 ms
+  - Time from hash to confirmation: 5553 ms
+  - Total send to confirm: 7110 ms
+- Total execution time: 7115 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0923547482, Percent: 0.2308%) after 7115 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-15T12:07:43.906Z
+🔢 Transaction #1
+ℹ️ Status: Success
+📜 Transaction Hash: N/A
+↔️ Path: 0x4bfc22a4da7f31f8a912a79a7e44a822398b4390 -> 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69
+💸 Loan Amount: 0.000488350000000000 TOKEN_A (≈$49.98 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000003237586100000 TOKEN_B (≈$0.01 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: -0.000003237586100000 TOKEN_B (≈$-0.01 USD)
+📊 Cumulative PnL: -0.000003237586100000 TOKEN_B (≈$-0.01 USD)
+🏆 Winning Streak: 1
+💔 Losing Streak: 0
+🏆 Total Wins: 1
+💔 Total Losses: 0
+⏱️ Timing Details:
+- Detection to retrieve/generate: 10 ms
+- Retrieve/generate to send: 4 ms
+- Send to confirm:
+  - Time to get transaction hash: 1607 ms
+  - Time from hash to confirmation: 5906 ms
+  - Total send to confirm: 7513 ms
+- Total execution time: 7527 ms
+🔍 Opportunity Status at Confirmation: Opportunity vanished (Price diff: 0.0898035869, Percent: 0.2242%) after 7527 ms
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-15T15:12:29.096Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69 -> 0x4bfc22a4da7f31f8a912a79a7e44a822398b4390
+💸 Loan Amount: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 397 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm:
+  - Time to get transaction hash: 0 ms
+  - Time from hash to confirmation: 0 ms
+  - Total send to confirm: 0 ms
+- Total execution time: 397 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.1581069137, Percent: 0.3900%)
+Error: Insufficient funds: have 0.000080192013078566 ETH, need 0.000081894 ETH
+--------------------------------------------------
+
+🕒 Timestamp: 2025-05-21T16:36:06.262Z
+🔢 Transaction #1
+ℹ️ Status: Failed
+📜 Transaction Hash: N/A
+↔️ Path: 0x515e252b2b5c22b4b2b6df66c2ebeea871aa4d69 -> 0x2f5e87c9312fa29aed5c179e456625d79015299c
+💸 Loan Amount: 0.000458600000000000 TOKEN_A (≈$50.00 USD)
+💰 Profit: 0.000000000000000000 TOKEN_A (≈$0.00 USD)
+⛽ Gas Cost: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Buy Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+💲 Sell Swap Fee: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📈 Net PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+📊 Cumulative PnL: 0.000000000000000000 TOKEN_B (≈$0.00 USD)
+🏆 Winning Streak: 0
+💔 Losing Streak: 1
+🏆 Total Wins: 0
+💔 Total Losses: 1
+⏱️ Timing Details:
+- Detection to retrieve/generate: 292 ms
+- Retrieve/generate to send: 0 ms
+- Send to confirm:
+  - Time to get transaction hash: 0 ms
+  - Time from hash to confirmation: 0 ms
+  - Total send to confirm: 0 ms
+- Total execution time: 292 ms
+🔍 Opportunity Status at Confirmation: Opportunity persists (Price diff: 0.0161251197, Percent: 0.0383%)
+Error: getaddrinfo ENOTFOUND arb1-sequencer.arbitrum.io
+--------------------------------------------------

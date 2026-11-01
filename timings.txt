@@ -1,0 +1,13 @@
+Arbitrage #1 timings:
+- Detection to loan calculation: 1 ms
+- Loan calculation to encoding: 5 ms
+- Encoding to signing: 1148 ms
+- Signing to submission: 1274 ms
+- Submission to confirmation: 7101 ms
+- Total from detection to confirmation: 9529 ms
+
+Arbitrage #1 timings:
+- Detection to submission: 601 ms
+- Submission to confirmation: 7279 ms
+- Total: 7880 ms
+

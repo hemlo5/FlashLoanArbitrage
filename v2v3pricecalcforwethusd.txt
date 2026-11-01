@@ -1,0 +1,38 @@
+const calculateV3Price = (sqrtPriceX96, isWETHFirst) => {
+  const Q96 = BigInt(2) ** BigInt(96);
+  const sqrtPrice = Number(sqrtPriceX96) / Number(Q96);
+  const priceRatio = sqrtPrice * sqrtPrice; // token1 per token0 in smallest units
+  let price;
+
+  if (isWETHFirst) {
+    // WETH (token0), USDT (token1)
+    price = priceRatio * 1e12; // USDT per WETH
+  } else {
+    // USDT (token0), WETH (token1)
+    price = (1 / priceRatio) * 1e-12; // USDT per WETH
+  }
+
+  console.log(`Uniswap V3 price: ${price} USDT per WETH`);
+  return price;
+};
+/** Calculate WETH/USDT price from SushiSwap V2 reserves */
+/** Calculate USDT per WETH price from SushiSwap V2 reserves */
+const calculateV2Price = (reserves, isWETHFirst) => {
+  const reserve0 = Number(reserves.reserve0);
+  const reserve1 = Number(reserves.reserve1);
+  let price;
+
+  if (isWETHFirst) {
+    // WETH (token0), USDT (token1)
+    price = (reserve1 / reserve0) * 1e12; // USDT per WETH
+  } else {
+    // USDT (token0), WETH (token1)
+    price = (reserve0 / reserve1) * 1e12; // USDT per WETH
+  }
+
+  console.log(`SushiSwap V2 price: ${price} USDT per WETH`);
+  return price;
+};
+
+
+

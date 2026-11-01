@@ -1,0 +1,39 @@
+Opportunity detected at 1747321947933 between SushiSwap and PancakeSwapV3
+⭕ Double check (opportunity_detected): uniswap=40.546906149595855595, sushiSwap=40.693588099580402684, pancakeSwapV3=40.535481185902042967 at 1747321948799
+⭕ Double check (2s_after_opportunity): uniswap=40.546906149595855595, sushiSwap=40.693588099580402684, pancakeSwapV3=40.541821107561695214 at 1747321951690
+Opportunity detected at 1747322137802 between SushiSwap and PancakeSwapV3
+Opportunity detected at 1747324290507 between SushiSwap and PancakeSwapV3
+Opportunity detected at 1747331174864 between PancakeSwapV3 and SushiSwap
+Opportunity detected at 1747468002341 between PancakeSwapV3 and SushiSwap
+Opportunity detected at 1747477670057 between SushiSwap and PancakeSwapV3
+⭕ Double check (opportunity_detected): uniswap=41.306532016977271837, sushiSwap=41.449446093368038646, pancakeSwapV3=41.285281103714510209 at 1747477671156
+Opportunity detected at 1747479790615 between SushiSwap and PancakeSwapV3
+Opportunity detected at 1747499664712 between PancakeSwapV3 and SushiSwap
+Opportunity detected at 1747844282408 between SushiSwap and PancakeSwapV3
+Opportunity detected at 1747845364986 between SushiSwap and Uniswap
+⭕ Double check (opportunity_detected): uniswap=42.050192931928428663, sushiSwap=42.066237428859722058, pancakeSwapV3=42.050112309197039906 at 1747845366063
+⭕ Double check (2s_after_opportunity): uniswap=42.050192931928428663, sushiSwap=42.066237428859722058, pancakeSwapV3=42.050112309197039906 at 1747845369124
+Opportunity detected at 1747845441531 between SushiSwap and PancakeSwapV3
+⭕ Double check (opportunity_detected): uniswap=42.046025521233602262, sushiSwap=42.066237428859722058, pancakeSwapV3=42.029400136094722029 at 1747845442660
+Opportunity detected at 1747845848311 between SushiSwap and PancakeSwapV3
+Opportunity at 1747991922695 between Solidity and Wagmi
+⭕ opportunity_detected: Wagmi=13.793265366495900182, Solidity=13.869077375089423398 at 1747991923260
+Vanished after 727 ms at 1747991923422
+⭕ 2s_after_opportunity: Wagmi=13.828105480777269420, Solidity=13.864739715248648011 at 1747991925797
+Opportunity detected at 1748000743575 between PancakeSwapV3 and SushiSwap
+⭕ Double check (opportunity_detected): uniswap=41.944499490333193137, sushiSwap=41.761482059318247195, pancakeSwapV3=41.959303717992519012 at 1748000744573
+//////////////////////////////////////////Opportunity detected at 1748021687467 between Uniswap and CamelotV3
+Opportunity detected at 1748022813332 between PancakeSwapV3 and CamelotV3
+⭕ Double check (opportunity_detected): uniswap=2581.319347999999990861, pancakeSwapV3=2581.200211000000308559, camelotV3=2581.314812000000074477 at 1748022814152
+⭕ Double check (opportunity_detected): uniswap=2581.319347999999990861, pancakeSwapV3=2581.200211000000308559, camelotV3=2581.314812000000074477 at 1748022814154
+⭕ Double check (opportunity_detected): uniswap=2581.319347999999990861, pancakeSwapV3=2581.200211000000308559, camelotV3=2581.314812000000074477 at 1748022814156
+⭕ Double check (opportunity_detected): uniswap=2581.319347999999990861, pancakeSwapV3=2581.200211000000308559, camelotV3=2581.314812000000074477 at 1748022814157
+Opportunity vanished after 2848 ms at 1748022816180
+⭕ Double check (opportunity_detected): uniswap=2581.074231999999938125, pancakeSwapV3=2580.904877999999825988, camelotV3=2580.956770000000233267 at 1748022816612
+⭕ Double check (opportunity_detected): uniswap=2581.074231999999938125, pancakeSwapV3=2580.904877999999825988, camelotV3=2580.956770000000233267 at 1748022816628
+⭕ Double check (2s_after_opportunity): uniswap=2581.074231999999938125, pancakeSwapV3=2580.904877999999825988, camelotV3=2580.956770000000233267 at 1748022816998
+⭕ Double check (2s_after_opportunity): uniswap=2581.074231999999938125, pancakeSwapV3=2580.904877999999825988, camelotV3=2580.956770000000233267 at 1748022817006
+⭕ Double check (2s_after_opportunity): uniswap=2581.074231999999938125, pancakeSwapV3=2580.904877999999825988, camelotV3=2580.956770000000233267 at 1748022817007
+⭕ Double check (2s_after_opportunity): uniswap=2581.074231999999938125, pancakeSwapV3=2580.904877999999825988, camelotV3=2580.956770000000233267 at 1748022817007
+⭕ Double check (2s_after_opportunity): uniswap=2581.053417999999965105, pancakeSwapV3=2580.904877999999825988, camelotV3=2580.946831000000202039 at 1748022819516
+⭕ Double check (2s_after_opportunity): uniswap=2581.053417999999965105, pancakeSwapV3=2580.904877999999825988, camelotV3=2580.946831000000202039 at 1748022819684

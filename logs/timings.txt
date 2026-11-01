@@ -1,0 +1,369 @@
+Arbitrage #1 timings:
+- Detection to loan calculation: 1 ms
+- Loan calculation to encoding: 5 ms
+- Encoding to signing: 13 ms
+- Signing to submission: 609 ms
+- Submission to confirmation: 5487 ms
+- Total from detection to confirmation: 6115 ms
+
+Arbitrage #1 timings:
+- Detection to loan calculation: 1 ms
+- Loan calculation to encoding: 4 ms
+- Encoding to signing: 13 ms
+- Signing to submission: 722 ms
+- Submission to confirmation: 6177 ms
+- Total from detection to confirmation: 6917 ms
+
+Arbitrage #1 timings:
+- Detection to loan calculation: 1 ms
+- Loan calculation to encoding: 3 ms
+- Encoding to signing: 15 ms
+- Signing to submission: 1123 ms
+- Submission to confirmation: 5764 ms
+- Total from detection to confirmation: 6906 ms
+
+Arbitrage #1 timings:
+- Detection to loan calculation: 2 ms
+- Loan calculation to encoding: 4 ms
+- Encoding to signing: 17 ms
+- Signing to submission: 569 ms
+- Submission to confirmation: 5815 ms
+- Total from detection to confirmation: 6407 ms
+
+Arbitrage #1 timings:
+- Detection to loan calculation: 1 ms
+- Loan calculation to encoding: 3 ms
+- Encoding to signing: 12 ms
+- Signing to submission: 787 ms
+- Submission to confirmation: 6078 ms
+- Total from detection to confirmation: 6881 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 447 ms
+- Encode to sign: 13 ms
+- Sign to send: 604 ms
+- Send to confirm: 5875 ms
+- Total: 6939 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 312 ms
+- Encode to sign: 27 ms
+- Sign to send: 1099 ms
+- Send to confirm: 6273 ms
+- Total: 7711 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 444 ms
+- Encode to sign: 7 ms
+- Sign to send: 765 ms
+- Send to confirm: 5456 ms
+- Total: 6672 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 372 ms
+- Encode to sign: 13 ms
+- Sign to send: 832 ms
+- Send to confirm: 6143 ms
+- Total: 7360 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 435 ms
+- Encode to sign: 45 ms
+- Sign to send: 722 ms
+- Send to confirm: 5910 ms
+- Total: 7112 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 526 ms
+- Encode to sign: 12 ms
+- Sign to send: 997 ms
+- Send to confirm: 6350 ms
+- Total: 7885 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 495 ms
+- Encode to sign: 13 ms
+- Sign to send: 876 ms
+- Send to confirm: 6189 ms
+- Total: 7573 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 291 ms
+- Encode to sign: 12 ms
+- Sign to send: 855 ms
+- Send to confirm: 5443 ms
+- Total: 6601 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 405 ms
+- Encode to sign: 15 ms
+- Sign to send: 769 ms
+- Send to confirm: 5856 ms
+- Total: 7045 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 401 ms
+- Encode to sign: 16 ms
+- Sign to send: 576 ms
+- Send to confirm: 5834 ms
+- Total: 6827 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 385 ms
+- Encode to sign: 10 ms
+- Sign to send: 588 ms
+- Send to confirm: 5813 ms
+- Total: 6796 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 371 ms
+- Encode to sign: 9 ms
+- Sign to send: 765 ms
+- Send to confirm: 5824 ms
+- Total: 6969 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 466 ms
+- Encode to sign: 12 ms
+- Sign to send: 973 ms
+- Send to confirm: 6194 ms
+- Total: 7645 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 392 ms
+- Encode to sign: 11 ms
+- Sign to send: 937 ms
+- Send to confirm: 5930 ms
+- Total: 7270 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 390 ms
+- Encode to sign: 13 ms
+- Sign to send: 1066 ms
+- Send to confirm: 6337 ms
+- Total: 7806 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 397 ms
+- Encode to sign: 9 ms
+- Sign to send: 885 ms
+- Send to confirm: 1556 ms
+- Total: 2847 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 411 ms
+- Encode to sign: 11 ms
+- Sign to send: 885 ms
+- Send to confirm: 6161 ms
+- Total: 7468 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 435 ms
+- Encode to sign: 14 ms
+- Sign to send: 900 ms
+- Send to confirm: 6049 ms
+- Total: 7398 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 401 ms
+- Encode to sign: 20 ms
+- Sign to send: 969 ms
+- Send to confirm: 6032 ms
+- Total: 7422 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 417 ms
+- Encode to sign: 14 ms
+- Sign to send: 701 ms
+- Send to confirm: 5791 ms
+- Total: 6923 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 521 ms
+- Encode to sign: 16 ms
+- Sign to send: 856 ms
+- Send to confirm: 6269 ms
+- Total: 7662 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 336 ms
+- Encode to sign: 12 ms
+- Sign to send: 471 ms
+- Send to confirm: 5431 ms
+- Total: 6250 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 437 ms
+- Encode to sign: 9 ms
+- Sign to send: 897 ms
+- Send to confirm: 6124 ms
+- Total: 7467 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 277 ms
+- Encode to sign: 13 ms
+- Sign to send: 467 ms
+- Send to confirm: 5443 ms
+- Total: 6200 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 389 ms
+- Encode to sign: 13 ms
+- Sign to send: 975 ms
+- Send to confirm: 6204 ms
+- Total: 7581 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 399 ms
+- Encode to sign: 19 ms
+- Sign to send: 1039 ms
+- Send to confirm: 5897 ms
+- Total: 7354 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 296 ms
+- Encode to sign: 13 ms
+- Sign to send: 1056 ms
+- Send to confirm: 5496 ms
+- Total: 6861 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 294 ms
+- Encode to sign: 13 ms
+- Sign to send: 902 ms
+- Send to confirm: 5545 ms
+- Total: 6754 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 365 ms
+- Encode to sign: 42 ms
+- Sign to send: 1230 ms
+- Send to confirm: 6014 ms
+- Total: 7651 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 462 ms
+- Encode to sign: 14 ms
+- Sign to send: 1006 ms
+- Send to confirm: 6261 ms
+- Total: 7743 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 553 ms
+- Encode to sign: 50 ms
+- Sign to send: 1157 ms
+- Send to confirm: 5470 ms
+- Total: 7230 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 458 ms
+- Encode to sign: 18 ms
+- Sign to send: 829 ms
+- Send to confirm: 6221 ms
+- Total: 7526 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 307 ms
+- Encode to sign: 15 ms
+- Sign to send: 970 ms
+- Send to confirm: 6489 ms
+- Total: 7781 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 321 ms
+- Encode to sign: 12 ms
+- Sign to send: 851 ms
+- Send to confirm: 5966 ms
+- Total: 7150 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 404 ms
+- Encode to sign: 19 ms
+- Sign to send: 951 ms
+- Send to confirm: 7060 ms
+- Total: 8434 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 425 ms
+- Encode to sign: 15 ms
+- Sign to send: 980 ms
+- Send to confirm: 7225 ms
+- Total: 8645 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 370 ms
+- Encode to sign: 24 ms
+- Sign to send: 1163 ms
+- Send to confirm: 6407 ms
+- Total: 7964 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 361 ms
+- Encode to sign: 25 ms
+- Sign to send: 978 ms
+- Send to confirm: 6399 ms
+- Total: 7763 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 295 ms
+- Encode to sign: 8 ms
+- Sign to send: 845 ms
+- Send to confirm: 5843 ms
+- Total: 6991 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 363 ms
+- Encode to sign: 14 ms
+- Sign to send: 1160 ms
+- Send to confirm: 7170 ms
+- Total: 8707 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 365 ms
+- Encode to sign: 13 ms
+- Sign to send: 1036 ms
+- Send to confirm: 6665 ms
+- Total: 8079 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 892 ms
+- Encode to sign: 24 ms
+- Sign to send: 940 ms
+- Send to confirm: 6515 ms
+- Total: 8371 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 284 ms
+- Encode to sign: 11 ms
+- Sign to send: 1040 ms
+- Send to confirm: 5769 ms
+- Total: 7104 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 305 ms
+- Encode to sign: 55 ms
+- Sign to send: 860 ms
+- Send to confirm: 5926 ms
+- Total: 7146 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 322 ms
+- Encode to sign: 42 ms
+- Sign to send: 1065 ms
+- Send to confirm: 1453 ms
+- Total: 2882 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 402 ms
+- Encode to sign: 22 ms
+- Sign to send: 1116 ms
+- Send to confirm: 610 ms
+- Total: 2150 ms
+
+Arbitrage #1 timings:
+- Detection to encode: 371 ms
+- Encode to sign: 14 ms
+- Sign to send: 1074 ms
+- Send to confirm: 834 ms
+- Total: 2293 ms
+
